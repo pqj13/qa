@@ -5,11 +5,11 @@ toc: false
 
 This is the landing page.
 
-## Explore
+## Áreas de práctica
 
 {{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
+  {{< card link="docs" title="Penal" icon="scale" >}}
+  {{< card link="about" title="Familia" icon="user-group" >}}
 {{< /cards >}}
 
 ## Documentation
