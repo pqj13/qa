@@ -16,6 +16,19 @@ markup:
   highlight:
     noClasses: false
 
+defaultContentLanguage: es
+languages:
+  es:
+    languageName: Español
+    weight: 1
+  en:
+    languageName: English
+    weight: 2
+  fr:
+    languageName: Français
+    weight: 3
+
+
 menu:
   main:
     - name: Docs
@@ -44,8 +57,14 @@ menu:
 
 params:
   navbar:
-    displayTitle: true
-    displayLogo: false
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/logo.png
+      dark: images/logo_oscuro.png
+      link: /
+      width: 187.5
+      height: 56.25
 
   footer:
     displayCopyright: true
