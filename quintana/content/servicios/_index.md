@@ -1,6 +1,5 @@
 ---
-title: Documentation
-next: first-page
+title: Servicios
 ---
 
 This is a demo of the theme's documentation layout.

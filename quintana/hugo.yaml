@@ -31,8 +31,8 @@ languages:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
+    - name: Servicios
+      pageRef: /servicios
       weight: 1
 #    - name: About
 #      pageRef: /about

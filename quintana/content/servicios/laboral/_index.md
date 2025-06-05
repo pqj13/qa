@@ -1,10 +1,10 @@
 ---
-title: Folder
+title: Laboral
 type: docs
 prev: docs/first-page
-next: docs/folder/leaf
+next: docs/laboral/leaf
 sidebar:
-  open: true
+  open: false
 ---
 
 Pages can be organized into folders.
