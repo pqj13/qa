@@ -5,9 +5,11 @@
   --primary-lightness: 35%;
 }
 
-}
-
 .hextra-footer {
   /* Styles will be applied to the footer element */
   background-color: #ffffff;
+}
+
+.hextra-footer:is(html[class~="dark"] *) {
+  /* Styles will be applied to the footer element in dark mode */
 }
