@@ -10,7 +10,7 @@ Contacto
 
 Asesoramiento Jurídico Profesional
 
-Quintana Abogados en Burgos: Más de 30 años de experiencia en asesoramiento jurídico y defensa legal
+Quintana Abogados: Abogados en [Burgos](#): Más de 30 años de experiencia en asesoramiento jurídico y defensa legal
 
 En Quintana Abogados Burgos, contamos con más de 30 años de experiencia en asesoramiento jurídico y defensa de los intereses de nuestros clientes. Somos un despacho de abogados en Burgos comprometido con la profesionalidad, la eficacia y la ética profesional, ofreciendo siempre un servicio legal actualizado y de excelencia.
 

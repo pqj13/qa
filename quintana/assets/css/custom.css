@@ -1,0 +1,13 @@
+/* color: #a10d2a */
+:root {
+  --primary-hue: 348deg;
+  --primary-saturation: 85%;
+  --primary-lightness: 35%;
+}
+
+}
+
+.hextra-footer {
+  /* Styles will be applied to the footer element */
+  background-color: #ffffff;
+}
