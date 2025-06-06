@@ -4,7 +4,9 @@ description: Quintana Abogados | Abogados en Burgos
 toc: false
 ---
 
-## Abogados en Burgos | 
+## Abogados en Burgos
+
+**[Teléfono: 000 000 000](tel:+34000000000)**
 
 {{< cards >}}
   {{< card link="tel:+34000000000" title="000 000 000" icon="phone" >}}
