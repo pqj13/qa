@@ -6,11 +6,9 @@ toc: false
 
 ## Abogados en Burgos
 
-**[Teléfono: 000 000 000](tel:+34000000000)**
-
-{{< cards >}}
-  {{< card link="tel:+34000000000" title="000 000 000" icon="phone" >}}
-{{< /cards >}}
+<div class="hx:mb-6">
+{{< hextra/hero-button text="Tel: 000 000 000" link="tel:+34000000" >}}
+</div>
 
 Contacto
 

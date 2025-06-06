@@ -5,6 +5,13 @@
   --primary-lightness: 35%;
 }
 
+/* color: #aa253f (#a10d2a un poco más claro) 
+:root {
+  --primary-hue: 348deg;
+  --primary-saturation: 65%;
+  --primary-lightness: 40%;
+}
+
 .hextra-footer {
   /* Styles will be applied to the footer element */
   background-color: #ffffff;
