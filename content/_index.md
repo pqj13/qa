@@ -7,7 +7,7 @@ toc: false
 ## Abogados en Burgos | 
 
 {{< cards >}}
-  {{< card title="000 000 000" icon="phone" >}}
+  {{< card link="tel:+34000000000" title="000 000 000" icon="phone" >}}
 {{< /cards >}}
 
 Contacto
