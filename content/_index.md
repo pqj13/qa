@@ -6,6 +6,10 @@ toc: false
 
 ## Abogados en Burgos | 
 
+{{< cards >}}
+  {{< card title="000 000 000" icon="phone" >}}
+{{< /cards >}}
+
 Contacto
 
 Asesoramiento Jurídico Profesional

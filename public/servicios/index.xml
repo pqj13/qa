@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quintana Abogados | Burgos – Servicios</title>
+    <link>//localhost:1313/servicios/</link>
+    <description>Recent content in Servicios on Quintana Abogados | Burgos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    
+	  <atom:link href="//localhost:1313/servicios/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

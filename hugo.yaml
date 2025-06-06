@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: Quintana Abogados | Burgos
 
 # import hextra as module
 module:
@@ -56,8 +56,8 @@ menu:
 #        icon: x-twitter
 
   sidebar:
-    - identifier: mas
-      name: Más
+    - identifier: privacidad
+      name: Política de privacidad y cookies
       params:
         type: separator
       weight: 1
