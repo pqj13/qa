@@ -4,12 +4,9 @@ description: Quintana Abogados Burgos. Abogados en Burgos.
 toc: false
 ---
 
-{{< hextra/hero-subtitle >}}
-**Abogado:** Del lat. *advocatus (ad auxilium vocatus)*, el llamado para auxiliar.
-{{< /hextra/hero-subtitle >}}
 
 ---
-#### [{{< icon "phone" >}} 947 273 101](#)
+#### **[{{< icon "phone" >}} 947 273 101](#)**
 
 **{{< icon "location-marker" >}}** c/ Santander 11, 2º apto. C (09004 - Burgos)
 
@@ -17,6 +14,9 @@ toc: false
 
 ---
 
+{{< hextra/hero-subtitle >}}
+**Abogado:** Del lat. *advocatus (ad auxilium vocatus)*, el llamado para auxiliar.
+{{< /hextra/hero-subtitle >}}
 
 
 
