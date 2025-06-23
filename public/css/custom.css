@@ -1,11 +1,3 @@
-/* color: #a10d2a 
-:root {
-  --primary-hue: 348deg;
-  --primary-saturation: 85%;
-  --primary-lightness: 35%;
-}
-*/
-
 /* color: #aa253f (#a00c2e un poco más claro) */
 :root {
   --primary-hue: 348deg;
@@ -16,8 +8,4 @@
 .hextra-footer {
   /* Styles will be applied to the footer element */
   background-color: #ffffff;
-}
-
-.hextra-footer:is(html[class~="dark"] *) {
-  /* Styles will be applied to the footer element in dark mode */
 }
