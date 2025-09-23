@@ -21,9 +21,9 @@ languages:
   es:
     languageName: Español
     weight: 1
-#  en:
-#    languageName: English
-#    weight: 2
+  en:
+    languageName: English
+    weight: 2
 #  fr:
 #    languageName: Français
 #    weight: 3
@@ -31,7 +31,8 @@ languages:
 
 menu:
   main:
-    - name: Servicios
+    - identifier: servicios
+      name: Servicios
       pageRef: /servicios
       weight: 1
 #    - name: About
