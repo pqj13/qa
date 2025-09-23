@@ -21,9 +21,9 @@ languages:
   es:
     languageName: Español
     weight: 1
-  en:
-    languageName: English
-    weight: 2
+#  en:
+#    languageName: English
+#    weight: 2
 #  fr:
 #    languageName: Français
 #    weight: 3
@@ -100,7 +100,7 @@ params:
     width: normal
 
   # Display the last modification date
-  displayUpdatedDate: true
+  displayUpdatedDate: false
   dateFormat: "January 2, 2006"
 
   # Search

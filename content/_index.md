@@ -10,7 +10,6 @@ toc: false
   Pablo
 {{< /hextra/hero-subtitle >}}
 </div>
-<br class="hx:sm:block hx:hidden" />
 {{< callout type="error" emoji="☎️" >}}
   **[000 000 000](#)** : Concierte una cita con nosotros.  
 {{< /callout >}}
@@ -18,4 +17,4 @@ toc: false
 
 ## Servicios
 
-Asesoramiento e intervención profesional en los órdenes jurisdiccionales Civil, Penal, Contencioso-Administrativo y Laboral. Puede consultar con mayor detalle la [lista completa de servicios.](servicios)
+Asesoramiento e intervención profesional en los órdenes jurisdiccionales Civil, Penal, Contencioso-Administrativo y Laboral. Puede consultar con mayor detalle nuestras [áreas de práctica y servicios](servicios).

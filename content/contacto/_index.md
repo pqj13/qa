@@ -1,9 +1,9 @@
 ---
-title: Áreas de práctica y servicios
+title: Contacto
 comments: false
-linkTitle: Servicios
+linkTitle: Contacto
 toc: false
-breadcrumbs: true
+breadcrumbs: false
 ---
 <br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
