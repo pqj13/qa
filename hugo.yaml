@@ -31,10 +31,18 @@ languages:
 
 menu:
   main:
+    - identifier: informacion
+      name: Información
+      pageRef: #
+      weight: 1
     - identifier: servicios
       name: Servicios
       pageRef: /servicios
-      weight: 1
+      weight: 2
+    - identifier: contacto
+      name: Contacto
+      pageRef: #
+      weight: 3
 #    - name: About
 #      pageRef: /about
 #      weight: 2
