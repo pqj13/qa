@@ -6,19 +6,18 @@ toc: false
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
   <br class="hx:sm:block hx:hidden" />
-  Cándido<br class="hx:sm:block hx:hidden" />
-  Pablo
+  Cándido Quintana Núñez <br class="hx:sm:block hx:hidden" />
+  Pablo Quintana Jabato
 {{< /hextra/hero-subtitle >}}
 </div>
 
 {{< callout type="error" emoji="☎️" >}}
-  **[000 000 000](#)** : Concierte una cita con nosotros.  
+  **[947 273 101](phone:+34947273101)** : Concierte una cita con nosotros.  
 {{< /callout >}}
 
 ## Abogados en Burgos
 
 En Quintana Abogados contamos con más de 40 años de experiencia en asesoramiento jurídico en Burgos así como en la defensa de los intereses de nuestros clientes, con profesionalidad, eficacia y compromiso ético, en constante actualización y búsqueda de la excelencia y con respeto absoluto a las normas que regulan el ejercicio de la Abogacía.
-[información](#)
 
 
 
