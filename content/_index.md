@@ -6,7 +6,9 @@ toc: false
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
   <br class="hx:sm:block hx:hidden" />
-  Cándido Quintana Núñez <br class="hx:sm:block hx:hidden" />
+  Cándido Quintana Núñez
+{{< /hextra/hero-subtitle >}}
+{{< hextra/hero-subtitle >}}
   Pablo Quintana Jabato
 {{< /hextra/hero-subtitle >}}
 </div>
