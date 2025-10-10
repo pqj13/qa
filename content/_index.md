@@ -13,7 +13,7 @@ toc: false
 {{< /hextra/hero-subtitle >}}
 </div>
 
-{{< callout type="error" emoji="☎️" >}}
+{{< callout type="error" emoji="📞" >}}
   **[947 27 31 01](tel:+34947273101)** : Concierte una cita con nosotros.  
 {{< /callout >}}
 
