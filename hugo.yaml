@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: Quintana Abogados | Burgos
+title: Abogados en Burgos | Quintana Abogados
 
 # import hextra as module
 module:
@@ -99,7 +99,7 @@ params:
   theme:
     # light | dark | system
     default: light
-    displayToggle: true
+    displayToggle: false
 
   footer:
     enable: true
@@ -119,7 +119,7 @@ params:
 
     flexsearch:
       # index page by: content | summary | heading | title
-      index: content
+      index: heading
       # full | forward | reverse | strict
       # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
       tokenize: forward
