@@ -33,7 +33,7 @@ Asesoramiento y defensa en cuestiones laborales y frente a la Seguridad Social e
 ### ADMINISTRATIVO
 
 Asesoramiento y defensa en Procedimientos Administrativos y Contencioso-Administrativo.
-[Más información](servicios/administrativo)
+[Más información](/administrativo)
 
 
 {{% /steps %}}
