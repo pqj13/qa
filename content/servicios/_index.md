@@ -15,22 +15,25 @@ breadcrumbs: true
 ### FAMILIA
 
 Asesoramiento y defensa en asuntos de familia en Burgos:  divorcios, adopción de medidas sobre hijos menores, pensión de alimentos, etc.
+[Más información](/familia)
 
 ### CIVIL
 
-Asesoramiento Y defensa en asuntos civiles.
+Asesoramiento y defensa en asuntos civiles. [Más información](/civil)
 
 ### PENAL
 
-Proporcionamos defensa frente a todo tipo de delitos en Burgos. 
+Proporcionamos defensa frente a todo tipo de delitos en Burgos. [Más información](/penal) 
 
 ### LABORAL
 
 Asesoramiento y defensa en cuestiones laborales y frente a la Seguridad Social en Burgos: despidos, reclamaciones de cantidad, procedimientos de incapacidad permanente.
+[Más información](/laboral)
 
 ### ADMINISTRATIVO
 
 Asesoramiento y defensa en Procedimientos Administrativos y Contencioso-Administrativo.
+[Más información](/administrativo)
 
 
 {{% /steps %}}
