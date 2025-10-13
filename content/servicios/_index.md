@@ -4,6 +4,9 @@ comments: false
 linkTitle: Servicios
 toc: false
 breadcrumbs: true
+cascade:
+  type: default
+
 ---
 <br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
