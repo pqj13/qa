@@ -40,12 +40,12 @@ menu:
       pageRef: /servicios
       weight: 2
     - identifier: contacto
-      name: CONTACTO
+      name: Contacto
       pageRef: /contacto
       weight: 3
       params:
         type: link
-        icon: user-circle
+        icon: arrow-narrow-right
 
 #    - name: About
 #      pageRef: /about
