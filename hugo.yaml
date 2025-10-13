@@ -33,7 +33,7 @@ menu:
   main:
     - identifier: informacion
       name: Información
-      pageRef: #
+      pageRef: /informacion
       weight: 1
     - identifier: servicios
       name: Servicios
@@ -41,8 +41,12 @@ menu:
       weight: 2
     - identifier: contacto
       name: Contacto
-      pageRef: #
+      pageRef: /contacto
       weight: 3
+      params:
+        type: link
+        icon: chevron-double-right
+
 #    - name: About
 #      pageRef: /about
 #      weight: 2
@@ -63,6 +67,7 @@ menu:
 #      url: "https://twitter.com/"
 #      params:
 #        icon: x-twitter
+
 
 #  sidebar:
 #    - identifier: privacidad
