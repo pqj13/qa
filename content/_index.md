@@ -3,16 +3,6 @@ title:
 description: Quintana Abogados Burgos. Abogados en Burgos. 
 toc: false
 ---
-<div class="hx:mb-12">
-{{< hextra/hero-subtitle >}}
-  <br class="hx:sm:block hx:hidden" />
-  Cándido Quintana Núñez
-{{< /hextra/hero-subtitle >}}
-{{< hextra/hero-subtitle >}}
-  Pablo Quintana Jabato
-{{< /hextra/hero-subtitle >}}
-</div>
-
 {{< callout type="error" emoji="📞" >}}
   **[947 27 31 01](tel:+34947273101)** : Concierte una cita con nosotros.  
 {{< /callout >}}
