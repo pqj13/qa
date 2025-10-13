@@ -1,5 +1,5 @@
 ---
-title: Quintana Abogados
+title: 
 description: Quintana Abogados Burgos. Abogados en Burgos. 
 toc: false
 ---
