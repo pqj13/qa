@@ -8,13 +8,13 @@ toc: false
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
-  Lawyers in Spain (Burgos)&nbsp;<br class="hx:sm:block hx:hidden" />since more than 40 years ago.
+  Lawyers in Spain &nbsp;<br class="hx:sm:block hx:hidden" />since more than 40 years ago.
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
-  At Quintana Abogados, we have over 40 years of experience &nbsp;<br class="hx:sm:block hx:hidden" /> providing legal advice in León across various areas of law. <br class="hx:sm:block hx:hidden" /><br class="hx:sm:block hx:hidden" />Contact us to schedule an appointment and study your case.
+  At Quintana Abogados, we have over 40 years of experience &nbsp;<br class="hx:sm:block hx:hidden" /> providing legal advice across various areas of law based in the city of Burgos. <br class="hx:sm:block hx:hidden" /><br class="hx:sm:block hx:hidden" />Contact us to schedule an appointment and study your case.
 {{< /hextra/hero-subtitle >}}
 </div>
 
