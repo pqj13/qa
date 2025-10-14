@@ -4,9 +4,6 @@ comments: false
 linkTitle: Servicios
 toc: false
 breadcrumbs: true
-cascade:
-  sidebar:
-    exclude: true
 
 ---
 <br class="hx:sm:block hx:hidden" />
@@ -15,6 +12,10 @@ cascade:
 {{< /hextra/hero-subtitle >}}
 
 {{% steps %}}
+
+### PENAL
+
+Proporcionamos defensa frente a todo tipo de delitos en Burgos. [Más información](/servicios/penal) 
 
 ### FAMILIA
 
@@ -25,9 +26,6 @@ Asesoramiento y defensa en asuntos de familia en Burgos:  divorcios, adopción d
 
 Asesoramiento y defensa en asuntos civiles. [Más información](/servicios/civil)
 
-### PENAL
-
-Proporcionamos defensa frente a todo tipo de delitos en Burgos. [Más información](/servicios/penal) 
 
 ### LABORAL
 

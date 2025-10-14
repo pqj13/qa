@@ -14,10 +14,14 @@ toc: false
 
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
-  Fast, batteries-included Hugo theme&nbsp;<br class="hx:sm:block hx:hidden" />for creating beautiful static websites
+  En Quintana Abogados contamos con más de 40 años de experiencia&nbsp;<br class="hx:sm:block hx:hidden" />  en asesoramiento jurídico en Burgos en diversas [**áreas**](#) del Derecho. <br class="hx:sm:block hx:hidden" /><br class="hx:sm:block hx:hidden" />Contacte con nosotros para concertar una cita y estudiar su caso.
 {{< /hextra/hero-subtitle >}}
 </div>
 
 <div class="hx:mb-6">
-{{< hextra/hero-button text="Get Started" link="docs" >}}
+{{< hextra/hero-button text="Contacto " link="contacto" >}}
 </div>
+
+
+<div class="hx:mt-6"></div>
+
