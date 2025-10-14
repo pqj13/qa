@@ -119,7 +119,7 @@ params:
   # Search
   # flexsearch is enabled by default
   search:
-    enable: true
+    enable: false
     type: flexsearch
 
     flexsearch:
