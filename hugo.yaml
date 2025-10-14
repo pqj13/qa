@@ -24,9 +24,9 @@ languages:
   en:
     languageName: English
     weight: 2
-#  fr:
-#    languageName: Français
-#    weight: 3
+  fr:
+    languageName: Français
+    weight: 3
 
 
 menu:
@@ -104,13 +104,13 @@ params:
   theme:
     # light | dark | system
     default: light
-    displayToggle: false
+    displayToggle: true
 
   footer:
     enable: true
     displayCopyright: true
     displayPoweredBy: false
-    width: normal
+    width: full
 
   # Display the last modification date
   displayUpdatedDate: false
