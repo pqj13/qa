@@ -1,19 +1,26 @@
 ---
-title: 
+title:
 description: Quintana Abogados Burgos. Abogados en Burgos. 
 toc: false
 ---
-{{< callout type="error" emoji="📞" >}}
-  **[947 27 31 01](tel:+34947273101)** : Concierte una cita con nosotros.  
-{{< /callout >}}
+{{< hextra/hero-badge link="tel:+34947273101" >}}
+  <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
+  <span>Tel: 947 27 31 01</span>
+  {{< icon name="arrow-circle-right" attributes="height=14" >}}
+{{< /hextra/hero-badge >}}
 
-## Abogados en Burgos
+<div class="hx:mt-6 hx:mb-6">
+{{< hextra/hero-headline >}}
+  Abogados en Burgos&nbsp;<br class="hx:sm:block hx:hidden" />desde hace más de 40 años
+{{< /hextra/hero-headline >}}
+</div>
 
-En Quintana Abogados contamos con más de 40 años de experiencia en asesoramiento jurídico en Burgos así como en la defensa de los intereses de nuestros clientes, con profesionalidad, eficacia y compromiso ético, en constante actualización y búsqueda de la excelencia y con respeto absoluto a las normas que regulan el ejercicio de la Abogacía.
+<div class="hx:mb-12">
+{{< hextra/hero-subtitle >}}
+  Fast, batteries-included Hugo theme&nbsp;<br class="hx:sm:block hx:hidden" />for creating beautiful static websites
+{{< /hextra/hero-subtitle >}}
+</div>
 
-
-
-
-## Servicios
-
-Asesoramiento e intervención profesional en los órdenes jurisdiccionales Civil, Penal, Contencioso-Administrativo y Laboral. Puede consultar con mayor detalle nuestras [áreas de práctica y servicios](servicios).
+<div class="hx:mb-6">
+{{< hextra/hero-button text="Get Started" link="docs" >}}
+</div>
