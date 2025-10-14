@@ -29,7 +29,7 @@ Asesoramiento y defensa en otros asuntos civiles: sucesiones, arrendamientos, de
 
 ### LABORAL
 
-Asesoramiento y defensa en cuestiones laborales individuales y frente a la Seguridad Social: despidos, reclamaciones de cantidad, procedimientos de incapacidad permanente.
+Asesoramiento y defensa en cuestiones laborales individuales y frente a la Seguridad Social: despidos, reclamaciones de cantidad, procedimientos de incapacidad permanente, etc.
 
 
 ### ADMINISTRATIVO
