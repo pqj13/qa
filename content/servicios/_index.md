@@ -8,33 +8,40 @@ breadcrumbs: true
 ---
 <br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
-  En Quintana Abogados prestamos, entre otros, los siguientes servicios
+  En Quintana Abogados prestamos servicios en las siguientes áreas
 {{< /hextra/hero-subtitle >}}
 
 {{% steps %}}
 
 ### PENAL
 
-Proporcionamos defensa frente a todo tipo de delitos en Burgos. [Más información](/servicios/penal) 
+Defensa, asistencia e intervención en todo tipo de procedimientos penales y frente a todo tipo de delitos. 
+
+[Más información](/servicios/penal) 
 
 ### FAMILIA
 
-Asesoramiento y defensa en asuntos de familia en Burgos:  divorcios, adopción de medidas sobre hijos menores, pensión de alimentos, etc.
+Asesoramiento y defensa en asuntos de familia:  divorcios, adopción de medidas sobre hijos menores, pensión de alimentos, etc.
+
 [Más información](/servicios/familia)
 
 ### CIVIL
 
-Asesoramiento y defensa en asuntos civiles. [Más información](/servicios/civil)
+Asesoramiento y defensa en otros asuntos civiles: sucesiones, arrendamientos, desahucios, reclamaciones de cantidad, etc. 
+
+[Más información](/servicios/civil)
 
 
 ### LABORAL
 
-Asesoramiento y defensa en cuestiones laborales y frente a la Seguridad Social en Burgos: despidos, reclamaciones de cantidad, procedimientos de incapacidad permanente.
+Asesoramiento y defensa en cuestiones laborales individuales y frente a la Seguridad Social: despidos, reclamaciones de cantidad, procedimientos de incapacidad permanente.
+
 [Más información](/servicios/laboral)
 
 ### ADMINISTRATIVO
 
-Asesoramiento y defensa en Procedimientos Administrativos y Contencioso-Administrativo.
+Asesoramiento y defensa ante la Administración y en vía judicial en el orden Contencioso-Administrativo.
+
 [Más información](/servicios/administrativo)
 
 

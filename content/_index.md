@@ -4,7 +4,7 @@ description: Quintana Abogados Burgos. Abogados en Burgos.
 toc: false
 ---
 
-{{< badge content="947 273 101" color="red" icon="phone" link="tel:+34947273101">}}
+{{< badge content="947 273 101" color="red" icon="phone" >}}
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
