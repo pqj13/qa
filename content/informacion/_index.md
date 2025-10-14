@@ -20,7 +20,20 @@ En Quintana Abogados contamos con más de 40 años de experiencia en asesoramien
 
 ## Abogados del despacho
 
-#### Cándido Quintana Núñez
+### Cándido Quintana Núñez
+Col. 1.178 del ICA de Burgos.
 
-#### Pablo Quintana Jabato
+Licenciado en Derecho por la Universidad de Valladolid.
+
+Con más de 40 años de experiencia en el ejercicio de la abogacía en Derecho Civil, de Familia, Sucesiones, Penal y Laboral.
+
+--- 
+
+### Pablo Quintana Jabato
+Col. 3.308 del ICA de Burgos.
+
+Graduado en Derecho por la Universidad de Navarra.
+
+Miembro de la Asociación Española de Abogados de Familia.
+
 
