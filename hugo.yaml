@@ -53,10 +53,13 @@ menu:
 #    - name: Contact ↗
 #      url: "https://github.com/imfing"
 #      weight: 3
-    - name: Search
-      weight: 4
-      params:
-        type: search
+
+#    - name: Search
+#      weight: 4
+#      params:
+#       type: search
+
+
 #    - name: GitHub
 #      weight: 5
 #      url: "https://github.com/imfing/hextra-starter-template"
