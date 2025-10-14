@@ -20,8 +20,8 @@ En Quintana Abogados contamos con más de 40 años de experiencia en asesoramien
 
 ## Abogados del despacho
 
-### Cándido Quintana Núñez
-{{< badge content="Es" color="amber" >}}
+### Cándido Quintana Núñez {{< badge content="ES" color="amber" >}} {{< badge content="EN" color="red" >}}
+{{< badge content="Col. 1.178 ICA Burgos" >}}
 
 Col. 1.178 del ICA de Burgos.
 
@@ -31,10 +31,9 @@ Con más de 40 años de experiencia en el ejercicio de la abogacía en Derecho C
 
 --- 
 
-### Pablo Quintana Jabato
-{{< badge content="Es" color="amber" >}}
-{{< badge content="En" color="red">}}
-{{< badge content="Fr" color="blue" >}}
+### Pablo Quintana Jabato {{< badge content="ES" color="amber" >}} {{< badge content="EN" color="red">}} {{< badge content="FR" color="indigo" >}}
+{{< badge content="Col. 3.308 ICA Burgos" >}}
+
 Col. 3.308 del ICA de Burgos.
 
 Graduado en Derecho por la Universidad de Navarra.

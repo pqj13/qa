@@ -4,7 +4,11 @@ description: Quintana Abogados Burgos. Abogados en Burgos.
 toc: false
 ---
 
-{{< badge content="(+34) 947 273 101" color="red" icon="phone" >}}
+{{< hextra/hero-badge >}}
+  <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
+  <span>(+34) 947 273 101</span>
+  {{< icon name="phone-outgoing" attributes="height=14" >}}
+{{< /hextra/hero-badge >}}
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
@@ -14,7 +18,7 @@ toc: false
 
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
-  Based in the city of Burgos, at Quintana Abogados we have over 40 years of experience&nbsp;<br class="hx:sm:block hx:hidden" /> providing legal advice across various areas of Law. <br class="hx:sm:block hx:hidden" /><br class="hx:sm:block hx:hidden" />Contact us to schedule an appointment and study your case.
+  Based in the city of Burgos, at Quintana Abogados we have over 40 years of experience providing legal advice across diverse [**areas of Law**](servicios). <br class="hx:sm:block hx:hidden" /><br class="hx:sm:block hx:hidden" />Contact us to schedule an appointment and study your case.
 
 {{< /hextra/hero-subtitle >}}
 </div>

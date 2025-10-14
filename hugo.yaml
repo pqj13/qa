@@ -21,12 +21,12 @@ languages:
   es:
     languageName: Español
     weight: 1
-  en:
-    languageName: English
-    weight: 2
-  fr:
-    languageName: Français
-    weight: 3
+#  en:
+#    languageName: English
+#    weight: 2
+#  fr:
+#    languageName: Français
+#    weight: 3
 
 
 menu:
