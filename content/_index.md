@@ -3,6 +3,7 @@ title: Abogados en Burgos desde hace más de 40 años
 description: Quintana Abogados Burgos. Abogados en Burgos. 
 toc: false
 ---
+&nbsp;<br class="hx:sm:block hx:hidden" />
 
 {{< callout type="error" emoji="📞" >}} 947 27 31 01 : Concierte una cita con nosotros.
 {{< /callout >}}
