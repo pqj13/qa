@@ -9,6 +9,8 @@ toc: false
 
 <div class="hx:mb-12">
 
+&nbsp;<br class="hx:sm:block hx:hidden" />
+
 En Quintana Abogados contamos con más de 40 años de experiencia en asesoramiento jurídico en Burgos en diversas [**áreas del Derecho**](servicios).
 
 &nbsp;<br class="hx:sm:block hx:hidden" />
