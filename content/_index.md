@@ -9,9 +9,9 @@ toc: false
 
 <div class="hx:mb-12">
 
-##### En Quintana Abogados contamos con más de 40 años de experiencia en asesoramiento jurídico en Burgos en diversas [**áreas del Derecho**](servicios).
+#### En Quintana Abogados contamos con más de 40 años de experiencia en asesoramiento jurídico en Burgos en diversas [**áreas del Derecho**](servicios).
 
-##### Contacte con nosotros para concertar una cita y estudiar su caso.
+#### Contacte con nosotros para concertar una cita y estudiar su caso.
 
 </div>
 
