@@ -6,6 +6,6 @@
 }
 
 .hextra-footer:is(html[class~="light"] *) {
-  /* Styles will be applied to the footer element in dark mode */
+  /* Styles will be applied to the footer element in light mode */
   background-color: #ffffff;
 }
