@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abogados en Burgos | Quintana Abogados – Abogados del despacho</title>
+    <link>//localhost:1313/abogados/</link>
+    <description>Recent content in Abogados del despacho on Abogados en Burgos | Quintana Abogados</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    
+	  <atom:link href="//localhost:1313/abogados/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

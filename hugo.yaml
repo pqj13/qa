@@ -31,9 +31,9 @@ languages:
 
 menu:
   main:
-    - identifier: informacion
-      name: Información
-      pageRef: /informacion
+    - identifier: abogados
+      name: Abogados
+      pageRef: /abogados
       weight: 1
     - identifier: servicios
       name: Servicios
@@ -54,10 +54,10 @@ menu:
 #      url: "https://github.com/imfing"
 #      weight: 3
 
-#    - name: Search
-#      weight: 4
-#      params:
-#       type: search
+    - name: Search
+      weight: 4
+      params:
+       type: search
 
 
 #    - name: GitHub

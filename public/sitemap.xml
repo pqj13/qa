@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/abogados/</loc>
+  </url><url>
     <loc>//localhost:1313/</loc>
   </url><url>
     <loc>//localhost:1313/servicios/administrativo/</loc>
@@ -12,11 +14,9 @@
   </url><url>
     <loc>//localhost:1313/contacto/</loc>
   </url><url>
-    <loc>//localhost:1313/cookies/</loc>
+    <loc>//localhost:1313/cookies_y_privacidad/</loc>
   </url><url>
     <loc>//localhost:1313/servicios/familia/</loc>
-  </url><url>
-    <loc>//localhost:1313/informacion/</loc>
   </url><url>
     <loc>//localhost:1313/servicios/laboral/</loc>
   </url><url>

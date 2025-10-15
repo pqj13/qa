@@ -5,7 +5,7 @@ toc: true
 ---
 ## Cookies
 
-Esta web se ha diseñado respetando su privacidad, de modo que **no almacena cookies** de ninguna clase.
+Esta web se ha diseñado con respeto por su privacidad, de modo que **no almacena cookies** de ninguna clase.
 
 ## Protección de datos
 
