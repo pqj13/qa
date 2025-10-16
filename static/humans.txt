@@ -2,7 +2,6 @@ DISEÑO WEB / WEB DESIGN: Pablo Quintana
 
 EQUIPO / TEAM: Cándido Quintana  & Pablo Quintana
 
-AGRADECIMIENTO / THANKS: Xin Fu (Github: @imfing) for Hextra
 
 
 
@@ -30,4 +29,5 @@ AGRADECIMIENTO / THANKS: Xin Fu (Github: @imfing) for Hextra
 
 
 
-/* LAUDETUR CHRISTUS REX */
+
++ LAUDETUR CHRISTUS REX +
