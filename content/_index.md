@@ -13,7 +13,7 @@ toc: false
 {{< /callout >}}
 
 ---
-En Quintana Abogados contamos con más de 40 años de experiencia en asesoramiento jurídico en Burgos así como en la defensa de los intereses de nuestros clientes en [diversas áreas del Derecho](servicios), con profesionalidad, eficacia y compromiso ético, en constante actualización y búsqueda de la excelencia y con respeto absoluto a las normas que regulan el ejercicio de la Abogacía, en especial:
+En Quintana Abogados contamos con más de 40 años de experiencia en asesoramiento jurídico en Burgos así como en la defensa de los intereses de nuestros clientes en [diversas áreas del Derecho](servicios) con profesionalidad, eficacia y compromiso ético, en constante actualización y búsqueda de la excelencia y con respeto absoluto a las normas que regulan el ejercicio de la Abogacía, en especial:
 
 * Lealtad a los clientes.
 * Independencia y libertad en la garantía de la defensa y el asesoramiento del cliente.
