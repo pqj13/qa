@@ -1,16 +1,16 @@
-/* TEAM */
-    
-	Web designer: Pablo Q. J. 
-    From: Spain
+DISEÑO WEB / WEB DESIGN: Pablo Quintana 
 
-/* THANKS */
+EQUIPO / TEAM: Cándido Quintana  & Pablo Quintana
 
-	Xin Fu for creating the Hextra Project
-	GitHub: @imfing
-	
-/* SITE */
-	Designed with HUGO 
-    IDE: VSCode, Sublime Text
+AGRADECIMIENTO / THANKS: Xin Fu (Github: @imfing)
+
+
+
+
+
+
+
+
 
 
 
