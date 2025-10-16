@@ -9,7 +9,7 @@ toc: false
 {{< /hextra/hero-subtitle >}}
 
 <br class="hx:sm:block hx:hidden" />
-{{< callout type="error" emoji="📞" >}} +34 947 27 31 01: Prenez rendez-vous avec nous.
+{{< callout type="error" emoji="📞" >}} (+34) 947 27 31 01: Prenez une rendez-vous avec nous.
 {{< /callout >}}
 
 ---
@@ -29,7 +29,7 @@ toc: false
 &nbsp;<br class="hx:sm:block hx:hidden" />
 
 <div class="hx:mb-6">
-{{< hextra/hero-button text="Contact" link="contacto" >}}
+{{< hextra/hero-button text="Nous contacter" link="contacto" >}}
 </div>
 
 <div class="hx:mt-6"></div>
