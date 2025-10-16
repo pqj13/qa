@@ -155,8 +155,3 @@ params:
   comments:
     enable: false
     type: giscus
-
-  analytics:
-    umami:
-      serverURL: "https://analytics.umami.is"
-      websiteID: "bf1deda4-7572-4fb0-9347-4f29c731e162"
