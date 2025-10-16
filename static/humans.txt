@@ -1,0 +1,33 @@
+/* TEAM */
+    
+	Web designer: Pablo Q. J. 
+    From: Spain
+
+/* THANKS */
+
+	Xin Fu for creating the Hextra Project
+	GitHub: @imfing
+	
+/* SITE */
+	Designed with HUGO 
+    IDE: VSCode, Sublime Text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LAUDETUR CHRISTUS REX */
