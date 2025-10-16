@@ -5,7 +5,7 @@ comments: false
 linkTitle: Laboral
 toc: false
 breadcrumbs: true
-draft: false
+draft: true
 cascade:
   sidebar:
     exclude: true
