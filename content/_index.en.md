@@ -9,7 +9,7 @@ toc: false
 {{< /hextra/hero-subtitle >}}
 
 <br class="hx:sm:block hx:hidden" />
-{{< callout type="error" emoji="📞" >}} +34 947 27 31 01: Schedule an appointment with us.
+{{< callout type="error" emoji="📞" >}} (+34) 947 27 31 01: Schedule an appointment with us.
 {{< /callout >}}
 
 ---
