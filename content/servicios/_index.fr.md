@@ -2,7 +2,7 @@
 title: Expertises
 description: Quintana Abogados. Abogados penalistas en Burgos. Abogados de Familia en Burgos. Abogados Civil en Burgos. Abogados laboralistas en Burgos. Abogados Administrativo en Burgos. 
 comments: false
-linkTitle: Servicios
+linkTitle: Expertises
 toc: false
 breadcrumbs: true
 ---
@@ -19,15 +19,15 @@ Défense, assistance et intervention dans tous les types de procédures pénales
 
 ### FAMILLE
 
-Conseils et défense dans les affaires familiales : divorces, adoption de mesures concernant les enfants mineurs, pension alimentaire, etc.
+Conseils et défense dans les affaires familiales: divorces, adoption de mesures concernant les enfants mineurs, pension alimentaire, etc.
 
 ### CIVIL
 
-Conseils et défense dans d'autres affaires civiles : successions, baux, expulsions, réclamations de sommes, etc.
+Conseils et défense dans d'autres affaires civiles: successions, baux, expulsions, réclamations de sommes, etc.
 
 ### TRAVAIL
 
-Conseils et défense dans les questions de travail individuelles et face à la Sécurité Sociale : licenciements, réclamations de sommes, procédures d'incapacité permanente, etc.
+Conseils et défense dans les questions de travail individuelles et face à la Sécurité Sociales: licenciements, réclamations de sommes, procédures d'incapacité permanente, etc.
 
 ### ADMINISTRATIF
 
@@ -35,5 +35,5 @@ Conseils et défense devant l'Administration et en voie judiciaire.
 
 {{% /steps %}}
 
-{{< callout type="error" icon="arrow-circle-right">}} [Contactez-nous](/contact)
+{{< callout type="error" icon="arrow-circle-right">}} [Contactez-nous](/contacto)
 {{< /callout >}}

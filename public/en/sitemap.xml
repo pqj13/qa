@@ -19,21 +19,21 @@
                 href="//localhost:1313/en/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/</loc>
+    <loc>//localhost:1313/en/contacto/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="//localhost:1313/"
+                href="//localhost:1313/contacto/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="//localhost:1313/fr/"
+                href="//localhost:1313/fr/contacto/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/"
+                href="//localhost:1313/en/contacto/"
                 />
   </url><url>
     <loc>//localhost:1313/en/servicios/</loc>
@@ -51,6 +51,23 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/en/servicios/"
+                />
+  </url><url>
+    <loc>//localhost:1313/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="//localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/"
                 />
   </url><url>
     <loc>//localhost:1313/en/tags/</loc>

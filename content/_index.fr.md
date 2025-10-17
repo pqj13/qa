@@ -10,7 +10,7 @@ toc: false
 
 <br class="hx:sm:block hx:hidden" />
 {{< callout type="error" icon="phone" >}}
-  **[(+34) 947 27 31 01](tel:+34947273101)** : Concierte una cita con nosotros.  
+  **[(+34) 947 27 31 01](tel:+34947273101)** : Prenez une rendex-vous avec nous.  
 {{< /callout >}}
 
 ---

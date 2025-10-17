@@ -39,6 +39,21 @@
                 />
   </url><url>
     <loc>//localhost:1313/contacto/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/contacto/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/contacto/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="//localhost:1313/contacto/"
+                />
   </url><url>
     <loc>//localhost:1313/cookies_y_privacidad/</loc>
   </url><url>

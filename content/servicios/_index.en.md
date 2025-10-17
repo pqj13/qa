@@ -2,7 +2,7 @@
 title: Areas of expertise
 description: Quintana Abogados. Abogados penalistas en Burgos. Abogados de Familia en Burgos. Abogados Civil en Burgos. Abogados laboralistas en Burgos. Abogados Administrativo en Burgos. 
 comments: false
-linkTitle: Servicios
+linkTitle: Expertise
 toc: false
 breadcrumbs: true
 ---
@@ -35,5 +35,5 @@ Advice and defense before the Administration and in judicial proceedings in the 
 
 {{% /steps %}}
 
-{{< callout type="error" icon="arrow-circle-right">}} [Contact us](/contact)
+{{< callout type="error" icon="arrow-circle-right">}} [Contact us](/contacto)
 {{< /callout >}}
