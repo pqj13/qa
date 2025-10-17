@@ -5,7 +5,7 @@ comments: false
 linkTitle: Penal
 toc: true
 breadcrumbs: true
-draft: true
+draft: false
 cascade:
   sidebar:
     exclude: true
