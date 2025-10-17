@@ -36,6 +36,23 @@
                 href="//localhost:1313/en/"
                 />
   </url><url>
+    <loc>//localhost:1313/en/servicios/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="//localhost:1313/servicios/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/servicios/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/servicios/"
+                />
+  </url><url>
     <loc>//localhost:1313/en/tags/</loc>
     <xhtml:link
                 rel="alternate"

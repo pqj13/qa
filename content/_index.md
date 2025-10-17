@@ -9,7 +9,8 @@ toc: false
 {{< /hextra/hero-subtitle >}}
 
 <br class="hx:sm:block hx:hidden" />
-{{< callout type="error" emoji="📞" >}} 947 27 31 01 : Concierte una cita con nosotros.
+{{< callout type="error" icon="phone" >}}
+  **[947 27 31 01](tel:+34947273101)** : Concierte una cita con nosotros.  
 {{< /callout >}}
 
 ---

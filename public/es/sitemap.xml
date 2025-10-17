@@ -21,8 +21,6 @@
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/servicios/administrativo/</loc>
-  </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -40,19 +38,30 @@
                 href="//localhost:1313/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/servicios/civil/</loc>
-  </url><url>
     <loc>//localhost:1313/contacto/</loc>
   </url><url>
     <loc>//localhost:1313/cookies_y_privacidad/</loc>
   </url><url>
     <loc>//localhost:1313/servicios/familia/</loc>
   </url><url>
-    <loc>//localhost:1313/servicios/laboral/</loc>
-  </url><url>
     <loc>//localhost:1313/servicios/penal/</loc>
   </url><url>
     <loc>//localhost:1313/servicios/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/servicios/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/servicios/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="//localhost:1313/servicios/"
+                />
   </url><url>
     <loc>//localhost:1313/tags/</loc>
     <xhtml:link

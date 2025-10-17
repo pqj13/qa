@@ -11,7 +11,7 @@ toc: false
 
 ### Teléfono
 
-{{< callout type="error" emoji="📞" >}}
+{{< callout type="error" icon="phone" >}}
   **[947 27 31 01](tel:+34947273101)** : Concierte una cita con nosotros.  
 {{< /callout >}}
 
