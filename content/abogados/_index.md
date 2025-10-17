@@ -25,4 +25,5 @@ Licenciado en Derecho por la Universidad de Valladolid, cuenta con una sólida e
 
 Graduado en Derecho por la Universidad de Navarra donde obtuvo premios y distinciones por su desempeño académico, combina su excelente formación con experiencia, especialmente (aunque no exclusivamente) en el ámbito del Derecho Penal. Es miembro de la Asociación Española de Abogados de Familia.
 
-
+{{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)
+{{< /callout >}}
