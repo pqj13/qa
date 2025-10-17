@@ -158,7 +158,7 @@ params:
   
   analytics:
     umami:
-      serverURL: "https://e2a61560-97ed-4c3b-9ce4-414e4c725b9e.umami.is"
+      serverURL: "https://cloud.umami.is"
       websiteID: "bf1deda4-7572-4fb0-9347-4f29c731e162"
       scriptName: "umami.js" # optional (default: umami.js)
       # https://umami.is/docs/tracker-configuration#data-host-url
