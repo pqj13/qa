@@ -16,10 +16,17 @@ En el ámbito del derecho de familia ofrecemos un acompañamiento legal cercano 
 
 {{< callout type="info" >}} Página en construcción
 {{< /callout >}}
-### Procedimientos matrimoniales
+## Procedimientos matrimoniales
 * Divorcio de mutuo acuerdo
 * Divorcio contencioso
 * Adopción de medidas provisionales
 
-### Patria potestad, guarda y custodia
+## Patria potestad, guarda y custodia
+
+* Atribución de guarda y custodia
+* Modificación del régimen de visitas y comunicación
+
+## Alimentos
+* Reclamación de alimentos
+* Modificación o extinción de pensión alimenticia o compensatoria
 
