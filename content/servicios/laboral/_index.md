@@ -1,11 +1,11 @@
----
+	---
 title: Derecho Laboral
 description: Quintana Abogados - Abogados laboralistas en Burgos 
 comments: false
 linkTitle: Laboral
 toc: false
 breadcrumbs: true
-draft: true
+draft: false
 cascade:
   sidebar:
     exclude: true
@@ -13,3 +13,22 @@ cascade:
 {{< callout type="info" >}}
  PÁGINA EN CONSTRUCCIÓN
 {{< /callout >}}
+
+## Despidos
+* Despido disciplinario
+* Despido improcedente
+* Despido objetivo o colectivo
+* Reclamaciones de salarios impagados / horas extraordinarias
+
+## Otras materias 
+* Sanciones disciplinarias
+* Modificacion sustancial de condiciones de trbajp
+* Movilidad geografic
+* Vacaciones
+
+## Seguridad Social
+* Incapacidad Temporal
+* Incapacidad Permanente 
+* Jubilación 
+* Prestaciones familiares
+* Impugnacioón de actos de la Seguridad Social
