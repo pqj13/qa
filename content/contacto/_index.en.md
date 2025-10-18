@@ -26,3 +26,7 @@ You can write to us through the following [contact form](https://forms.office.co
 Our office is located at the following address. You can click on it to access Google Maps. [^2]
 
 [^2]: External site not affiliated with quintana-abogados.com. Quintana Abogados is not responsible for any personal data collected by this site.
+
+{{< cards cols="1" >}}
+  {{< card icon="location-marker" title="c/ Santander 11, 2º C (09004 - Burgos)" link="https://maps.app.goo.gl/tUnp3YdsnFdcqDZM7" >}}
+{{< /cards >}}

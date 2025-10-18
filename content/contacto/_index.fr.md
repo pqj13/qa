@@ -27,3 +27,7 @@ Vous pouvez nous écrire via le [formulaire de contact](https://forms.office.com
 Notre cabinet est situé à l'adresse suivante. Vous pouvez cliquer dessus pour accéder à Google Maps. [^2]
 
 [^2]: Site externe non affilié à quintana-abogados.com. Quintana Abogados n'est pas responsable des données personnelles collectées par ce site.
+
+{{< cards cols="1" >}}
+  {{< card icon="location-marker" title="c/ Santander 11, 2º C (09004 - Burgos)" link="https://maps.app.goo.gl/tUnp3YdsnFdcqDZM7" >}}
+{{< /cards >}}
