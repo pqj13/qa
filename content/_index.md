@@ -1,6 +1,6 @@
 ---
 title: Abogados en Burgos desde hace más de 40 años
-description: Quintana Abogados Burgos. Abogados en Burgos. 
+description: Abogados en Burgos | Quintana Abogados
 toc: false
 ---
 <br class="hx:sm:block hx:hidden" />

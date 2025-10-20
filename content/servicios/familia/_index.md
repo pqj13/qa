@@ -11,7 +11,7 @@ cascade:
 ---
 <br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
-En el ámbito del derecho de familia ofrecemos un acompañamiento legal cercano y eficaz, garantizando dedicación, confidencialidad y profesionalidad en cada caso
+En el ámbito del derecho de familia ofrecemos un acompañamiento legal cercano y eficaz garantizando dedicación, confidencialidad y profesionalidad en cada caso
 {{< /hextra/hero-subtitle >}}
 
 {{< callout type="info" >}} Página en construcción

@@ -19,6 +19,23 @@
                 href="//localhost:1313/fr/"
                 />
   </url><url>
+    <loc>//localhost:1313/fr/abogados/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="//localhost:1313/abogados/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/abogados/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/abogados/"
+                />
+  </url><url>
     <loc>//localhost:1313/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -51,6 +68,23 @@
                 rel="alternate"
                 hreflang="fr"
                 href="//localhost:1313/fr/contacto/"
+                />
+  </url><url>
+    <loc>//localhost:1313/fr/cookies_y_privacidad/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="//localhost:1313/cookies_y_privacidad/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/cookies_y_privacidad/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/cookies_y_privacidad/"
                 />
   </url><url>
     <loc>//localhost:1313/fr/servicios/</loc>

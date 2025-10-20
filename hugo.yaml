@@ -156,11 +156,11 @@ params:
     enable: false
     type: giscus
   
-  analytics:
-    umami:
-      serverURL: "https://cloud.umami.is"
-      websiteID: "bf1deda4-7572-4fb0-9347-4f29c731e162"
-      scriptName: "umami.js" # optional (default: umami.js)
+  # analytics:
+  #  umami:
+  #    serverURL: "https://cloud.umami.is"
+  #    websiteID: "bf1deda4-7572-4fb0-9347-4f29c731e162"
+  #    scriptName: "umami.js" # optional (default: umami.js)
       # https://umami.is/docs/tracker-configuration#data-host-url
       # hostURL: "http://stats.quintana-abogados.com" # optional
       # https://umami.is/docs/tracker-configuration#data-auto-track
@@ -174,4 +174,4 @@ params:
       # https://umami.is/docs/tracker-configuration#data-do-not-track
       # excludeHash: "true" # optional
       # https://umami.is/docs/tracker-configuration#data-domains
-      doNotTrack: "true" # optional
+      #doNotTrack: "true" # optional

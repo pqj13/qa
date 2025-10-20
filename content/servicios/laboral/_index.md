@@ -1,4 +1,4 @@
-	---
+---
 title: Derecho Laboral
 description: Quintana Abogados - Abogados laboralistas en Burgos 
 comments: false
@@ -10,9 +10,10 @@ cascade:
   sidebar:
     exclude: true
 ---
-{{< callout type="info" >}}
- PÁGINA EN CONSTRUCCIÓN
-{{< /callout >}}
+<br class="hx:sm:block hx:hidden" />
+{{< hextra/hero-subtitle >}}
+En el ámbito del Derecho Laboral intervenimos en las siguientes materias con rigor y profesionalidad.
+{{< /hextra/hero-subtitle >}}
 
 ## Despidos
 * Despido disciplinario

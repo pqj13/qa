@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/abogados/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/abogados/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/abogados/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="//localhost:1313/abogados/"
+                />
   </url><url>
     <loc>//localhost:1313/</loc>
     <xhtml:link
@@ -56,8 +71,25 @@
                 />
   </url><url>
     <loc>//localhost:1313/cookies_y_privacidad/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/cookies_y_privacidad/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/cookies_y_privacidad/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="//localhost:1313/cookies_y_privacidad/"
+                />
   </url><url>
     <loc>//localhost:1313/servicios/familia/</loc>
+  </url><url>
+    <loc>//localhost:1313/servicios/laboral/</loc>
   </url><url>
     <loc>//localhost:1313/servicios/penal/</loc>
   </url><url>

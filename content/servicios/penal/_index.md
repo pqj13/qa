@@ -12,7 +12,7 @@ cascade:
 ---
 <br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
-En el ámbito del Derecho Penal ofrecemos una defensa eficaz, garantizando la máxima atención y profesionalidad.
+En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la máxima atención y profesionalidad.
 {{< /hextra/hero-subtitle >}}
 
 ## Defensa frente a delitos
