@@ -36,6 +36,8 @@
                 href="//localhost:1313/"
                 />
   </url><url>
+    <loc>//localhost:1313/servicios/administrativo/</loc>
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -52,6 +54,8 @@
                 hreflang="es"
                 href="//localhost:1313/categories/"
                 />
+  </url><url>
+    <loc>//localhost:1313/servicios/civil/</loc>
   </url><url>
     <loc>//localhost:1313/contacto/</loc>
     <xhtml:link

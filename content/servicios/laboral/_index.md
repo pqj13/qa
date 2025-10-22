@@ -15,6 +15,9 @@ cascade:
 En el ámbito del Derecho Laboral intervenimos en las siguientes materias con rigor y profesionalidad.
 {{< /hextra/hero-subtitle >}}
 
+{{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)
+{{< /callout >}}
+
 ## Despidos
 * Despido disciplinario
 * Despido improcedente
@@ -32,4 +35,5 @@ En el ámbito del Derecho Laboral intervenimos en las siguientes materias con ri
 * Incapacidad Permanente 
 * Jubilación 
 * Prestaciones familiares
-* Impugnacioón de actos de la Seguridad Social
+* Impugnación de actos de la Seguridad Social
+

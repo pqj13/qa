@@ -14,6 +14,9 @@ cascade:
 En el ámbito del derecho de familia ofrecemos un acompañamiento legal cercano y eficaz garantizando dedicación, confidencialidad y profesionalidad en cada caso
 {{< /hextra/hero-subtitle >}}
 
+{{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)
+{{< /callout >}}
+
 {{< callout type="info" >}} Página en construcción
 {{< /callout >}}
 ## Procedimientos matrimoniales

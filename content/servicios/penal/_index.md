@@ -15,6 +15,9 @@ cascade:
 En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la máxima atención y profesionalidad.
 {{< /hextra/hero-subtitle >}}
 
+{{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)
+{{< /callout >}}
+
 ## Defensa frente a delitos
 ### Contra las personas
 * Homicidio y asesinato
@@ -85,3 +88,4 @@ En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la má
 * Contra los derechos de los trabajadores extranjeros
 
 ### Delitos leves
+
