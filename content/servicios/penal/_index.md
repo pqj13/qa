@@ -28,11 +28,9 @@ En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la má
 * Coacciones
 
 ### Contra la libertad e indemnidad sexual
-* Agresión sexual
-* Acoso sexual
-* Violación
-* Prostitución
+* Agresiones sexuales
 * Delitos sexuales contra menores
+* Prostitución
 
 ### Contra la integridad moral
 * Torturas y tratos degradantes

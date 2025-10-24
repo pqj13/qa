@@ -46,6 +46,10 @@ menu:
       params:
         type: link
         icon: arrow-narrow-right
+#    - name: Search
+#      weight: 4
+#      params:
+#       type: search
 
 #    - name: About
 #      pageRef: /about
@@ -53,12 +57,6 @@ menu:
 #    - name: Contact ↗
 #      url: "https://github.com/imfing"
 #      weight: 3
-
-#    - name: Search
-#      weight: 4
-#      params:
-#       type: search
-
 
 #    - name: GitHub
 #      weight: 5
@@ -122,12 +120,12 @@ params:
   # Search
   # flexsearch is enabled by default
   search:
-    enable: false
+    enable: true
     type: flexsearch
 
     flexsearch:
       # index page by: content | summary | heading | title
-      index: heading
+      index: content
       # full | forward | reverse | strict
       # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
       tokenize: forward
