@@ -1,6 +1,6 @@
 ---
-title: Abogados penalistas especializados en detención ilegal y secuestro en Burgos
-description: Quintana Abogados - Abogados penalistas en Burgos especializados en la defensa y acusación particular en casos de detención ilegal y secuestro. Solicite su consulta.
+title: Detención ilegal y secuestro
+description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de detención ilegal y secuestro. Solicite su consulta.
 comments: false
 linkTitle: Detención ilegal y secuestro
 toc: true

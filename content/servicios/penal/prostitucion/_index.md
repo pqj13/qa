@@ -1,6 +1,6 @@
 ---
-title: Abogados penalistas especializados en delitos de prostitución en Burgos
-description: Quintana Abogados - Abogados penalistas en Burgos especializados en la defensa y acusación particular en casos de delitos de prostitución. Solicite su consulta.
+title: Prostitución
+description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de prostitución. Solicite su consulta.
 comments: false
 linkTitle: Prostitución
 toc: true
@@ -12,7 +12,7 @@ cascade:
 ---
 <br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
-En Quintana Abogados prestamos asesoramiento jurídico integral en delitos sexuales contra menores, ofreciendo defensa penal tanto a investigados como a víctimas.  
+En Quintana Abogados prestamos asesoramiento jurídico integral en delitos de prostitución, ofreciendo defensa penal tanto a investigados como a víctimas.  
 {{< /hextra/hero-subtitle >}}
 
 {{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)

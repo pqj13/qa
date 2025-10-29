@@ -38,7 +38,6 @@ En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la má
 ### Contra la familia
 * Abandono de familia
 * Sustracción de menores
-* Quebrantamiento de los deberes familiares
 
 ### Contra el patrimonio y el orden socioeconómico
 * Hurto

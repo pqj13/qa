@@ -1,6 +1,6 @@
 ---
-title: Abogados penalistas especializados en agresiones sexuales en Burgos
-description: Quintana Abogados - Abogados penalistas en Burgos especializados en la defensa y acusación particular en casos de agresiones sexuales. Solicite su consulta.
+title: Agresiones sexuales
+description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de agresiones sexuales. Solicite su consulta.
 comments: false
 linkTitle: Agresiones sexuales
 toc: true

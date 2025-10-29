@@ -38,7 +38,7 @@
   </url><url>
     <loc>//localhost:1313/servicios/administrativo/</loc>
   </url><url>
-    <loc>//localhost:1313/servicios/penal/agresiones_sexuales/</loc>
+    <loc>//localhost:1313/servicios/penal/agresiones-sexuales/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
@@ -95,13 +95,13 @@
                 href="//localhost:1313/cookies_y_privacidad/"
                 />
   </url><url>
-    <loc>//localhost:1313/servicios/penal/delitos_sexuales_contra_menores/</loc>
+    <loc>//localhost:1313/servicios/penal/delitos-sexuales-contra-menores/</loc>
   </url><url>
     <loc>//localhost:1313/servicios/familia/</loc>
   </url><url>
-    <loc>//localhost:1313/servicios/penal/detencion_ilegal_y_secuestro/</loc>
+    <loc>//localhost:1313/servicios/penal/detencion-ilegal-y-secuestro/</loc>
   </url><url>
-    <loc>//localhost:1313/servicios/penal/homicidio_y_asesinato/</loc>
+    <loc>//localhost:1313/servicios/penal/homicidio-y-asesinato/</loc>
   </url><url>
     <loc>//localhost:1313/servicios/laboral/</loc>
   </url><url>
@@ -109,7 +109,11 @@
   </url><url>
     <loc>//localhost:1313/servicios/penal/</loc>
   </url><url>
+    <loc>//localhost:1313/servicios/penal/abandono-de-familia/</loc>
+  </url><url>
     <loc>//localhost:1313/servicios/penal/prostitucion/</loc>
+  </url><url>
+    <loc>//localhost:1313/servicios/penal/torturas-y-tratos-degradantes/</loc>
   </url><url>
     <loc>//localhost:1313/servicios/</loc>
     <xhtml:link

@@ -1,6 +1,6 @@
 ---
-title: Abogados penalistas especializados en lesiones en Burgos
-description: Quintana Abogados - Abogados penalistas en Burgos especializados en la defensa y acusación particular en casos de lesiones. Solicite su consulta.
+title: Lesiones
+description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de lesiones. Solicite su consulta.
 comments: false
 linkTitle: Lesiones
 toc: true

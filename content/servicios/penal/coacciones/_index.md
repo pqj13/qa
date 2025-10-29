@@ -1,6 +1,6 @@
 ---
-title: Abogados penalistas especializados en coacciones en Burgos
-description: Quintana Abogados - Abogados penalistas en Burgos especializados en la defensa y acusación particular en casos de coacciones. Solicite su consulta.
+title: Coacciones
+description: Quintana Abogados - Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de coacciones. Solicite su consulta.
 comments: false
 linkTitle: Coacciones
 toc: true

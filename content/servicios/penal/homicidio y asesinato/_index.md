@@ -1,6 +1,6 @@
 ---
-title: Abogados penalistas especializados en homicidio y asesinato en Burgos
-description: Quintana Abogados - Abogados penalistas en Burgos especializados en la defensa y acusación particular en casos de homicidio y asesinato. Solicite su consulta.
+title: Homicidio y asesinato
+description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de homicidio y asesinato. Solicite su consulta.
 comments: false
 linkTitle: Homicidio y asesinato
 toc: true
