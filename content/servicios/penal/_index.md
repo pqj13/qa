@@ -3,7 +3,7 @@ title: Derecho penal
 description: Quintana Abogados - Abogados penalistas en Burgos 
 comments: false
 linkTitle: Penal
-toc: true
+toc: false
 breadcrumbs: true
 draft: false
 cascade:
@@ -55,7 +55,8 @@ En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la má
 * Malversación de caudales públicos
 * Tráfico de influencias
 * Fraudes y exacciones ilegales
-* Desobediencia y denegación de auxilio
+* Desobediencia
+* Denegación de auxilio
 
 ### Contra la Administración de Justicia
 * Prevaricación judicial

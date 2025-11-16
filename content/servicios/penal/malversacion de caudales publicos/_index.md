@@ -1,8 +1,8 @@
 ---
-title: Lesiones
-description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de lesiones. Solicite su consulta.
+title: Malversación de caudales públicos
+description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de malversación de caudales públicos. Solicite su consulta.
 comments: false
-linkTitle: Lesiones
+linkTitle: Malversación
 toc: true
 breadcrumbs: true
 draft: false
@@ -12,7 +12,7 @@ cascade:
 ---
 <br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
-En Quintana Abogados prestamos asesoramiento jurídico integral en delitos de lesiones, ofreciendo defensa penal tanto a investigados como a víctimas.  
+En Quintana Abogados prestamos asesoramiento jurídico integral en delitos de malversación de caudales públicos, ofreciendo defensa penal tanto a investigados como a víctimas.  
 {{< /hextra/hero-subtitle >}}
 
 {{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)
@@ -20,22 +20,21 @@ En Quintana Abogados prestamos asesoramiento jurídico integral en delitos de le
 
 ---
 
-### ¿Qué es el delito de lesiones?
+### ¿Qué es el delito de malversación de caudales públicos?
 
-El delito de lesiones se encuentra regulado en los artículos 147 a 156 del Código Penal, y castiga a quien, por cualquier medio o procedimiento, cause a otro una lesión que menoscabe su integridad corporal o su salud física o mental.
+La malversación, regulada en los arts. 432 a 435 del Código Penal, consiste en la apropiación, distracción o administración desleal de caudales públicos por parte de una autoridad o funcionario.
 
-Para su existencia resulta necesario que se produzca un daño corporal o funcional y que exista una relación directa entre la acción del autor y la lesión sufrida por la víctima.
-
-En función del resultado y del medio empleado, pueden distinguirse distintas modalidades: lesiones leves, simples, con uso de armas o instrumentos peligrosos, mutilaciones o lesiones agravadas por circunstancias de parentesco o violencia de género.
+Incluye tanto conductas de lucro como de gestión irregular que produzcan perjuicio al patrimonio público.
 
 ### Penas aplicables
 
 Las penas varían según la gravedad del daño y los medios empleados:
 
-* **Lesiones básicas (art. 147.1):** Prisión de 3 meses a 3 años o multa de 6 a 12 meses.
-* **Lesiones leves (art. 147.2):** Generalmente penadas con multa.
-* **Lesiones con agravantes (arts. 148-149):** Prisión de 2 a 10 años.
-* **Lesiones imprudentes (art. 152):** Penadas en función del resultado y del grado de imprudencia.
+* **Malversación básica:** Prisión de 2 a 6 años e inhabilitación de 9 a 12 años.
+
+* **Modalidad agravada (cuando el perjuicio sea grave):** Prisión de 4 a 8 años.
+
+**Malversación atenuada (cuando no exista ánimo de lucro):** Prisión de 1 a 4 años.
 
 ### Nuestro servicio de asistencia Penal en Burgos
 En Quintana Abogados ofrecemos una defensa técnica especializada tanto si es Vd. acusado como si es víctima. Nuestro servicio comprende:

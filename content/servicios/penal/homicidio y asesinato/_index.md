@@ -38,7 +38,7 @@ Estos delitos se encuentran entre los más graves que contempla el Código Penal
 
 El ordenamiento jurídico distingue tres categorías principales:
 
-* **Homicidio simple (art. 138):** Prisión de 10 a 15 años.
+* **Homicidio (art. 138):** Prisión de 10 a 15 años.
 * **Asesinato (art. 139):**  Prisión de 15 a 25 años.
 * **Asesinato agravado (art. 140):** Prisión permanente revisable
 
