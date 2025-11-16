@@ -9,3 +9,6 @@ HUGO_VERSION = "0.147.7"
 package = "@netlify/plugin-sitemap"
   [plugins.inputs]
   buildDir = "."
+
+[context.deploy-preview]
+  command = "hugo --baseURL $DEPLOY_PRIME_URL"
