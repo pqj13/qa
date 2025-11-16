@@ -18,14 +18,18 @@ En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la má
 {{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)
 {{< /callout >}}
 
+{{< callout type="info" >}}
+  Página en construcción
+{{< /callout >}}
+
 ## Defensa frente a delitos
 ### Contra las personas
-* Homicidio y asesinato
-* Lesiones
+* Homicidio y asesinato [Más](/servicios/penal/homicidio-y-asesinato)
+* Lesiones [Más](/servicios/penal/lesiones)
 
 ### Contra la libertad
-* Detención ilegal y secuestro
-* Coacciones
+* Detención ilegal y secuestro [Más](/servicios/penal/detencion-ilegal-y-secuestro)
+* Coacciones [Más](/servicios/penal/coacciones)
 
 ### Contra la libertad e indemnidad sexual
 * Agresiones sexuales
