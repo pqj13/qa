@@ -24,49 +24,48 @@ En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la má
 
 ## Defensa frente a delitos
 ### Contra las personas
-* Homicidio y asesinato [Más](/servicios/penal/homicidio-y-asesinato)
-* Lesiones [Más](/servicios/penal/lesiones)
+* Homicidio y asesinato [→](/servicios/penal/homicidio-y-asesinato)
+* Lesiones [→](/servicios/penal/lesiones)
 
 ### Contra la libertad
-* Detención ilegal y secuestro [Más](/servicios/penal/detencion-ilegal-y-secuestro)
-* Coacciones [Más](/servicios/penal/coacciones)
+* Detención ilegal y secuestro [→](/servicios/penal/detencion-ilegal-y-secuestro)
+* Coacciones [→](/servicios/penal/coacciones)
 
 ### Contra la libertad e indemnidad sexual
-* Agresiones sexuales
-* Delitos sexuales contra menores
-* Prostitución
+* Agresiones sexuales [→](/servicios/penal/agresiones-sexuales)
+* Delitos sexuales contra menores [→](/servicios/penal/delitos-sexuales-contra-menores)
+* Prostitución [→](/servicios/penal/prostitucion)
 
 ### Contra la integridad moral
-* Torturas y tratos degradantes
+* Torturas y tratos degradantes [→](/servicios/penal/torturas-y-tratos-degradantes)
 
 ### Contra la familia
-* Abandono de familia
-* Sustracción de menores
+* Abandono de familia [→](/servicios/penal/abandono-de-familia)
+* Sustracción de menores [→](/servicios/penal/sustraccion-de-menores)
 
 ### Contra el patrimonio y el orden socioeconómico
-* Hurto
-* Robo
-* Extorsión
-* Estafa
-* Apropiación indebida
-* Daños
-* Insolvencia punible
-* Blanqueo de capitales
+* Hurto [→](/servicios/penal/hurto)
+* Robo [→](/servicios/penal/robo)
+* Extorsión [→](/servicios/penal/extorsion)
+* Estafa [→](/servicios/penal/estafa)
+* Apropiación indebida [→](/servicios/penal/apropiacion-indebida)
+* Daños [→](/servicios/penal/danos)
+* Insolvencia punible [→](/servicios/penal/insolvencia-punible)
+* Blanqueo de capitales [→](/servicios/penal/blanqueo-de-capitales)
 
 ### Contra la Administración Púlica
-* Prevaricación
-* Cohecho (soborno)
-* Malversación de caudales públicos
-* Tráfico de influencias
-* Fraudes y exacciones ilegales
-* Desobediencia
-* Denegación de auxilio
+* Prevaricación [→](/servicios/penal/prevaricacion)
+* Cohecho (soborno) [→](/servicios/penal/cohecho)
+* Malversación de caudales públicos [→](/servicios/penal/malversacion-de-caudales-publicos)
+* Tráfico de influencias [→](/servicios/penal/trafico-de-influencias)
+* Fraudes y exacciones ilegales [→](/servicios/penal/fraudes-y-exacciones-ilegales)
+* Desobediencia [→](/servicios/penal/desobediencia)
+* Denegación de auxilio [→](/servicios/penal/denegacion-de-auxilio)
 
 ### Contra la Administración de Justicia
-* Prevaricación judicial
-* Falso testimonio
-* Encubrimiento
-* Quebrantamiento de condena
+* Falso testimonio [→](/servicios/penal/falso-testimonio)
+* Encubrimiento [→](/servicios/penal/encubrimiento)
+* Quebrantamiento de condena [→](/servicios/penal/quebrantamiento-de-condena)
 
 ### Contra el orden público
 * Atentado contra la autoridad
