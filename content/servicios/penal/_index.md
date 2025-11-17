@@ -18,11 +18,9 @@ En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la má
 {{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)
 {{< /callout >}}
 
-{{< callout type="info" >}}
-  Página en construcción
-{{< /callout >}}
-
 ## Defensa frente a delitos
+A continuación se ofrece una lista de los tipos de delitos frente a los que proporcionamos asistencia, así como una breve información sobre cada uno de ellos a efectos meramente orientativos. Para conocer la situación real, hay que acudir al estudio de cada caso concreto.
+
 ### Contra las personas
 * Homicidio y asesinato [→](/servicios/penal/homicidio-y-asesinato)
 * Lesiones [→](/servicios/penal/lesiones)
@@ -74,18 +72,18 @@ En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la má
 * Terrorismo [→](/servicios/penal/terrorismo)
 
 ### Contra la Seguridad Colectiva
-* Incendios
-* Tráfico de drogas
-* Conducción bajo la influencia de alcohol o drogas
-* Conducción temeraria
+* Incendios [→](/servicios/penal/incendio)
+* Tráfico de drogas [→](/servicios/penal/trafico-de-drogas)
+* Conducción bajo la influencia de alcohol o drogas [→](/servicios/penal/conduccion-bajo-influencia-alcohol-o-drogas)
+* Conducción temeraria [→](/servicios/penal/conduccion-temeraria)
 
 ### Contra la Hacienda Pública y la Seguridad Social
-* Fraude fiscal
-* Fraude a la Seguridad Social
+* Fraude fiscal [→](/servicios/penal/fraude-fiscal)
+* Fraude a la Seguridad Social [→](/servicios/penal/fraude-a-la-seguridad-social)
 
 ### Contra los derechos de los trabajadores y de los extranjeros
-* Explotación laboral
-* Tráfico ilegal de mano de obra
-* Contra los derechos de los trabajadores extranjeros
+* Explotación laboral [→](/servicios/penal/explotacion-laboral)
+* Tráfico ilegal de mano de obra [→](/servicios/penal/trafico-ilegal-de-mano-de-obra)
+* Contra los derechos de los trabajadores extranjeros [→](/servicios/penal/tdelitos-contra-los-derechos-de-los-trabajadores-extranjeros)
 
 

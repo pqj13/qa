@@ -189,9 +189,9 @@
                 href="http://localhost:1313/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/servicios/penal/torturas-y-tratos-degradantes/</loc>
-  </url><url>
     <loc>http://localhost:1313/servicios/penal/terrorismo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/penal/torturas-y-tratos-degradantes/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/trafico-de-influencias/</loc>
   </url>
