@@ -84,6 +84,6 @@ A continuación se ofrece una lista de los tipos de delitos frente a los que pro
 ### Contra los derechos de los trabajadores y de los extranjeros
 * Explotación laboral [→](/servicios/penal/explotacion-laboral)
 * Tráfico ilegal de mano de obra [→](/servicios/penal/trafico-ilegal-de-mano-de-obra)
-* Contra los derechos de los trabajadores extranjeros [→](/servicios/penal/tdelitos-contra-los-derechos-de-los-trabajadores-extranjeros)
+* Contra los derechos de los trabajadores extranjeros [→](/servicios/penal/delitos-contra-los-derechos-de-los-trabajadores-extranjeros)
 
 
