@@ -20,7 +20,7 @@ En Quintana Abogados prestamos asesoramiento jurídico integral en delitos de ab
 
 ---
 
-### ¿Qué es el demlito de abandono de familia?
+### ¿Qué es el delito de abandono de familia?
 
 El abandono de familia se encuentra regulado en los artículos 226 a 233 del Código Penal, dentro de los delitos contra las relaciones familiares.
 

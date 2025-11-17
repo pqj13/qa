@@ -68,10 +68,10 @@ En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la má
 * Quebrantamiento de condena [→](/servicios/penal/quebrantamiento-de-condena)
 
 ### Contra el orden público
-* Atentado contra la autoridad
-* Resistencia o desobediencia grave
-* Desórdenes públicos
-* Terrorismo
+* Atentado contra la autoridad [→](/servicios/penal/atentado)
+* Resistencia o desobediencia grave [→](/servicios/penal/resistencia-o-desobediencia-grave)
+* Desórdenes públicos [→](/servicios/penal/desordenes-publicos)
+* Terrorismo [→](/servicios/penal/terrorismo)
 
 ### Contra la Seguridad Colectiva
 * Incendios
@@ -88,5 +88,4 @@ En el ámbito del Derecho Penal ofrecemos una defensa eficaz garantizando la má
 * Tráfico ilegal de mano de obra
 * Contra los derechos de los trabajadores extranjeros
 
-### Delitos leves
 
