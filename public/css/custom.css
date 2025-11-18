@@ -1,0 +1,16 @@
+.content {
+  font-family: "Inter";
+  font-size: 13pt;
+}
+
+/* color: #aa253f (#a00c2e un poco más claro) */
+:root {
+  --primary-hue: 348deg;
+  --primary-saturation: 65%;
+  --primary-lightness: 40%;
+}
+
+.hextra-footer:is(html[class~="light"] *) {
+  /* Styles will be applied to the footer element in light mode */
+  background-color: #ffffff;
+}
