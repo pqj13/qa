@@ -8,7 +8,7 @@ HUGO_VERSION = "0.147.7"
 [[plugins]]
 package = "@netlify/plugin-sitemap"
   [plugins.inputs]
-  buildDir = "."
+  buildDir = "public"
   baseUrl = "http://quintana-abogados.com"
 
 [context.deploy-preview]
