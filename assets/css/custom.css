@@ -1,6 +1,9 @@
+* {
+    user-select: none;
+}
+
 .content {
   font-size: 13pt;
-  user-select: none;
 }
 
 /* color: #aa253f (#a00c2e un poco más claro) */
