@@ -25,11 +25,11 @@ Además del Derecho de Familia, servicios en todas las áreas del Derecho Civil
 
 ## Consumo
 * Reclamaciones a bancos y aseguradoras
-* Reclamación de gastos hipotecarios
+* Reclamación por cláusulas abusivas
 
 ## Contratos
 * Redacción y revisión de contratos
-* Incumplimientos contractuales y resolución de contratos
+* Incumplimientos contractuales y resolución de contratos *
 * Reclamaciones por vicios ocultos
 
 ## Incapacitaciones, tutela y medidas de apoyo

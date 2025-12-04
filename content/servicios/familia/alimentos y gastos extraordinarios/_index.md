@@ -1,39 +1,43 @@
 ---
-title: Derecho de Familia
-description: Quintana Abogados - Abogados de Familia en Burgos 
+title: Alimentos
+description: Quintana Abogados - Abogados de Familia en Burgos especializados en reclamación de alimentos. Solicite su consulta.
 comments: false
-toc: false
+linkTitle: Alimentos
+toc: true
 breadcrumbs: true
 draft: false
 cascade:
   sidebar:
     exclude: true
 ---
-**[{{< icon "arrow-circle-right" >}} Contacte con nosotros](/contacto)**
-
 <br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
-En el ámbito del derecho de familia ofrecemos un acompañamiento legal cercano y eficaz garantizando dedicación, confidencialidad y profesionalidad en cada caso.
+En Quintana Abogados prestamos asesoramiento jurídico integral en reclamaciones de alimentos, buscando la mejor solución jurídica.  
 {{< /hextra/hero-subtitle >}}
 
-{{% details title="Procedimientos matrimoniales" closed="true" %}}
-* Divorcio de mutuo acuerdo [→](/servicios/familia/divorcio-de-mutuo-acuerdo)
-* Divorcio contencioso [→](/servicios/familia/divorcio-contencioso)
-* Medidas provisionales [→](/servicios/familia/medidas-provisionales)
-{{% /details %}}
-
-{{% details title="Patria potestad, guarda y custodia" closed="true" %}}
-* Atribución de guarda y custodia [→](/servicios/familia/guarda-y-custodia)
-* Régimen de comunicaciones y visitas [→](/servicios/familia/regimen-de-comunicaciones-y-visitas)
-{{% /details %}}
-
-{{% details title="Pensiones de alimentos" closed="true" %}}
-* Reclamación de alimentos y gastos extraordinarios [→](/servicios/familia/alimentos-y-gastos-extraordinarios)
-* Modificación o extinción de pensión alimenticia [→](/servicios/familia/modificacion-o-extincion-de-pension-alimenticia)
-{{% /details %}}
+{{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)
+{{< /callout >}}
 
 ---
-### Abogados de Familia en Burgos
+
+### ¿Qué son los alimentos?
+
+La obligación de alimentos comprende todo lo necesario para el sustento, vivienda, educación, salud y bienestar ordinario de los hijos menores y de los mayores dependientes económicamente. 
+
+Es una obligación legal que deben asumir los progenitores de modo proporcional a su capacidad económica.
+
+### Información esencial sobre los alimentos
+
+Para fijar la pensión alimenticia se valoran:
+
+* Ingresos y gastos de cada progenitor.
+* Necesidades del menor: alimentación, escuela, salud, actividades.
+* Custodia y tiempo de convivencia.
+* Gastos extraordinarios y su reparto.
+
+Los alimentos deben actualizarse anualmente conforme al IPC, salvo pacto en contrario.
+
+### Nuestros servicios de Familia en Burgos
 
 En Quintana Abogados contamos con más de 40 años de experiencia en procedimientos Familia en Burgos. Nuestros servicios incluyen:
 

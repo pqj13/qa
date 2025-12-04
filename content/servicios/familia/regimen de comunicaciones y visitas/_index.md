@@ -1,39 +1,40 @@
 ---
-title: Derecho de Familia
-description: Quintana Abogados - Abogados de Familia en Burgos 
+title: Régimen de comunicaciones y visitas
+description: Quintana Abogados - Abogados de Familia en Burgos especializados en comunicaciones y visitas. Solicite su consulta.
 comments: false
-toc: false
+linkTitle: Comunicaciones y visitas
+toc: true
 breadcrumbs: true
 draft: false
 cascade:
   sidebar:
     exclude: true
 ---
-**[{{< icon "arrow-circle-right" >}} Contacte con nosotros](/contacto)**
-
 <br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
-En el ámbito del derecho de familia ofrecemos un acompañamiento legal cercano y eficaz garantizando dedicación, confidencialidad y profesionalidad en cada caso.
+En Quintana Abogados prestamos asesoramiento jurídico integral en procedimientos de comunicaciones y visitas, buscando la mejor solución jurídica.  
 {{< /hextra/hero-subtitle >}}
 
-{{% details title="Procedimientos matrimoniales" closed="true" %}}
-* Divorcio de mutuo acuerdo [→](/servicios/familia/divorcio-de-mutuo-acuerdo)
-* Divorcio contencioso [→](/servicios/familia/divorcio-contencioso)
-* Medidas provisionales [→](/servicios/familia/medidas-provisionales)
-{{% /details %}}
-
-{{% details title="Patria potestad, guarda y custodia" closed="true" %}}
-* Atribución de guarda y custodia [→](/servicios/familia/guarda-y-custodia)
-* Régimen de comunicaciones y visitas [→](/servicios/familia/regimen-de-comunicaciones-y-visitas)
-{{% /details %}}
-
-{{% details title="Pensiones de alimentos" closed="true" %}}
-* Reclamación de alimentos y gastos extraordinarios [→](/servicios/familia/alimentos-y-gastos-extraordinarios)
-* Modificación o extinción de pensión alimenticia [→](/servicios/familia/modificacion-o-extincion-de-pension-alimenticia)
-{{% /details %}}
+{{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)
+{{< /callout >}}
 
 ---
-### Abogados de Familia en Burgos
+
+### ¿En qué consiste el régimen de comunicaciones y visitas?
+
+El régimen de comunicaciones y visitas establece cuándo y cómo el progenitor no custodio (o ambos, en custodia compartida), mantiene contacto regular con los menores. Su finalidad es garantizar la continuidad del vínculo afectivo y la participación activa de ambos progenitores en la vida de sus hijos.
+
+### Información esencial sobre las comunicaciones y visitas
+
+El régimen puede ser:
+
+* Ordinario (fines de semana alternos y una o varias tardes entre semana).
+* Ampliado, adaptado a la disponibilidad de los progenitores.
+* Flexible, si existe alto nivel de cooperación.
+
+También deben regularse otros aspectos como vacaciones, festivos, comunicaciones telemáticas, estancias especiales u otras fechas señaladas.
+
+### Nuestros servicios de Familia en Burgos
 
 En Quintana Abogados contamos con más de 40 años de experiencia en procedimientos Familia en Burgos. Nuestros servicios incluyen:
 
