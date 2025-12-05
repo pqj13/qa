@@ -29,25 +29,22 @@ Además del Derecho de Familia, servicios en todas las áreas del Derecho Civil
 
 ## Contratos
 * Redacción y revisión de contratos
-* Incumplimientos contractuales y resolución de contratos *
+* Incumplimientos contractuales y resolución de contratos
 * Reclamaciones por vicios ocultos
 
 ## Incapacitaciones, tutela y medidas de apoyo
 * Procedimientos de adopción de medidas de apoyo judicial
-* Procedimientos de revisión de capacidad
 
 ## Propiedad y derechos reales
 * Acciones reivindicatorias, deslindes, servidumbres, usufructos, etc.
 
 ## Reclamaciones de cantidad
 * Procedimientos monitorios
-* Reclamaciones de impagos
+* Reclamaciones por impago
 
 ## Responsabilidad civil
 * Reclamaciones por daños y perjuicios
-* Accidentes de tráfico
-* Responsabilidad profesional
-* Resoponsabilidad extracontractual
+* Responsabilidad extracontractual
 
 ### Sucesiones
 * Declaración de herederos
