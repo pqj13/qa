@@ -13,7 +13,7 @@ cascade:
 
 <br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
-En el ámbito del derecho de familia ofrecemos un acompañamiento legal cercano y eficaz garantizando dedicación, confidencialidad y profesionalidad en cada caso.
+En el ámbito del derecho de familia ofrecemos un acompañamiento legal cercano y eficaz garantizando dedicación, confidencialidad y profesionalidad en cada caso. A continuación se ofrece una lista no exhaustiva de servicios con una breve información sobre cada uno de ellos:
 {{< /hextra/hero-subtitle >}}
 
 {{% details title="Procedimientos matrimoniales" closed="true" %}}

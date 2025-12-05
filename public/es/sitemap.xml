@@ -69,6 +69,8 @@
   </url><url>
     <loc>http://localhost:1313/servicios/civil/</loc>
   </url><url>
+    <loc>http://localhost:1313/servicios/civil/clausulas-abusivas/</loc>
+  </url><url>
     <loc>http://localhost:1313/servicios/penal/coacciones/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/cohecho/</loc>
@@ -96,6 +98,8 @@
                 href="http://localhost:1313/contacto/"
                 />
   </url><url>
+    <loc>http://localhost:1313/servicios/civil/contratos-de-arrendamiento/</loc>
+  </url><url>
     <loc>http://localhost:1313/cookies_y_privacidad/</loc>
     <xhtml:link
                 rel="alternate"
@@ -115,6 +119,10 @@
   </url><url>
     <loc>http://localhost:1313/servicios/penal/danos/</loc>
   </url><url>
+    <loc>http://localhost:1313/servicios/civil/danos-y-perjuicios/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/civil/declaracion-de-herederos/</loc>
+  </url><url>
     <loc>http://localhost:1313/servicios/penal/delitos-contra-los-derechos-de-los-trabajadores-extranjeros/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/delitos-sexuales-contra-menores/</loc>
@@ -122,6 +130,12 @@
     <loc>http://localhost:1313/servicios/penal/denegacion-de-auxilio/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/familia/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/civil/propiedad-y-derechos-reales/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/civil/desahucio-por-impago-de-rentas/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/civil/desahucio-por-vencimiento-contractual/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/desobediencia/</loc>
   </url><url>
@@ -155,7 +169,11 @@
   </url><url>
     <loc>http://localhost:1313/servicios/penal/hurto/</loc>
   </url><url>
+    <loc>http://localhost:1313/servicios/civil/impugnacion-de-testamento/</loc>
+  </url><url>
     <loc>http://localhost:1313/servicios/penal/incendio/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/civil/incumplimientos-contractuales-y-resolucion-de-contratos/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/insolvencia-punible/</loc>
   </url><url>
@@ -165,9 +183,13 @@
   </url><url>
     <loc>http://localhost:1313/servicios/penal/malversacion-de-caudales-publicos/</loc>
   </url><url>
+    <loc>http://localhost:1313/servicios/civil/medidas-de-apoyo/</loc>
+  </url><url>
     <loc>http://localhost:1313/servicios/familia/medidas-provisionales/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/familia/modificacion-o-extincion-de-pension-alimenticia/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/civil/monitorio/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/</loc>
   </url><url>
@@ -177,7 +199,15 @@
   </url><url>
     <loc>http://localhost:1313/servicios/penal/quebrantamiento-de-condena/</loc>
   </url><url>
+    <loc>http://localhost:1313/servicios/civil/reclamaciones-a-bancos-y-aseguradoras/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/civil/reclamaciones-por-impago/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/civil/redaccion-y-revision-de-contratos/</loc>
+  </url><url>
     <loc>http://localhost:1313/servicios/penal/resistencia-o-desobediencia-grave/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/civil/responsabilidad-extracontractual/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/robo/</loc>
   </url><url>
@@ -226,5 +256,7 @@
     <loc>http://localhost:1313/servicios/penal/trafico-de-influencias/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/trafico-ilegal-de-mano-de-obra/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/civil/vicios-ocultos/</loc>
   </url>
 </urlset>
