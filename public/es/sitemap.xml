@@ -131,6 +131,8 @@
   </url><url>
     <loc>http://localhost:1313/servicios/familia/</loc>
   </url><url>
+    <loc>http://localhost:1313/servicios/laboral/</loc>
+  </url><url>
     <loc>http://localhost:1313/servicios/civil/propiedad-y-derechos-reales/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/civil/desahucio-por-impago-de-rentas/</loc>
@@ -140,6 +142,16 @@
     <loc>http://localhost:1313/servicios/penal/desobediencia/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/desordenes-publicos/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/laboral/despido-colectivo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/laboral/despido-disciplinario/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/laboral/despido-improcedente/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/laboral/despido-nulo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/laboral/despido-objetivo/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/detencion-ilegal-y-secuestro/</loc>
   </url><url>
@@ -163,21 +175,31 @@
   </url><url>
     <loc>http://localhost:1313/servicios/penal/fraudes-y-exacciones-ilegales/</loc>
   </url><url>
+    <loc>http://localhost:1313/servicios/laboral/gran-invalidez/</loc>
+  </url><url>
     <loc>http://localhost:1313/servicios/familia/guarda-y-custodia/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/homicidio-y-asesinato/</loc>
   </url><url>
+    <loc>http://localhost:1313/servicios/laboral/horas-extraordinarias/</loc>
+  </url><url>
     <loc>http://localhost:1313/servicios/penal/hurto/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/civil/impugnacion-de-testamento/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/laboral/incapacidad-permanente-absoluta/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/laboral/incapacidad-permanente-parcial/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/laboral/incapacidad-permanente-total/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/laboral/incapacidad-temporal/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/incendio/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/civil/incumplimientos-contractuales-y-resolucion-de-contratos/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/insolvencia-punible/</loc>
-  </url><url>
-    <loc>http://localhost:1313/servicios/laboral/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/lesiones/</loc>
   </url><url>
@@ -210,6 +232,8 @@
     <loc>http://localhost:1313/servicios/civil/responsabilidad-extracontractual/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/penal/robo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/servicios/laboral/salarios-impagados/</loc>
   </url><url>
     <loc>http://localhost:1313/servicios/</loc>
     <xhtml:link

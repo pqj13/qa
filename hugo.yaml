@@ -39,14 +39,14 @@ menu:
     - identifier: servicios
       name: Servicios
       pageRef: /servicios
-      weight: 2
+      weight: 2 
     - identifier: contacto
       name: Contacto
       pageRef: /contacto
       weight: 3
       params:
         type: link
-        icon: arrow-narrow-right
+      #  icon: 
 #    - name: Search
 #      weight: 4
 #      params:
@@ -87,7 +87,7 @@ menu:
 #      weight: 3
 
 params:
-  description: Abogados en Burgos. 947 273 101. En Quintana Abogados contamos con más de 40 años de experiencia en el ejercicio de la Abogacía en Burgos capital. Actualmente forman parte de nuestro equipo Cándido Quintana Núñez y Pablo Quintana Jabato.
+  description: Abogados en Burgos. 947 273 101. En Quintana Abogados contamos con más de 40 años de experiencia en el ejercicio de la Abogacía en Burgos capital. Actualmente forman parte de nuestro despacho los abogados Cándido Quintana Núñez y Pablo Quintana Jabato.
 
   navbar:
     displayTitle: false
@@ -126,7 +126,7 @@ params:
 
     flexsearch:
       # index page by: content | summary | heading | title
-      index: content
+      index: heading
       # full | forward | reverse | strict
       # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
       tokenize: forward
