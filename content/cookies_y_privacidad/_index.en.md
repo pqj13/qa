@@ -5,27 +5,44 @@ toc: true
 ---
 ## Cookies
 
-This website has been designed with respect for your privacy, so **it does not store any type of cookies**.
+This website has been designed with respect for your privacy, meaning that it does not store any cookies of any kind, nor does it perform any analysis, tracking, or profiling of its visitors or users.
 
-## Protección de datos
+## Data Protection
 
+### 1. Identity of the Data Controller
 
-### 1. Collected data and purpose
+Quintana Núñez y Quintana Jabato Abogados (hereinafter "Quintana Abogados") are the owner and administrator of the domain name www.quintana-abogados.com.
 
-As mentioned in the previous section, this website does not store cookies or collect any user data.
+You can contact Quintana Abogados by writing to the postal address provided above or by using the [contact form](/contacto).
 
-However, notwithstanding the above, Quintana Abogados may require certain personal data — primarily name, surname, contact phone number, and email address — either through the contact form on this website or in the course of professional activity.
+### 2. Access and Navigation on this Website
 
-The purpose of the collected data is to communicate with the client or website user in the strict context of the legal services provided by the professionals at K Abogados. In this regard, the data will be kept for as long as necessary to carry out the assigned tasks.
+As stated above, this website does not record or store any data from visitors or users, nor does it perform any analysis, tracking, or profiling.
 
-### 2. Data controller
+Only the data provided by the user through the contact form (mainly name, surname, phone number, and email) will be collected to properly carry out legal services.
 
-QUINTANA NÚÑEZ Y QUINTANA JABATO ABOGADOS, SCP
+### 3. Purpose of Data Processing
 
-c/ Santander 11, 2º C (09004 - Burgos)
+The personal data provided by users will be collected and processed for the primary purpose of practicing law and addressing queries submitted through the contact form.
 
-### 3. Clients and web users rights
+### 4. Types of Data
 
-You may exercise your rights of access, rectification, cancellation, opposition, and limitation of processing by submitting a written request to the company at the address provided in the previous section.
+We collect the identification and contact information provided to us in order to address the inquiry or request made. Quintana Abogados may contact the user for the proper management of their request.
 
+### 5. Legal Basis
 
+The legal basis for processing the personal data of users is the legitimate interest of Quintana Abogados in properly addressing the inquiries made by the user.
+
+### 6. Duration
+
+The data provided by the user through the contact form for submitting an inquiry will be processed and stored for as long as necessary to resolve the inquiry or to carry out the entrusted tasks.
+
+### 7. User Rights
+
+Users can exercise their rights of access, rectification, cancellation, opposition, and limitation of processing by writing to the company at the postal address indicated in section 1.
+
+### 8. User Acceptance
+
+By accessing and navigating this website, the user acknowledges that they have read and accepted our Privacy Policy and expressly agrees to its application during their navigation of the website.
+
+The user guarantees the quality and truthfulness of the information provided, both to Quintana Abogados and to third parties. The user will be responsible for the accuracy of the personal data provided and will hold Quintana Abogados harmless from any claims from third parties or penalties or damages suffered due to non-compliance.

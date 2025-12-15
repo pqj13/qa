@@ -5,28 +5,44 @@ toc: true
 ---
 ## Cookies
 
-Ce site web a été conçu dans le respect de votre vie privée, **de sorte qu'il ne stocke aucun type de cookies**.
+Ce site web a été conçu dans le respect de votre vie privée, ce qui signifie qu'il ne stocke aucune cookie de quelque type que ce soit, ni ne réalise d'analyse, de suivi ou de profilage de ses visiteurs ou utilisateurs.
 
 ## Protection des données
 
+### 1. Identité du responsable du traitement des données
 
-### 1. Données collectées et finalité du traitement
+Quintana Núñez y Quintana Jabato Abogados (ci-après «Quintana Abogados») sont propriétaires et administrateurs du nom de domaine www.quintana-abogados.com.
 
-Comme indiqué dans la section précédente, ce site web ne stocke pas des cookies ou des données sur ses utilisateurs.
+Vous pouvez contacter Quintana Abogados par écrit à l'adresse postale indiquée ci-dessus ou en utilisant le formulaire de contact.
 
-Cependant, Quintana Abogados peut être amené à demander certaines données personnelles — principalement le nom, le prénom, le numéro de téléphone et l'adresse e-mail — soit via le formulaire de contact de ce site, soit dans le cadre de l'exercice de son activité professionnelle.
+### 2. Accès et navigation sur ce site web
 
-L'objectif des données collectées est de communiquer avec le client ou l'utilisateur du site dans le cadre strict des services juridiques fournis par les professionnels de K Abogados. Dans ce même esprit, les données seront conservées pendant la durée nécessaire à l'accomplissement des missions confiées.
+Comme indiqué ci-dessus, ce site neregistre ni ne stocke aucune donnée des visiteurs ou utilisateurs, ni ne réalise d'analyse, de suivi ou de profilage.
 
-### 2. Responsable du traitement
+Seules les données fournies par l'utilisateur via le formulaire de contact (principalement nom, prénom, numéro de téléphone et adresse e-mail) seront collectées dans le but de mener à bien l'exercice du droit de manière appropriée.
 
-QUINTANA NÚÑEZ Y QUINTANA JABATO ABOGADOS, SCP
+### 3. Objectif du traitement des données
 
-c/ Santander 11, 2º C (09004 - Burgos)
+Les données personnelles fournies par les utilisateurs seront collectées et traitées dans le but principal de l'exercice de la profession d'avocat et de répondre aux questions soumises via le formulaire de contact.
 
-### 3. Droits des clients et utilisateurs du site
+### 4. Types de données
 
-Les droits d'accès, de rectification, d'annulation, d'opposition et de limitation du traitement peuvent être exercés par écrit en adressant une demande à l'entreprise à l'adresse indiquée dans la section précédente.
+Nous recueillons les informations d'identification et de contact fournies pour répondre à la demande ou à la question formulée. Quintana Abogados peut contacter l'utilisateur pour assurer la bonne gestion de sa demande.
 
+### 5. Base légale
 
+La base légale du traitement des données personnelles des utilisateurs est l'intérêt légitime de Quintana Abogados à traiter correctement les demandes des utilisateurs.
 
+### 6. Durée
+
+Les données fournies par l'utilisateur via le formulaire de contact pour soumettre une demande seront traitées et conservées pendant la durée nécessaire à la résolution de la demande ou à l'exécution des tâches confiées.
+
+### 7. Droits des utilisateurs
+
+Les utilisateurs peuvent exercer leurs droits d'accès, de rectification, d'annulation, d'opposition et de limitation du traitement par écrit adressé à l'entreprise à l'adresse postale indiquée dans la section 1.
+
+### 8. Acceptation de l'utilisateur
+
+En accédant et en naviguant sur ce site, l'utilisateur reconnaît avoir lu et accepté notre politique de confidentialité et accepte expressément son application pendant sa navigation sur le site.
+
+L'utilisateur garantit la qualité et la véracité des informations fournies, tant envers Quintana Abogados qu'envers les tiers. L'utilisateur sera responsable de la véracité des données personnelles fournies et tiendra Quintana Abogados indemnes de toute réclamation de tiers ou de sanctions ou dommages résultant du non-respect.
