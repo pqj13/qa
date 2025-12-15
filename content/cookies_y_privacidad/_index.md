@@ -12,14 +12,14 @@ Esta web se ha diseñado con respeto por su privacidad, de modo que **no almacen
 ### 1. Identidad del responsable de los datos
 Quintana Núñez y Quintana Jabato Abogados, SCP, con domicilio social en Burgos, c/ Santander 11, 2º C (CP 09004) y con NIF número J-09584947 (en adelante «Quintana Abogados»), es titular y administrador del nombre de dominio www.quintana-abogados.com.
 
-Puede contactar con Quintana Abogados mediante escrito dirigido a la dirección postal anteriormente indicada o mediante la utilización del [formulario de contacto](/contacto),
+Puede contactar con Quintana Abogados mediante escrito dirigido a la dirección postal anteriormente indicada o mediante la utilización del [formulario de contacto](/contacto).
 
 ### 2. Acceso y navegación por este sitio web
 Tal como se ha indicado anteriormente, esta web no registra ni almacena datos de los visitantes o usuarios, ni realiza análisis, seguimiento o perfilado alguno.  
 
 Únicamente se recogerán los datos proporcionados por el usuario a través del formulario de contacto (fundamentalmente nombre, apellidos, número de teléfono y correo electrónico) con el fin de desarrollar el ejercicio de la abogacía de un modo adecuado.
 
-### 3. Finalidad de los tratamientos
+### 3. Finalidad del tratamiento
 
 Los datos personales proporcionados por los usuarios se recogerán y tratarán con la finalidad principal de ejercer la abogacía y de resolver las consultas planteadas a través del formulario de contacto.
 
