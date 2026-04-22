@@ -19,15 +19,15 @@ En el ámbito del Derecho Derecho Administrativo prestamos servicios en las áre
 
 
 {{% details title="Procedimientos y recursos en vía administrativa" closed="true" %}}
-* Presentación de alegaciones en expedientes administrativos
-* Recursos de reposición
-* Recursos de alzada
-* Recursos extraordinarios de revisión
+* Presentación de alegaciones en expedientes administrativos [→](/servicios/administrativo/alegaciones-expedientes-administrativos)
+* Recursos de reposición [→](/servicios/administrativo/recurso-de-reposicion)
+* Recursos de alzada [→](/servicios/administrativo/recurso-de-alzada)
+* Recursos extraordinarios de revisión [→](/servicios/administrativo/recurso-extraordinario-de-revision)
 {{% /details %}}
 
 {{% details title="Procedimientos sancionadores" closed="true" %}}
-* Multas de tráfico
-* Otros procedimientos sancionadores
+* Multas de tráfico [→](/servicios/administrativo/multas-de-trafico)
+* Otros procedimientos sancionadores [→](/servicios/administrativo/expedientes-sancionadores)
 {{% /details %}}
 
 {{% details title="Responsabilidad patrimonial de la Administración Pública" closed="true" %}}
