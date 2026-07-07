@@ -1,5 +1,5 @@
 ---
-title: Recurso de reposición
+title: Abogados de recurso de reposición en Burgos
 description: Quintana Abogados - Abogados administrativistas en Burgos especializados en recursos de reposición. Solicite su consulta.
 comments: false
 linkTitle: Recurso de reposición

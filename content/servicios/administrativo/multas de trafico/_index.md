@@ -1,5 +1,5 @@
 ---
-title: Multas de tráfico
+title: Abogados de multas de tráfico en Burgos
 description: Quintana Abogados - Abogados administrativistas en Burgos especializados en impugnación de multas de tráfico. Solicite su consulta.
 comments: false
 linkTitle: Multas de tráfico

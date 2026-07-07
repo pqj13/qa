@@ -1,5 +1,5 @@
 ---
-title: Derecho Administrativo
+title: Abogados de Derecho Administrativo en Burgos
 description: Quintana Abogados - Abogados administrativistas en Burgos 
 comments: false
 linkTitle: Administrativo
@@ -31,21 +31,19 @@ En el ámbito del Derecho Derecho Administrativo prestamos servicios en las áre
 {{% /details %}}
 
 {{% details title="Responsabilidad patrimonial de la Administración Pública" closed="true" %}}
-* Reclamaciones por daños causados por el funcionamiento de los servicios públicos
-* Caídas y accidentes en vía pública
-* Indemnizaciones por actuaciones negligentes o tardías de la Administración
+* Caídas y accidentes en vía pública [→](/servicios/administrativo/caidas-y-accidentes-via-publica)
+* Indemnizaciones por actuaciones negligentes o tardías de la Administración [→](/servicios/administrativo/indemnizaciones-actuaciones-negligentes)
 {{% /details %}}
 
 {{% details title="Extranjería" closed="true" %}}
-* Recursos frente a denegaciones de autorizaciones
-* Procedimientos de expulsión y devolución
+* Recursos frente a denegaciones de autorizaciones [→](/servicios/administrativo/denegacion-autorizaciones-extranjeria)
+* Procedimientos de expulsión y devolución [→](/servicios/administrativo/expulsion-y-devolucion-extranjeros)
 {{% /details %}}
 
 {{% details title="Jurisdicción Contencioso-Administrativa" closed="true" %}}
-* Interposición de recursos Contencioso-Administrativos
-* Solicitud de medidas cautelares
-* Recursos de Apelación
-* Ejecución de sentencias
+* Interposición de recurso Contencioso-Administrativo [→](/servicios/administrativo/recurso-contencioso-administrativo)
+* Solicitud de medidas cautelares [→](/servicios/administrativo/medidas-cautelares)
+* Recursos de Apelación y ejecución de sentencias[→](/servicios/administrativo/apelacion-y-ejecucion-sentencias)
 {{% /details %}}
 ---
 ### Abogados Administrativistas en Burgos

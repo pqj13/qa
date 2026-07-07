@@ -1,5 +1,5 @@
 ---
-title: Alegaciones en expedientes administrativos
+title: Abogados de alegaciones en expedientes administrativos en Burgos
 description: Quintana Abogados - Abogados administrativistas en Burgos especializados en presentación de alegaciones en expedientes administrativos. Solicite su consulta.
 comments: false
 linkTitle: Alegaciones exptes. admvos.

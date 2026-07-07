@@ -1,5 +1,5 @@
 ---
-title: Recurso de alzada
+title: Abogados de recurso de alzada en Burgos
 description: Quintana Abogados - Abogados administrativistas en Burgos especializados en recursos de alzada. Solicite su consulta.
 comments: false
 linkTitle: Recurso de alzada

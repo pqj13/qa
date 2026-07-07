@@ -1,5 +1,5 @@
 ---
-title: Expedientes sancionadores
+title: Abogados de expedientes sancionadores en Burgos
 description: Quintana Abogados - Abogados administrativistas en Burgos especializados en expedientes sancionadores. Solicite su consulta.
 comments: false
 linkTitle: Expedientes sancionadores

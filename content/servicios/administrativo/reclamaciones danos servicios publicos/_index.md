@@ -1,5 +1,5 @@
 ---
-title: Reclamaciones por daños ocasionados por servicios públicos
+title: Abogados de reclamaciones por daños ocasionados por servicios públicos en Burgos
 description: Quintana Abogados - Abogados administrativistas en Burgos especializados en reclamaciones por daños ocasionados por servicios públicos en Burgos. Solicite su consulta.
 comments: false
 linkTitle: Daños serv. públicos

@@ -1,5 +1,5 @@
 ---
-title: Recurso extraordinario de revisión
+title: Abogados de recurso extraordinario de revisión en Burgos
 description: Quintana Abogados - Abogados administrativistas en Burgos especializados en recursos extraordinarios de revisión. Solicite su consulta.
 comments: false
 linkTitle: Recurso extraordinario de revisión
