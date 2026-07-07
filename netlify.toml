@@ -1,15 +1,15 @@
 [build]
-publish = "public"
-command = "hugo --gc --minify -b ${DEPLOY_PRIME_URL}"
+  publish = "public"
+  command = "hugo --gc --minify"
 
 [build.environment]
-HUGO_VERSION = "0.147.7"
+  HUGO_VERSION = "0.147.7"
 
 [[plugins]]
-package = "@netlify/plugin-sitemap"
+  package = "@netlify/plugin-sitemap"
   [plugins.inputs]
-  buildDir = "public"
-  baseUrl = "http://quintana-abogados.com"
+    buildDir = "public"
+    baseUrl = "https://quintana-abogados.com"
 
 [context.deploy-preview]
-  command = "hugo --baseURL $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
