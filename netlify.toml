@@ -13,3 +13,9 @@
 
 [context.deploy-preview]
   command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
+
+[[redirects]]
+  from = "https://main--quintana-abogados.netlify.app/*"
+  to = "https://quintana-abogados.com/:splat"
+  status = 301
+  force = true
