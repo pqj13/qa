@@ -1,5 +1,5 @@
 ---
-title: Desórdenes públicos
+title: Abogados de desórdenes públicos en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de desórdenes públicos. Solicite su consulta.
 comments: false
 linkTitle: Desórdenes públicos

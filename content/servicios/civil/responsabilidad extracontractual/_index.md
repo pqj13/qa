@@ -1,5 +1,5 @@
 ---
-title: Responsabilidad extracontractual
+title: Abogados de responsabilidad civil en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en responsabilidad extracontractual. Solicite su consulta.
 comments: false
 linkTitle: Responsabilidad extracontractual

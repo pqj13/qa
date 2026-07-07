@@ -1,5 +1,5 @@
 ---
-title: Reclamaciones por cláusulas abusivas
+title: Abogados de cláusulas abusivas en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en reclamaciones por cláusulas abusivas. Solicite su consulta.
 comments: false
 linkTitle: Cláusulas abusivas

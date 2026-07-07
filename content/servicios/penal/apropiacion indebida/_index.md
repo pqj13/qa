@@ -1,5 +1,5 @@
 ---
-title: Apropiación indebida
+title: Abogados de apropiación indebida en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de apropiación indebida. Solicite su consulta.
 comments: false
 linkTitle: Apropiación indebida

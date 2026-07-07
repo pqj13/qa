@@ -1,5 +1,5 @@
 ---
-title: Resistencia o desobediencia grave
+title: Abogados de resistencia o desobediencia grave en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de resistencia o desobediencia grave. Solicite su consulta.
 comments: false
 linkTitle: Resistencia o desobediencia grave

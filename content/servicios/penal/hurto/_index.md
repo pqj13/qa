@@ -1,5 +1,5 @@
 ---
-title: Hurto
+title: Abogados de hurto en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de hurto. Solicite su consulta.
 comments: false
 linkTitle: Hurto

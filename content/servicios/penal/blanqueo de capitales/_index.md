@@ -1,5 +1,5 @@
 ---
-title: Blanqueo de capitales
+title: Abogados de blanqueo de capitales en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de blanqueo de capitales. Solicite su consulta.
 comments: false
 linkTitle: Blanqueo de capitales

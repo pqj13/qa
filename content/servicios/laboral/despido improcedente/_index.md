@@ -1,5 +1,5 @@
 ---
-title: Despido improcedente
+title: Abogados de despido improcedente en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en despido improcedente. Solicite su consulta.
 comments: false
 linkTitle: Despido improcedente

@@ -1,5 +1,5 @@
 ---
-title: Malversación de caudales públicos
+title: Abogados de malversación de caudales públicos en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de malversación de caudales públicos. Solicite su consulta.
 comments: false
 linkTitle: Malversación

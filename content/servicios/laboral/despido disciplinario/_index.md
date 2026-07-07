@@ -1,5 +1,5 @@
 ---
-title: Despido disciplinario
+title: Abogados de despido disciplinario en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en despido disciplinario. Solicite su consulta.
 comments: false
 linkTitle: Despido disciplinario

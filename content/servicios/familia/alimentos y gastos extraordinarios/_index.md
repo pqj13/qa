@@ -1,5 +1,5 @@
 ---
-title: Alimentos
+title: Abogados de pensión de alimentos en Burgos
 description: Quintana Abogados - Abogados de Familia en Burgos especializados en reclamación de alimentos. Solicite su consulta.
 comments: false
 linkTitle: Alimentos

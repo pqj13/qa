@@ -1,5 +1,5 @@
 ---
-title: Denegación de auxilio
+title: Abogados de denegación de auxilio en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de denegación de auxilio. Solicite su consulta.
 comments: false
 linkTitle: Denegación de auxilio

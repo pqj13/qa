@@ -1,5 +1,5 @@
 ---
-title: Declaración de herederos
+title: Abogados de declaración de herederos en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en declaraciones de herederos. Solicite su consulta.
 comments: false
 linkTitle: Declaración de herederos

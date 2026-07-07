@@ -1,5 +1,5 @@
 ---
-title: Explotación laboral
+title: Abogados de explotación laboral en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de explotación laboral. Solicite su consulta.
 comments: false
 linkTitle: Explotación laboral

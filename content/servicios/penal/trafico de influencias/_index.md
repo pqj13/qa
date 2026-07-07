@@ -1,5 +1,5 @@
 ---
-title: Tráfico de influencias
+title: Abogados de tráfico de influencias en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de tráfico de influencias. Solicite su consulta.
 comments: false
 linkTitle: Tráfico de influencias

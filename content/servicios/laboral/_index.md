@@ -1,5 +1,5 @@
 ---
-title: Derecho Laboral
+title: Abogados laboralistas en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos
 comments: false
 toc: false

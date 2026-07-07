@@ -1,5 +1,5 @@
 ---
-title: Tráfico de drogas
+title: Abogados de tráfico de drogas en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de tráfico de drogas. Solicite su consulta.
 comments: false
 linkTitle: Tráfico de drogas

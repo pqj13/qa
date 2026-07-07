@@ -1,5 +1,5 @@
 ---
-title: Extorsión
+title: Abogados de extorsión en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de extorsión. Solicite su consulta.
 comments: false
 linkTitle: Extorsión

@@ -1,5 +1,5 @@
 ---
-title: Estafa
+title: Abogados de estafa en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de estafa. Solicite su consulta.
 comments: false
 linkTitle: Estafa

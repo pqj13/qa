@@ -1,5 +1,5 @@
 ---
-title: Encubrimiento
+title: Abogados de encubrimiento en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de encubrimiento. Solicite su consulta.
 comments: false
 linkTitle: Encubrimiento

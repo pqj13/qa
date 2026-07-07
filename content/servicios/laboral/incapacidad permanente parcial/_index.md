@@ -1,5 +1,5 @@
 ---
-title: Incapacidad Permanente Parcial
+title: Abogados de Incapacidad Permanente Parcial en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en Incapacidad Permanente Parcial. Solicite su consulta.
 comments: false
 linkTitle: Incapacidad Permanente Parcial

@@ -1,5 +1,5 @@
 ---
-title: Gran Invalidez
+title: Abogados de Gran Invalidez en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en Gran Invalidez. Solicite su consulta.
 comments: false
 linkTitle: Gran Invalidez

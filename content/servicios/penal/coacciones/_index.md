@@ -1,5 +1,5 @@
 ---
-title: Coacciones
+title: Abogados de coacciones en Burgos
 description: Quintana Abogados - Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de coacciones. Solicite su consulta.
 comments: false
 linkTitle: Coacciones

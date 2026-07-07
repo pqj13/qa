@@ -1,5 +1,5 @@
 ---
-title: Redacción y revisión de contratos
+title: Redacción y revisión de contratos en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en redacción y revisión de contratos civiles. Solicite su consulta.
 comments: false
 linkTitle: Redacción y revisión de contratos 

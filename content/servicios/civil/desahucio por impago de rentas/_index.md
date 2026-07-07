@@ -1,5 +1,5 @@
 ---
-title: Desahucio por impago de rentas
+title: Abogados de desahucio por impago de rentas en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en procedimientos de desahucio por impago de rentas. Solicite su consulta.
 comments: false
 linkTitle: Desahucio por impago

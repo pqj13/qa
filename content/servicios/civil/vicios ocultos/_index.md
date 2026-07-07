@@ -1,5 +1,5 @@
 ---
-title: Vicios ocultos
+title: Abogados de vicios ocultos en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en vicios ocultos. Solicite su consulta.
 comments: false
 linkTitle: Vicios ocultos

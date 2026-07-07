@@ -1,5 +1,5 @@
 ---
-title: Daños
+title: Abogados de delitos de daños en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de daños. Solicite su consulta.
 comments: false
 linkTitle: Daños

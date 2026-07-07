@@ -1,5 +1,5 @@
 ---
-title: Atentado contra la autoridad
+title: Abogados de atentado contra la autoridad en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de atentado contra la autoridad. Solicite su consulta.
 comments: false
 linkTitle: Atentado contra la autoridad

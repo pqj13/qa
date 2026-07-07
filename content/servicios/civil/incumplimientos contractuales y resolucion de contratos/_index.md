@@ -1,5 +1,5 @@
 ---
-title: Incumplimientos contractuales y resolución de contratos
+title: Abogados de incumplimientos contractuales en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en reclamaciones por incumplimientos contractuales y resolución de contratos civiles. Solicite su consulta.
 comments: false
 linkTitle: Incumplimientos contractuales

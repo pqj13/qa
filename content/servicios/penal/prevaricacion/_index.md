@@ -1,5 +1,5 @@
 ---
-title: Prevaricación
+title: Abogados de prevaricación en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de prevaricación. Solicite su consulta.
 comments: false
 linkTitle: Prevaricación

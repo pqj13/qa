@@ -1,5 +1,5 @@
 ---
-title:  Cohecho
+title:  Abogados de cohecho en Burgos
 description: Quintana Abogados - Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de cohecho. Solicite su consulta.
 comments: false
 linkTitle: Cohecho

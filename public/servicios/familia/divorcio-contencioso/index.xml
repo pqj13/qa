@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abogados en Burgos | Quintana Abogados – Divorcio contencioso</title>
+    <link>http://localhost:1313/servicios/familia/divorcio-contencioso/</link>
+    <description>Recent content in Divorcio contencioso on Abogados en Burgos | Quintana Abogados</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    
+	  <atom:link href="http://localhost:1313/servicios/familia/divorcio-contencioso/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

@@ -1,5 +1,5 @@
 ---
-title: Impugnación de testamento
+title: Abogados de impugnación de testamento en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en impugnaciones de testamento. Solicite su consulta.
 comments: false
 linkTitle: Impugnación testamento

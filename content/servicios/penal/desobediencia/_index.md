@@ -1,5 +1,5 @@
 ---
-title: Desobediencia
+title: Abogados de delito de desobediencia en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de desobediencia. Solicite su consulta.
 comments: false
 linkTitle: Desobediencia

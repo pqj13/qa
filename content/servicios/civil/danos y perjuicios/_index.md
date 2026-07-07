@@ -1,5 +1,5 @@
 ---
-title: Daños y perjuicios
+title: Abogados de daños y perjuicios en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en daños y perjuicios. Solicite su consulta.
 comments: false
 linkTitle: Daños y perjuicios

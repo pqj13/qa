@@ -1,5 +1,5 @@
 ---
-title: Delitos contra los derechos de los trabajadores extranjeros
+title: Abogados de delitos contra los derechos de los trabajadores extranjeros en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos contra los derechos de los trabajadores extranjeros. Solicite su consulta.
 comments: false
 linkTitle: Delitos derechos trabajadores extranjeros

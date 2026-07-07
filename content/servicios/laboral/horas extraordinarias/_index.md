@@ -1,5 +1,5 @@
 ---
-title: Horas extraordinarias
+title: Abogados de reclamación de horas extraordinarias en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en reclamación de horas extraordinarias. Solicite su consulta.
 comments: false
 linkTitle: Horas extraordinarias

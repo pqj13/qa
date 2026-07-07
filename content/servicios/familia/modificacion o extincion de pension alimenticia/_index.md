@@ -1,5 +1,5 @@
 ---
-title: Modificación o extinción de pensión alimenticia o compensatoria
+title: Abogados de modificación o extinción de pensión de alimentos en Burgos
 description: Quintana Abogados - Abogados de Familia en Burgos especializados en modificaciones de medidas. Solicite su consulta.
 comments: false
 linkTitle: Modificación medidas

@@ -1,5 +1,5 @@
 ---
-title: Fraude a la Seguridad Social
+title: Abogados de fraude a la Seguridad Social en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de fraude a la Seguridad Social. Solicite su consulta.
 comments: false
 linkTitle: Fraude a la Seguridad Social

@@ -1,5 +1,5 @@
 ---
-title: Reclamaciones a bancos y aseguradoras
+title: Abogados de reclamaciones a bancos y aseguradoras en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en reclamaciones a bancos y aseguradoras. Solicite su consulta.
 comments: false
 linkTitle: Reclamaciones a bancos y aseguradoras

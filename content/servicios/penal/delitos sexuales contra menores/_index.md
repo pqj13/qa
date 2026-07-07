@@ -1,5 +1,5 @@
 ---
-title: Delitos sexuales contra menores en Burgos
+title: Abogados de delitos sexuales contra menores en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos sexuales contra menores. Solicite su consulta.
 comments: false
 linkTitle: Delitos sexuales contra menores

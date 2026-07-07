@@ -1,5 +1,5 @@
 ---
-title: Procedimiento monitorio
+title: Abogados de procedimiento monitorio en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en procedimiento monitorio. Solicite su consulta.
 comments: false
 linkTitle: Monitorio

@@ -1,5 +1,5 @@
 ---
-title: Torturas y tratos degradantes
+title: Abogados de torturas y tratos degradantes en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de torturas y tratos degradantes. Solicite su consulta.
 comments: false
 linkTitle: Torturas y tratos degradantes

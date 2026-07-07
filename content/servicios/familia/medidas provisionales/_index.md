@@ -1,5 +1,5 @@
 ---
-title: Medidas provisionales
+title: Abogados de medidas previas y provisionales en Burgos
 description: Quintana Abogados - Abogados de Familia en Burgos especializados en medidas provisionales. Solicite su consulta.
 comments: false
 linkTitle: Medidas provisionales

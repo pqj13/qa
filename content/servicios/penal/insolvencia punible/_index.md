@@ -1,5 +1,5 @@
 ---
-title: Insolvencia punible
+title: Abogados de insolvencia punible en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de insolvencia punible. Solicite su consulta.
 comments: false
 linkTitle: Insolvencia punible

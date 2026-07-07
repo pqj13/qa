@@ -1,5 +1,5 @@
 ---
-title: Quebrantamiento de condena
+title: Abogados de quebrantamiento de condena en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de quebrantamiento de condena. Solicite su consulta.
 comments: false
 linkTitle: Quebrantamiento de condena

@@ -1,5 +1,5 @@
 ---
-title: Incapacidad Temporal
+title: Abogados de Incapacidad Temporal en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en Incapacidad Temporal. Solicite su consulta.
 comments: false
 linkTitle: Incapacidad Temporal

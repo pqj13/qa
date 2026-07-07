@@ -1,5 +1,5 @@
 ---
-title: Incapacidad Permanente Absoluta
+title: Abogados de Incapacidad Permanente Absoluta en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en Incapacidad Permanente Absoluta. Solicite su consulta.
 comments: false
 linkTitle: Incapacidad Permanente Absoluta

@@ -1,5 +1,5 @@
 ---
-title: Despido objetivo
+title: Abogados de despido objetivo en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en despido objetivo. Solicite su consulta.
 comments: false
 linkTitle: Despido objetivo

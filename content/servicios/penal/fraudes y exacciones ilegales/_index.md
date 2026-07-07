@@ -1,5 +1,5 @@
 ---
-title: Fraudes y exacciones ilegales
+title: Abogados de fraudes y exacciones ilegales en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de fraudes y exacciones ilegales. Solicite su consulta.
 comments: false
 linkTitle: Fraudes y exacciones ilegales

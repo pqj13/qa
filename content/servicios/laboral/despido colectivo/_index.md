@@ -1,5 +1,5 @@
 ---
-title: Despido colectivo
+title: Abogados de despido colectivo en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en despido colectivo. Solicite su consulta.
 comments: false
 linkTitle: Despido colectivo

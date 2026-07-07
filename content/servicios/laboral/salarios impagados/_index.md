@@ -1,5 +1,5 @@
 ---
-title: Salarios impagados
+title: Abogados de salarios impagados en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en reclamación de salarios impagados. Solicite su consulta.
 comments: false
 linkTitle: Salarios impagados

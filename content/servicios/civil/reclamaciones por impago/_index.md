@@ -1,5 +1,5 @@
 ---
-title: Reclamaciones por impago
+title: Abogados de reclamaciones por impago en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en reclamaciones por impagos. Solicite su consulta.
 comments: false
 linkTitle: Reclamaciones por impago

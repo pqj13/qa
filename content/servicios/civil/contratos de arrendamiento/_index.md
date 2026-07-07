@@ -1,5 +1,5 @@
 ---
-title: Contratos de arrendamiento
+title: Abogados de contratos de arrendamiento en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en contratos de arrendamientos urbanos. Solicite su consulta.
 comments: false
 linkTitle: Contratos de arrendamiento

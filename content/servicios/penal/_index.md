@@ -1,5 +1,5 @@
 ---
-title: Derecho penal
+title: Abogados penalistas en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos 
 comments: false
 linkTitle: Penal

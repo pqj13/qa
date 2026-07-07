@@ -1,5 +1,5 @@
 ---
-title: Medidas de apoyo judicial
+title: Abogados de incapacitación y medidas de apoyo en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en medidas de apoyo judicial. Solicite su consulta.
 comments: false
 linkTitle: Medidas de apoyo

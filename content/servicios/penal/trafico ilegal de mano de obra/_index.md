@@ -1,5 +1,5 @@
 ---
-title: Tráfico ilegal de mano de obra
+title: Abogados de tráfico ilegal de mano de obra en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de tráfico ilegal de mano de obra. Solicite su consulta.
 comments: false
 linkTitle: Tráfico ilegal de mano de obra

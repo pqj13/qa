@@ -1,5 +1,5 @@
 ---
-title: Incendio
+title: Abogados de delitos de incendio en Burgos
 description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de incendio. Solicite su consulta.
 comments: false
 linkTitle: Incendio

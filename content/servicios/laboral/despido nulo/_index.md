@@ -1,5 +1,5 @@
 ---
-title: Despido nulo
+title: Abogados de despido nulo en Burgos
 description: Quintana Abogados - Abogados laboralistas en Burgos especializados en despido nulo. Solicite su consulta.
 comments: false
 linkTitle: Despido nulo

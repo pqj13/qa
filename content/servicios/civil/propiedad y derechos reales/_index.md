@@ -1,5 +1,5 @@
 ---
-title: Procedimientos sobre propiedad y derechos reales
+title: Abogados de proindivisos y derechos reales en Burgos
 description: Quintana Abogados - Abogados civilistas en Burgos especializados en propiedad y derechos reales. Solicite su consulta.
 comments: false
 linkTitle: Derechos reales
