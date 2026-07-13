@@ -5,7 +5,7 @@ toc: true
 ---
 ## Cookies
 
-Esta web se ha diseñado con respeto por su privacidad, de modo que **no almacena cookies** de ninguna clase, ni realiza análisis, seguimiento o perfilado alguno de sus visitantes o usuarios.
+Este sitio se ha diseñado con respeto por su privacidad, de modo que no almacena cookies ni utiliza herramientas propias o de terceros de seguimiento, análisis o perfilado de los visitantes o usuarios. Únicamente emplea almacenamiento local del navegador para recordar su preferencia de tema visual (claro/oscuro), un dato técnico que permanece en su dispositivo, no requiere consentimiento y puede eliminarse borrando los datos de navegación desde la configuración del navegador.
 
 ## Protección de datos
 

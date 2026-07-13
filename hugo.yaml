@@ -47,10 +47,10 @@ menu:
       params:
         type: link
       #  icon: 
-#    - name: Search
-#      weight: 4
-#      params:
-#       type: search
+    - name: Search
+      weight: 4
+      params:
+       type: search
 
 #    - name: About
 #      pageRef: /about

@@ -5,7 +5,7 @@ toc: true
 ---
 ## Cookies
 
-This website has been designed with respect for your privacy, meaning that it does not store any cookies of any kind, nor does it perform any analysis, tracking, or profiling of its visitors or users.
+This website has been designed with respect for your privacy: it stores no cookies and uses no first- or third-party tools for tracking, analytics or profiling of visitors or users. It only uses the browser's local storage to remember your visual theme preference (light/dark), a technical item that stays on your device, requires no consent and can be removed by clearing your browsing data in your browser settings.
 
 ## Data Protection
 

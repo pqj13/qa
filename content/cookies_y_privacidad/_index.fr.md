@@ -5,7 +5,7 @@ toc: true
 ---
 ## Cookies
 
-Ce site web a été conçu dans le respect de votre vie privée, ce qui signifie qu'il ne stocke aucune cookie de quelque type que ce soit, ni ne réalise d'analyse, de suivi ou de profilage de ses visiteurs ou utilisateurs.
+Ce site a été conçu dans le respect de votre vie privée: il ne stocke aucun cookie et n'utilise aucun outil, propre ou tiers, de suivi, d'analyse ou de profilage des visiteurs ou utilisateurs. Il emploie uniquement le stockage local du navigateur pour mémoriser votre préférence de thème visuel (clair/sombre), une donnée technique qui reste sur votre appareil, ne requiert aucun consentement et peut être supprimée en effaçant les données de navigation dans les paramètres du navigateur.
 
 ## Protection des données
 
