@@ -9,7 +9,6 @@ Actualmente forman parte de nuestro despacho los siguientes abogados:
 {{< /hextra/hero-subtitle >}}
 
 ### Cándido Quintana Núñez
-{{< badge content="Col. 1.178 ICA Burgos" >}} 
 
 {{< badge content="ES" color="amber">}} · {{< badge content="EN" color="red">}}
 
@@ -18,8 +17,6 @@ Licenciado en Derecho por la Universidad de Valladolid, cuenta con una sólida e
 --- 
 
 ### Pablo Quintana Jabato
-{{< badge content="Col. 3.308 ICA Burgos" >}}
-
 
 {{< badge content="ES" color="amber">}} · {{< badge content="EN" color="red">}} · {{< badge content="FR" color="blue">}}
 
