@@ -28,8 +28,6 @@ En Quintana Abogados contamos con más de 40 años de experiencia en asesoramien
 * Probidad en materia de honorarios profesionales.
 {{< /qa/ledger >}}
 
----
-
 {{< qa/section title="Áreas de práctica" >}}
 {{< /qa/section >}}
 
