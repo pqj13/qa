@@ -15,9 +15,7 @@ toc: false
 **Abogado:** del lat. *advocatus (ad auxilium vocatus)*: el llamado para auxiliar.
 {{< /qa/hero >}}
 
----
-
-{{< qa/section >}}
+{{< qa/section title="Profesionalidad, experiencia y compromiso ético" >}}
 En Quintana Abogados contamos con más de 40 años de experiencia en asesoramiento jurídico en Burgos así como en la defensa de los intereses de nuestros clientes en [diversas áreas del Derecho](servicios) con profesionalidad, eficacia y compromiso ético, en constante actualización y búsqueda de la excelencia y con respeto absoluto a las normas que regulan el ejercicio de la Abogacía, en especial:
 {{< /qa/section >}}
 
@@ -29,6 +27,8 @@ En Quintana Abogados contamos con más de 40 años de experiencia en asesoramien
 * Prevención de conflictos de intereses.
 * Probidad en materia de honorarios profesionales.
 {{< /qa/ledger >}}
+
+---
 
 {{< qa/section title="Áreas de práctica" >}}
 {{< /qa/section >}}
