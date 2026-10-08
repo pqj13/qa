@@ -1,0 +1,26 @@
+{{- /*
+Encabezado de sección: antetítulo, título serif y entradilla. Abre una nueva
+sección con el espaciado vertical del sistema (64px).
+
+@param {string} eyebrow Antetítulo en mayúsculas con color de acento (opcional).
+@param {string} title   Título de la sección.
+@param {string} id      Ancla de la sección (opcional; por defecto, a partir del título).
+@param {string} align   "center" para centrar (opcional).
+
+@example {{< qa/section eyebrow="Áreas" title="En qué podemos ayudarle" >}}Entradilla opcional{{< /qa/section >}}
+*/ -}}
+{{- $title := .Get "title" -}}
+{{- $id := .Get "id" | default ($title | plainify | anchorize) -}}
+<div class="qa-section not-prose{{ if eq (.Get "align") "center" }} qa-section--center{{ end }}">
+  <div class="qa-section__head">
+  {{- with .Get "eyebrow" }}
+    <span class="qa-eyebrow">{{ . }}</span>
+  {{- end }}
+  {{- with $title }}
+    <h2 class="qa-section__title" id="{{ $id }}">{{ . | markdownify }}</h2>
+  {{- end }}
+  {{- with .Inner }}
+    <div class="qa-section__intro">{{ . | $.Page.RenderString (dict "display" "block") }}</div>
+  {{- end }}
+  </div>
+</div>

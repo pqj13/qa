@@ -1,0 +1,8 @@
+{{- /* Resuelve la ruta de una imagen o vídeo: externas (http…) se dejan igual;
+     las locales ("/images/x.jpg" o "images/x.jpg") se convierten en ruta del sitio. */ -}}
+{{- $src := . | default "" -}}
+{{- $out := $src -}}
+{{- if not (or (hasPrefix $src "http") (hasPrefix $src "data:")) -}}
+  {{- $out = strings.TrimPrefix "/" $src | relURL -}}
+{{- end -}}
+{{- return $out -}}

@@ -1,0 +1,22 @@
+{{- /* Cabecera editorial de página: migas de pan y título serif. */ -}}
+{{- $page := . -}}
+<header class="qa-page-header">
+  {{- if $page.Params.breadcrumbs }}
+    <nav class="qa-breadcrumb" aria-label="Breadcrumb">
+      {{- range $page.Ancestors.Reverse }}
+        {{- if not .IsHome }}
+          <a href="{{ .RelPermalink }}">{{ partial "utils/title" . }}</a>
+          {{- partial "utils/icon.html" (dict "name" "chevron-right" "attributes" "class=\"hx:rtl:-rotate-180\"") -}}
+        {{- end }}
+      {{- end }}
+      <span aria-current="page">{{ partial "utils/title" $page }}</span>
+    </nav>
+  {{- else }}
+    {{- with $page.Parent }}{{ if not .IsHome }}
+      <a class="qa-eyebrow" href="{{ .RelPermalink }}">{{ partial "utils/title" . }}</a>
+    {{- end }}{{ end }}
+  {{- end }}
+  {{- with $page.Title }}
+    <h1 class="qa-page-title">{{ . }}</h1>
+  {{- end }}
+</header>

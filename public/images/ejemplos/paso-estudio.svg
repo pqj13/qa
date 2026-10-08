@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="420" viewBox="0 0 560 420" font-family="Arial, sans-serif">
+  <!-- Ilustración de muestra: documentos en estudio -->
+  <rect x="150" y="70" width="280" height="300" rx="8" fill="#f1f0ee" transform="rotate(-6 290 220)"/>
+  <rect x="140" y="60" width="280" height="300" rx="8" fill="#ffffff" stroke="#dbdad7"/>
+  <text x="166" y="104" font-family="Georgia, serif" font-size="22" fill="#121212">Informe preliminar</text>
+  <g fill="#e6e4e0">
+    <rect x="166" y="126" width="228" height="8" rx="4"/>
+    <rect x="166" y="146" width="210" height="8" rx="4"/>
+    <rect x="166" y="166" width="220" height="8" rx="4"/>
+    <rect x="166" y="206" width="228" height="8" rx="4"/>
+    <rect x="166" y="226" width="180" height="8" rx="4"/>
+    <rect x="166" y="266" width="200" height="8" rx="4"/>
+  </g>
+  <rect x="166" y="186" width="150" height="8" rx="4" fill="#a10d2a" opacity=".8"/>
+  <rect x="166" y="306" width="90" height="26" rx="13" fill="#fbe3e8"/>
+  <text x="180" y="323" font-size="12" fill="#a10d2a">En estudio</text>
+  <circle cx="420" cy="300" r="44" fill="#ffffff" stroke="#121212" stroke-width="6"/>
+  <line x1="451" y1="331" x2="486" y2="366" stroke="#121212" stroke-width="10" stroke-linecap="round"/>
+</svg>

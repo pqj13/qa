@@ -39,18 +39,48 @@ menu:
     - identifier: servicios
       name: Servicios
       pageRef: /servicios
-      weight: 2 
+      weight: 2
+  #  - identifier: noticias
+  #    name: Noticias
+  #    pageRef: /noticias
+  #    weight: 3
     - identifier: contacto
       name: Contacto
       pageRef: /contacto
-      weight: 3
-      params:
-        type: link
-      #  icon: 
-    - name: Search
       weight: 4
       params:
-       type: search
+        type: link
+      #  icon:
+  #  - name: Search
+  #    weight: 5
+  #    params:
+  #     type: search
+
+    # --- MENÚ ANIDADO (desplegable a todo el ancho, como midday.ai) -------------
+    # Para activarlo, quita las almohadillas (#). Cualquier elemento con hijos
+    # deja de ser un enlace y pasa a abrir un panel bajo la barra.
+    # Cada hijo indica a qué elemento pertenece con "parent: <identifier>".
+    #
+    # - identifier: recursos          # elemento padre (sin pageRef)
+    #   name: Recursos
+    #   weight: 4
+    #   params:
+    #     description: Guías y documentos útiles.   # texto opcional a la izquierda del panel
+    # - identifier: guias
+    #   name: Guías
+    #   parent: recursos
+    #   pageRef: /guias
+    #   weight: 1
+    #   params:
+    #     description: Explicaciones prácticas paso a paso   # línea gris bajo el título
+    #     menuIcon: book-open                                 # icono opcional
+    # - identifier: formularios
+    #   name: Formularios
+    #   parent: recursos
+    #   url: https://forms.office.com/e/H4qwDRuGdY
+    #   weight: 2
+    #   params:
+    #     description: Escríbanos online
 
 #    - name: About
 #      pageRef: /about
@@ -87,11 +117,22 @@ menu:
 #      weight: 3
 
 params:
+  # Datos de contacto usados por la barra de navegación, el pie y los shortcodes qa/*
+  contact:
+    phone: "947 27 31 01"
+    phoneIntl: "(+34) 947 27 31 01"
+    phoneLink: "+34947273101"
+    address: "c/ Santander 11, 2º C, 09004 Burgos"
+    maps: "https://maps.app.goo.gl/tUnp3YdsnFdcqDZM7"
+    form: "https://forms.office.com/e/H4qwDRuGdY"
+
   description: Abogados en Burgos. 947 273 101. En Quintana Abogados contamos con más de 40 años de experiencia en el ejercicio de la Abogacía en Burgos capital. Actualmente forman parte de nuestro despacho los abogados Cándido Quintana Núñez y Pablo Quintana Jabato.
 
   navbar:
     displayTitle: false
     displayLogo: true
+    # Botón del teléfono en la barra (true = se muestra, false = se oculta)
+    displayPhone: true
     logo:
       path: images/logo.png
       dark: images/logo_oscuro.png
@@ -116,12 +157,13 @@ params:
 
   # Display the last modification date
   displayUpdatedDate: false
-  dateFormat: "January 2, 2006"
+  # Fecha larga localizada por idioma ("7 de octubre de 2026", "October 7, 2026", "7 octobre 2026")
+  dateFormat: ":date_long"
 
   # Search
   # flexsearch is enabled by default
   search:
-    enable: true
+    enable: false
     type: flexsearch
 
     flexsearch:

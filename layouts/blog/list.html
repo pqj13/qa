@@ -1,0 +1,46 @@
+{{- /* Listado de noticias (tipo "blog" de Hextra) con el diseño editorial.
+     Usa la ordenación y paginación de Hextra (params.blog.list). */ -}}
+{{ define "main" }}
+  {{- $readMore := (T "readMore") | default "Read more →" -}}
+  <div class="hx:mx-auto hx:flex hextra-max-page-width">
+    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" false) }}
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8">
+      <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:md:px-12">
+        {{ partial "page-header.html" . }}
+        {{- with .Content }}<div class="content">{{ . }}</div><div class="qa-spacer"></div>{{ end }}
+
+        {{- $pages := partial "utils/sort-pages" (dict "page" . "by" site.Params.blog.list.sortBy "order" site.Params.blog.list.sortOrder) -}}
+        {{- $pagerSize := site.Params.blog.list.pagerSize | default 10 -}}
+        {{- $paginator := .Paginate $pages $pagerSize -}}
+
+        {{- if $paginator.Pages }}
+          <div class="qa-posts">
+          {{- range $paginator.Pages }}
+            <article class="qa-post">
+              <time class="qa-post__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "utils/format-date" .Date }}</time>
+              <div>
+                <h2 class="qa-post__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                {{- with partial "utils/page-description" . }}
+                  <p class="qa-post__summary">{{ . }}</p>
+                {{- end }}
+                {{- if and site.Params.blog.list.displayTags .Params.tags }}
+                  <div class="qa-post__tags">
+                    {{- range .Params.tags }}<span class="qa-pill">{{ . }}</span>{{ end -}}
+                  </div>
+                {{- end }}
+                <a class="qa-post__more" href="{{ .RelPermalink }}" aria-label="{{ printf "%s %s" $readMore .Title }}">{{ $readMore }}</a>
+              </div>
+            </article>
+          {{- end }}
+          </div>
+        {{- else }}
+          <p class="qa-empty">{{ T "noticiasVacio" | default "—" }}</p>
+        {{- end }}
+
+        {{- if gt $paginator.TotalPages 1 -}}
+          {{ partial "components/blog-pager.html" $paginator }}
+        {{- end -}}
+      </main>
+    </article>
+  </div>
+{{- end -}}

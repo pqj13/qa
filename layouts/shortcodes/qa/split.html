@@ -1,0 +1,91 @@
+{{- /*
+Pantalla dividida en dos, como la sección "How it works" de midday.ai:
+a la izquierda, una lista de elementos unidos por una línea vertical con
+puntos; a la derecha, un panel con la imagen y/o el texto del elemento activo.
+Se cambia de elemento al pulsar o con el teclado (flechas), y avanza solo
+cada cierto tiempo mientras está en pantalla. En móvil los elementos se
+apilan, cada uno con su panel debajo.
+
+@param {string} eyebrow  Antetítulo pequeño en mayúsculas (opcional).
+@param {string} title    Título serif sobre la lista (opcional, admite Markdown).
+@param {string} interval Segundos entre cambios automáticos (por defecto 8; "0" lo desactiva).
+@param {string} height   Alto del bloque en escritorio (CSS, por defecto 560px).
+@param {string} side     "right" (panel a la derecha, por defecto) o "left" (panel a la izquierda).
+@param {string} style    "minimal": paneles blancos, sin borde, texto arriba y sin adornos.
+@param {string} divider  "true": línea vertical fina entre la lista y el panel (solo escritorio).
+@param {string} border   "false" quita el borde fino de los paneles.
+@param {string} bg       Fondo de los paneles: "paper", "sand", "accent", "dark" o cualquier color CSS
+                         ("#f4efe6", "rgb(…)"). Sin él: blanco con imagen, sand si solo hay texto.
+@param {string} textColor Color del texto: "light" o "dark". Solo hace falta con colores propios.
+Cada qa/split-item puede llevar su propio bg y textColor, que mandan sobre los de qa/split.
+Contenido interior: uno o varios qa/split-item.
+
+@example {{< qa/split title="Cómo trabajamos" >}}{{< qa/split-item title="Consulta" text="…" />}}{{< /qa/split >}}
+*/ -}}
+{{- $_ := .Inner -}}
+{{- $items := .Store.Get "qa-split-items" | default slice -}}
+{{- $id := printf "qa-split-%d" .Ordinal -}}
+{{- $interval := .Get "interval" | default "8" -}}
+{{- $skinBg := .Get "bg" | default "" -}}
+{{- $skinText := .Get "textColor" | default "" -}}
+{{- $style := slice -}}
+{{- with .Get "height" }}{{ $style = $style | append (printf "--qa-split-h: %s" .) }}{{ end -}}
+
+<section class="qa-split not-prose{{ if eq (.Get "side") "left" }} qa-split--left{{ end }}{{ if eq (.Get "border") "false" }} qa-split--noborder{{ end }}{{ if eq (.Get "style") "minimal" }} qa-split--minimal{{ end }}{{ if eq (.Get "divider") "true" }} qa-split--divider{{ end }}" data-qa-split data-interval="{{ $interval }}"{{ with $style }} style="{{ delimit . "; " | safeCSS }}"{{ end }}>
+  <div class="qa-split__nav">
+  {{- if or (.Get "eyebrow") (.Get "title") }}
+    <div class="qa-split__head">
+      {{- with .Get "eyebrow" }}<span class="qa-eyebrow">{{ . }}</span>{{ end }}
+      {{- with .Get "title" }}<h2 class="qa-split__heading">{{ . | markdownify }}</h2>{{ end }}
+    </div>
+  {{- end }}
+    <div class="qa-split__list" role="tablist" aria-orientation="vertical">
+    {{- range $i, $it := $items }}
+      <div class="qa-split__item"{{ if eq $i 0 }} data-active="true"{{ end }}>
+        <button
+          type="button"
+          role="tab"
+          class="qa-split__tab"
+          id="{{ $id }}-tab-{{ $i }}"
+          aria-controls="{{ $id }}-panel-{{ $i }}"
+          aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+          tabindex="{{ if eq $i 0 }}0{{ else }}-1{{ end }}"
+        >
+          <span class="qa-split__dot" aria-hidden="true"></span>
+          <span class="qa-split__label">
+            <span class="qa-split__title">{{ $it.title | markdownify }}</span>
+            {{- with $it.text }}<span class="qa-split__text">{{ . | markdownify }}</span>{{ end }}
+          </span>
+        </button>
+        {{- $skin := partial "qa/split-skin.html" (dict "bg" ($it.bg | default $skinBg) "text" ($it.text_color | default $skinText)) }}
+        <div class="qa-split__inline {{ $skin.class }}"{{ with $skin.style }} style="{{ . | safeCSS }}"{{ end }}>
+          {{- template "qa-split-media" $it -}}
+        </div>
+      </div>
+    {{- end }}
+    </div>
+  </div>
+  <div class="qa-split__stage">
+  {{- range $i, $it := $items }}
+    {{- $skin := partial "qa/split-skin.html" (dict "bg" ($it.bg | default $skinBg) "text" ($it.text_color | default $skinText)) }}
+    <div
+      class="qa-split__panel {{ $skin.class }}"{{ with $skin.style }} style="{{ . | safeCSS }}"{{ end }}
+      role="tabpanel"
+      id="{{ $id }}-panel-{{ $i }}"
+      aria-labelledby="{{ $id }}-tab-{{ $i }}"
+      {{ if eq $i 0 }}data-active="true"{{ else }}hidden{{ end }}
+    >
+      {{- template "qa-split-media" $it -}}
+    </div>
+  {{- end }}
+  </div>
+</section>
+
+{{- define "qa-split-media" -}}
+  {{- with .image }}
+    <img class="qa-split__img qa-split__img--{{ $.fit }}" src="{{ partial "qa/src.html" . }}" alt="{{ $.alt }}" loading="lazy" decoding="async" />
+  {{- end }}
+  {{- with .body }}
+    <div class="qa-split__body">{{ . }}</div>
+  {{- end }}
+{{- end -}}

@@ -1,0 +1,47 @@
+{{- /*
+Cabecera de portada: píldora de anuncio, titular serif, entradilla y botones.
+
+@param {string} title         Titular (admite Markdown; *cursiva* = acento). Por defecto, el título de la página.
+@param {string} pill          Texto de la píldora superior (opcional).
+@param {string} pillLink      Enlace de la píldora (opcional).
+@param {string} primary       Texto del botón principal (opcional).
+@param {string} primaryLink   Enlace del botón principal.
+@param {string} secondary     Texto del botón secundario (opcional).
+@param {string} secondaryLink Enlace del botón secundario.
+@param {string} secondaryIcon Icono del botón secundario (opcional).
+@param {string} note          Línea de confianza bajo los botones (opcional).
+
+@example {{< qa/hero pill="Burgos" primary="Contacto" primaryLink="contacto" >}}Entradilla{{< /qa/hero >}}
+*/ -}}
+{{- $title := .Get "title" | default .Page.Title -}}
+{{- $pill := .Get "pill" -}}
+{{- $pillLink := .Get "pillLink" -}}
+{{- $note := .Get "note" -}}
+<section class="qa-hero not-prose">
+{{- with $pill }}
+  {{- if $pillLink }}
+  <a class="qa-pill" href="{{ partial "qa/href.html" $pillLink }}"><span class="qa-pill__dot"></span>{{ . | markdownify }}{{ partial "utils/icon.html" (dict "name" "arrow-right" "attributes" "aria-hidden=true") }}</a>
+  {{- else }}
+  <span class="qa-pill"><span class="qa-pill__dot"></span>{{ . | markdownify }}</span>
+  {{- end }}
+{{- end }}
+  <h1 class="qa-hero__title">{{ $title | markdownify }}</h1>
+{{- with .Inner }}
+  <div class="qa-hero__lede">{{ . | $.Page.RenderString }}</div>
+{{- end }}
+{{- if or (.Get "primary") (.Get "secondary") }}
+  <div class="qa-actions">
+  {{- with .Get "primary" }}
+    <a class="qa-btn qa-btn--primary" href="{{ partial "qa/href.html" ($.Get "primaryLink") }}">{{ . }}</a>
+  {{- end }}
+  {{- with .Get "secondary" }}
+    <a class="qa-btn qa-btn--ghost" href="{{ partial "qa/href.html" ($.Get "secondaryLink") }}">
+      {{- with $.Get "secondaryIcon" }}{{ partial "utils/icon.html" (dict "name" . "attributes" "aria-hidden=true") }}{{ end -}}
+      {{ . }}</a>
+  {{- end }}
+  </div>
+{{- end }}
+{{- with $note }}
+  <p class="qa-hero__note">{{ . | markdownify }}</p>
+{{- end }}
+</section>

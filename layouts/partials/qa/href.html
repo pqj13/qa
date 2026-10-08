@@ -1,0 +1,10 @@
+{{- /* Resuelve un enlace de shortcode: externos, tel:, mailto:, anclas y rutas
+     relativas al idioma actual ("contacto" → "/en/contacto/"). */ -}}
+{{- $link := . | default "" -}}
+{{- $out := "" -}}
+{{- if or (hasPrefix $link "http") (hasPrefix $link "tel:") (hasPrefix $link "mailto:") (hasPrefix $link "#") -}}
+  {{- $out = $link -}}
+{{- else -}}
+  {{- $out = strings.TrimPrefix "/" $link | relLangURL -}}
+{{- end -}}
+{{- return $out -}}

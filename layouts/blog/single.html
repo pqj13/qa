@@ -1,0 +1,60 @@
+{{- /* Noticia individual (tipo "blog" de Hextra) con el diseño editorial.
+     Mantiene índice lateral, autores, fecha, navegación anterior/siguiente y comentarios de Hextra. */ -}}
+{{ define "main" }}
+  <div class="hx:mx-auto hx:flex hextra-max-page-width">
+    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" false) }}
+    {{ partial "toc.html" . }}
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8">
+      <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:md:px-12">
+        <header class="qa-page-header">
+          <nav class="qa-breadcrumb" aria-label="Breadcrumb">
+            {{- range .Ancestors.Reverse }}
+              {{- if not .IsHome }}
+                <a href="{{ .RelPermalink }}">{{ partial "utils/title" . }}</a>
+                {{- partial "utils/icon.html" (dict "name" "chevron-right" "attributes" "class=\"hx:rtl:-rotate-180\"") -}}
+              {{- end }}
+            {{- end }}
+            <span aria-current="page">{{ partial "utils/title" . }}</span>
+          </nav>
+          <h1 class="qa-page-title">{{ .Title }}</h1>
+          <div class="qa-post-meta">
+            {{- with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ partial "utils/format-date" . }}</time>{{ end -}}
+            {{- with .Params.authors }}
+              <span aria-hidden="true">·</span>
+              <span>
+              {{- range $i, $author := . -}}
+                {{- if $i }}, {{ end -}}
+                {{- if reflect.IsMap $author -}}
+                  {{- with $author.link }}<a href="{{ . }}" target="_blank" rel="noreferrer">{{ $author.name }}</a>{{ else }}{{ $author.name }}{{ end -}}
+                {{- else -}}
+                  {{- $author -}}
+                {{- end -}}
+              {{- end -}}
+              </span>
+            {{- end }}
+            {{- range .Params.tags }}<span class="qa-pill">{{ . }}</span>{{ end -}}
+          </div>
+        </header>
+        <div class="content">
+          {{ .Content }}
+        </div>
+        {{- /* Tarjeta de contacto al final de cada noticia (desactivable con contactCard: false) */}}
+        {{- if ne .Params.contactCard false }}
+          {{- partial "qa/cta.html" (dict
+            "title" (T "ctaTitle")
+            "button" (T "ctaButton")
+            "link" "contacto"
+            "intl" (ne site.Language.Lang "es")
+          ) -}}
+        {{- end }}
+        <div class="hx:mt-16"></div>
+        {{- partial "components/last-updated.html" . -}}
+        {{- if (site.Params.blog.article.displayPagination | default true) -}}
+          {{- .Store.Set "reversePagination" (.Params.reversePagination | default true) -}}
+          {{- partial "components/pager.html" . -}}
+        {{ end }}
+        {{- partial "components/comments.html" . -}}
+      </main>
+    </article>
+  </div>
+{{ end }}

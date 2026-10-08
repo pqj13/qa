@@ -1,19 +1,2365 @@
-* {
-    user-select: none;
-}
+/* ==========================================================================
+   Quintana Abogados — sistema de diseño editorial
+   Lienzo pergamino, titulares serif, cuerpo sans espaciado, controles en
+   píldora, cero sombras. Acento corporativo: #a10d2a.
+   ========================================================================== */
 
-.content {
-  font-size: 13pt;
-}
-
-/* color: #aa253f (#a00c2e un poco más claro) */
+/* -------------------------------------------------------------------------
+   1. Tokens
+   ------------------------------------------------------------------------- */
 :root {
+  /* Superficies */
+  --qa-canvas: #ffffff;        /* Lienzo de página */
+  --qa-sand: #f1f0ee;          /* Sand: paneles y bandas */
+  --qa-paper: #ffffff;         /* Paper: tarjetas y controles */
+  --qa-line: #dbdad7;          /* Línea fina sobre el lienzo */
+  --qa-line-soft: #dbdad7;     /* Línea fina sobre papel */
+
+  /* Texto */
+  --qa-ink: #121212;
+  --qa-smoke: #595959;
+  --qa-charcoal: #18181b;
+  --qa-on-charcoal: #ffffff;
+
+  /* Acento corporativo */
+  --qa-accent: #a10d2a;
+  --qa-accent-hover: #820a21;
+  --qa-accent-soft: rgba(161, 13, 42, 0.08);
+
+  /* Tipografía */
+  --qa-sans: "Hedvig Letters Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --qa-serif: "Hedvig Letters Serif", ui-serif, Georgia, Cambria, "Times New Roman", serif;
+
+  --qa-text-caption: 0.6875rem; /* 11px */
+  --qa-text-small: 0.75rem;     /* 12px */
+  --qa-text-body: 0.875rem;     /* 14px */
+  --qa-text-prose: 1.0625rem;   /* 17px */
+  --qa-text-display: clamp(2.5rem, 1.4rem + 4.6vw, 4.5rem);
+  --qa-text-title: clamp(2.125rem, 1.5rem + 2.6vw, 3.25rem);
+
+  --qa-track-small: 0.05em;
+  --qa-track-large: 0.025em;
+  --qa-track-serif: -0.025em;
+
+  /* Formas y ritmo (rejilla de 4px) */
+  --qa-radius: 8px;
+  --qa-pill: 9999px;
+  --qa-section-gap: 4rem;
+  --qa-card-pad: 1.5rem;
+  --qa-gap: 0.5rem;
+
+  /* Tema Hextra: primario = #a10d2a */
   --primary-hue: 348deg;
-  --primary-saturation: 65%;
-  --primary-lightness: 40%;
+  --primary-saturation: 85%;
+  --primary-lightness: 34%;
+
+  /* Anchos de página (1200px) */
+  --hextra-max-page-width: 75rem;
+  --hextra-max-navbar-width: 75rem;  /* barra alineada con el contenido */
+  --hextra-max-footer-width: 75rem;
 }
 
-.hextra-footer:is(html[class~="light"] *) {
-  /* Styles will be applied to the footer element in light mode */
-  background-color: #ffffff;
+.dark {
+  --qa-canvas: #161514;
+  --qa-sand: #1e1d1b;
+  --qa-paper: #242321;
+  --qa-line: #363431;
+  --qa-line-soft: #33312e;
+
+  --qa-ink: #edebe7;
+  --qa-smoke: #a6a39d;
+  --qa-charcoal: #edebe7;
+  --qa-on-charcoal: #121212;
+
+  --qa-accent: #ec6a83;
+  --qa-accent-hover: #f48da1;
+  --qa-accent-soft: rgba(236, 106, 131, 0.12);
+
+  --primary-hue: 348deg;
+  --primary-saturation: 75%;
+  --primary-lightness: 66%;
+}
+
+/* -------------------------------------------------------------------------
+   2. Base
+   ------------------------------------------------------------------------- */
+html {
+  --hx-default-font-family: var(--qa-sans);
+  background-color: var(--qa-canvas);
+}
+
+body,
+.dark body {
+  overflow-x: clip; /* evita scroll lateral con bloques a todo el ancho (qa/showcase width="full") */
+  background-color: var(--qa-canvas);
+  color: var(--qa-ink);
+  font-family: var(--qa-sans);
+  letter-spacing: var(--qa-track-large);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Se mantiene la preferencia original de no permitir seleccionar texto,
+   salvo en campos de formulario. */
+* {
+  user-select: none;
+}
+input,
+textarea {
+  user-select: text;
+}
+
+::selection {
+  background: var(--qa-accent);
+  color: #fff;
+}
+
+/* Sin sombras en ningún componente */
+.hextra-card,
+.hextra-search-results,
+.hextra-nav-menu-items,
+.hextra-language-options,
+.hextra-theme-toggle-options {
+  box-shadow: none !important;
+}
+
+/* -------------------------------------------------------------------------
+   3. Barra de navegación
+   ------------------------------------------------------------------------- */
+.hextra-nav-container-blur {
+  background-color: color-mix(in srgb, var(--qa-canvas) 88%, transparent) !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid var(--qa-line);
+}
+
+/* Enlaces al estilo midday.ai: texto gris sin fondo ni borde;
+   el activo, en negrita y color tinta. */
+.qa-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  background: none;
+  font-family: var(--qa-sans);
+  font-size: var(--qa-text-body);
+  font-weight: 400;
+  letter-spacing: var(--qa-track-small);
+  white-space: nowrap;
+  color: var(--qa-smoke) !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.qa-nav-link:hover,
+.qa-nav-item--menu:hover > .qa-nav-link,
+.qa-nav-item--menu[data-open="true"] > .qa-nav-link {
+  color: var(--qa-ink) !important;
+}
+.qa-nav-link[aria-current="page"],
+.qa-nav-link[data-active="true"] {
+  font-weight: 600;
+  color: var(--qa-ink) !important;
+}
+.qa-nav-link--top {
+  display: none;
+}
+.qa-nav-item {
+  display: none;
+  align-self: stretch;
+  align-items: center;
+}
+@media (min-width: 48rem) {
+  .qa-nav-link--top {
+    display: inline-flex;
+  }
+  .qa-nav-item {
+    display: flex;
+  }
+}
+.qa-nav-chevron {
+  width: 0.75rem;
+  height: 0.75rem;
+  transition: transform 0.2s ease;
+}
+.qa-nav-item--menu:hover .qa-nav-chevron,
+.qa-nav-item--menu[data-open="true"] .qa-nav-chevron {
+  transform: rotate(180deg);
+}
+
+/* Menú desplegable a todo el ancho bajo la barra (menús anidados) */
+.qa-mega {
+  position: fixed;
+  top: var(--navbar-height, 4rem);
+  left: 0;
+  right: 0;
+  z-index: 30;
+  border-top: 1px solid var(--qa-line);
+  border-bottom: 1px solid var(--qa-line);
+  background-color: var(--qa-paper);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s;
+}
+.qa-nav-item--menu:hover .qa-mega,
+.qa-nav-item--menu:focus-within .qa-mega,
+.qa-nav-item--menu[data-open="true"] .qa-mega {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s;
+}
+.qa-nav-item--menu[data-open="false"]:not(:hover) .qa-mega {
+  visibility: hidden;
+  opacity: 0;
+}
+.qa-mega__inner {
+  display: grid;
+  gap: 1.5rem 2rem;
+  padding: 2rem 1.5rem;
+}
+@media (min-width: 64rem) {
+  .qa-mega__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    padding: 2.5rem;
+  }
+  .qa-mega__inner:not(:has(.qa-mega__intro)) {
+    grid-template-columns: 1fr;
+  }
+}
+.qa-mega__intro {
+  max-width: 20rem;
+  margin: 0;
+  font-family: var(--qa-serif);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+}
+.qa-mega__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.qa-nav-item--menu:is(:hover, :focus-within, [data-open="true"]) .qa-mega__list > li {
+  animation: qa-drop-slide 0.28s ease both;
+}
+@keyframes qa-drop-slide {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: none; }
+}
+.qa-mega__link {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 0.5rem;
+  color: var(--qa-ink) !important;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease;
+}
+.qa-mega__link:hover,
+.qa-mega__link:focus-visible {
+  background-color: var(--qa-sand);
+}
+.qa-mega__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--qa-radius);
+  background-color: var(--qa-sand);
+  color: var(--qa-accent);
+}
+.qa-mega__icon svg {
+  width: 1rem;
+  height: 1rem;
+}
+.qa-mega__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.qa-mega__title {
+  font-size: 1rem;
+  letter-spacing: var(--qa-track-large);
+}
+.qa-mega__link[aria-current="page"] .qa-mega__title {
+  font-weight: 600;
+}
+.qa-mega__desc {
+  font-size: var(--qa-text-small);
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+  transition: color 0.15s ease;
+}
+.qa-mega__link:hover .qa-mega__desc {
+  color: var(--qa-ink);
+}
+
+.qa-nav-phone {
+  display: none !important;
+}
+@media (min-width: 64rem) {
+  .qa-nav-phone {
+    display: inline-flex !important;
+  }
+}
+
+/* Buscador */
+.hextra-search-input {
+  background-color: var(--qa-paper) !important;
+  border: 1px solid var(--qa-line) !important;
+  border-radius: var(--qa-pill) !important;
+  padding-left: 1rem !important;
+  letter-spacing: var(--qa-track-small);
+  font-size: var(--qa-text-body) !important;
+}
+.hextra-search-input:focus-visible {
+  border-color: var(--qa-ink) !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-ring-offset-shadow: 0 0 #0000 !important;
+}
+.hextra-search-wrapper kbd {
+  background: var(--qa-sand) !important;
+  border-color: var(--qa-line-soft) !important;
+  border-radius: var(--qa-pill) !important;
+  right: 0.5rem;
+}
+.hextra-search-results {
+  background-color: var(--qa-paper) !important;
+  border-color: var(--qa-line-soft) !important;
+  border-radius: var(--qa-radius) !important;
+}
+
+/* Menús desplegables (idioma, tema, submenús) */
+.hextra-language-options,
+.hextra-theme-toggle-options,
+.hextra-nav-menu-items {
+  background-color: var(--qa-paper) !important;
+  border-color: var(--qa-line-soft) !important;
+  border-radius: var(--qa-radius) !important;
+}
+
+/* Menú lateral en móvil */
+@media (max-width: 48rem) {
+  .hextra-sidebar-container {
+    background-color: var(--qa-canvas) !important;
+  }
+}
+.hextra-sidebar-container .hx\:bg-white,
+.dark .hextra-sidebar-container .hx\:dark\:bg-dark {
+  background-color: var(--qa-canvas) !important;
+  box-shadow: none !important;
+}
+.hextra-sidebar-container a {
+  border-radius: var(--qa-pill);
+  padding-left: 0.875rem !important;
+  letter-spacing: var(--qa-track-small);
+}
+.hextra-sidebar-container .hextra-sidebar-active-item {
+  background-color: var(--qa-paper) !important;
+  color: var(--qa-ink) !important;
+  box-shadow: inset 0 0 0 1px var(--qa-line-soft);
+}
+
+/* -------------------------------------------------------------------------
+   4. Botones y píldoras (shortcodes qa/*)
+   ------------------------------------------------------------------------- */
+.qa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.125rem;
+  border-radius: var(--qa-pill);
+  border: 1px solid transparent;
+  font-family: var(--qa-sans);
+  font-size: var(--qa-text-body);
+  font-weight: 500;
+  letter-spacing: var(--qa-track-small);
+  line-height: 1.43;
+  text-decoration: none !important;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.qa-btn svg {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+}
+.qa-btn--primary {
+  background-color: var(--qa-charcoal);
+  color: var(--qa-on-charcoal) !important;
+}
+.qa-btn--primary:hover {
+  background-color: var(--qa-accent);
+  color: #fff !important;
+}
+.dark .qa-btn--primary:hover {
+  color: #121212 !important;
+}
+.qa-btn--accent {
+  background-color: var(--qa-accent);
+  color: #fff !important;
+}
+.dark .qa-btn--accent {
+  color: #121212 !important;
+}
+.qa-btn--accent:hover {
+  background-color: var(--qa-accent-hover);
+}
+.qa-btn--ghost {
+  background-color: transparent;
+  border-color: var(--qa-line);
+  color: var(--qa-ink) !important;
+}
+.qa-btn--ghost:hover {
+  background-color: var(--qa-paper);
+  border-color: var(--qa-ink);
+}
+.qa-btn--small {
+  padding: 0.375rem 0.875rem;
+  font-size: var(--qa-text-small);
+}
+.qa-btn:focus-visible,
+.qa-pill:focus-visible,
+.qa-card--link:focus-visible,
+.qa-nav-link:focus-visible {
+  outline: 2px solid var(--qa-accent);
+  outline-offset: 2px;
+}
+
+.qa-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--qa-pill);
+  border: 1px solid var(--qa-line);
+  background-color: var(--qa-paper);
+  color: var(--qa-ink) !important;
+  font-size: var(--qa-text-small);
+  font-weight: 500;
+  letter-spacing: var(--qa-track-small);
+  line-height: 1.33;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.qa-pill svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+a.qa-pill:hover {
+  border-color: var(--qa-ink);
+}
+.qa-pill__dot {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: var(--qa-pill);
+  background-color: var(--qa-accent);
+}
+.qa-pill--accent {
+  border-color: transparent;
+  background-color: var(--qa-accent-soft);
+  color: var(--qa-accent) !important;
+}
+
+.qa-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--qa-gap);
+}
+
+.qa-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* -------------------------------------------------------------------------
+   5. Hero
+   ------------------------------------------------------------------------- */
+/* Ocupa toda la altura visible bajo la barra de navegación */
+.qa-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--navbar-height, 4rem));
+  min-height: calc(100svh - var(--navbar-height, 4rem));
+  padding: 3rem 0;
+  text-align: center;
+}
+.qa-hero > .qa-pill {
+  margin-bottom: 1.5rem;
+}
+.qa-hero__title {
+  max-width: 16ch;
+  margin: 0;
+  font-family: var(--qa-serif);
+  font-size: var(--qa-text-display);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+  text-wrap: balance;
+}
+.qa-hero__title em {
+  font-style: italic;
+  color: var(--qa-accent);
+}
+.qa-hero__lede {
+  max-width: 38rem;
+  margin-top: 1.5rem;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  letter-spacing: var(--qa-track-large);
+  color: var(--qa-smoke);
+  text-wrap: pretty;
+}
+.qa-hero__lede p {
+  margin: 0;
+}
+.qa-hero__lede strong {
+  font-weight: 500;
+  color: var(--qa-ink);
+}
+.qa-hero .qa-actions {
+  justify-content: center;
+  margin-top: 2rem;
+}
+.qa-hero__note {
+  margin-top: 1rem;
+  font-size: var(--qa-text-small);
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+
+/* -------------------------------------------------------------------------
+   6. Secciones
+   ------------------------------------------------------------------------- */
+.qa-section {
+  padding-top: var(--qa-section-gap);
+}
+.qa-section__head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 44rem;
+  margin-bottom: 2rem;
+}
+.qa-section--center .qa-section__head {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.qa-eyebrow {
+  font-size: var(--qa-text-small);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--qa-accent);
+}
+.content .qa-section__title,
+.qa-section__title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--qa-serif);
+  font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+  text-wrap: balance;
+}
+.qa-section__intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--qa-smoke);
+}
+.qa-section__intro p {
+  margin: 0;
+}
+.qa-section__body > :first-child {
+  margin-top: 0;
+}
+
+/* -------------------------------------------------------------------------
+   7. Tarjetas, rejillas, cifras
+   ------------------------------------------------------------------------- */
+.qa-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 40rem) {
+  .qa-grid--2,
+  .qa-grid--3,
+  .qa-grid--4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 64rem) {
+  .qa-grid--3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .qa-grid--4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.qa-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: var(--qa-card-pad);
+  border-radius: var(--qa-radius);
+  border: 1px solid var(--qa-line-soft);
+  background-color: var(--qa-card-bg, var(--qa-paper));
+  color: var(--qa-ink) !important;
+  text-decoration: none !important;
+  transition: border-color 0.15s ease;
+}
+.qa-card--link:hover {
+  border-color: var(--qa-ink);
+}
+.qa-card__label {
+  font-size: var(--qa-text-small);
+  font-weight: 500;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+.content .qa-card__title,
+.qa-card__title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--qa-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+}
+.qa-card__text {
+  font-size: var(--qa-text-body);
+  line-height: 1.6;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+.qa-card__text p {
+  margin: 0;
+}
+.qa-card__text p + p {
+  margin-top: 0.75rem;
+}
+.qa-card__text a {
+  color: var(--qa-accent);
+}
+.qa-card__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  font-size: var(--qa-text-small);
+  font-weight: 500;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-accent);
+}
+.qa-card__more svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  transition: transform 0.15s ease;
+}
+.qa-card--link:hover .qa-card__more svg {
+  transform: translateX(3px);
+}
+.qa-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-bottom: 0.5rem;
+  border-radius: var(--qa-radius);
+  background-color: var(--qa-sand);
+  color: var(--qa-accent);
+}
+.qa-card__icon svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+/* Fondos de tarjeta (parámetro bg) */
+.qa-card--paper {
+  --qa-card-bg: var(--qa-paper);
+}
+.qa-card--sand {
+  --qa-card-bg: var(--qa-sand);
+  border-color: transparent;
+}
+.qa-card--sand .qa-card__icon {
+  background-color: var(--qa-paper);
+}
+.qa-card--accent {
+  --qa-card-bg: #a10d2a;
+  border-color: transparent;
+}
+.qa-card--dark {
+  --qa-card-bg: #121212;
+  border-color: transparent;
+}
+.dark .qa-card--dark {
+  border-color: var(--qa-line);
+}
+.qa-card--custom {
+  border-color: transparent;
+}
+.qa-card--sand.qa-card--link:hover,
+.qa-card--custom.qa-card--link:hover {
+  border-color: var(--qa-ink);
+}
+
+/* Texto claro sobre fondos oscuros (parámetro text="light") */
+.qa-card--text-light .qa-card__title,
+.qa-card--text-light .qa-card__more {
+  color: #ffffff;
+}
+.qa-card--text-light .qa-card__label,
+.qa-card--text-light .qa-card__text {
+  color: rgba(255, 255, 255, 0.8);
+}
+.qa-card--text-light .qa-card__text a {
+  color: #ffffff;
+}
+.qa-card--text-light .qa-card__icon {
+  background-color: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+.qa-card--text-light.qa-card--link:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Texto oscuro fijo, también en modo oscuro (parámetro text="dark") */
+.qa-card--text-dark .qa-card__title {
+  color: #121212;
+}
+.qa-card--text-dark .qa-card__label,
+.qa-card--text-dark .qa-card__text {
+  color: #4a4a4a;
+}
+.qa-card--text-dark .qa-card__more,
+.qa-card--text-dark .qa-card__text a {
+  color: #a10d2a;
+}
+.qa-card--text-dark .qa-card__icon {
+  background-color: rgba(0, 0, 0, 0.06);
+  color: #a10d2a;
+}
+.qa-card--text-dark.qa-card--link:hover {
+  border-color: #121212;
+}
+
+/* -------------------------------------------------------------------------
+   Pasos / listas editoriales (qa/steps + qa/step)
+   ------------------------------------------------------------------------- */
+.qa-steps {
+  counter-reset: qa-step;
+  border-bottom: 1px solid var(--qa-line);
+}
+.qa-step {
+  counter-increment: qa-step;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--qa-line);
+  color: var(--qa-ink) !important;
+  text-decoration: none !important;
+}
+@media (min-width: 48rem) {
+  .qa-step {
+    grid-template-columns: 4rem minmax(0, 1fr) minmax(0, 1.5fr);
+    gap: 2rem;
+    align-items: baseline;
+    padding: 1.75rem 0;
+  }
+  .qa-steps--plain .qa-step {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  }
+}
+.qa-step__num {
+  font-size: var(--qa-text-small);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-accent);
+}
+.qa-step__num:empty::before {
+  content: counter(qa-step, decimal-leading-zero);
+}
+.qa-steps--plain .qa-step__num {
+  display: none;
+}
+.content .qa-step__title,
+.qa-step__title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--qa-serif);
+  font-size: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+  transition: color 0.15s ease;
+}
+.qa-step__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.qa-step__text {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+.qa-step__text p {
+  margin: 0;
+}
+.qa-step__text p + p {
+  margin-top: 0.75rem;
+}
+.qa-step__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: var(--qa-text-small);
+  font-weight: 500;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-accent);
+}
+.qa-step__more svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  transition: transform 0.15s ease;
+}
+.qa-step--link:hover .qa-step__title {
+  color: var(--qa-accent);
+}
+.qa-step--link:hover .qa-step__more svg {
+  transform: translateX(3px);
+}
+.qa-step--link:focus-visible {
+  outline: 2px solid var(--qa-accent);
+  outline-offset: 4px;
+}
+/* Variante layout="line": línea vertical con un punto por elemento */
+.qa-steps--line {
+  margin-left: 0.375rem;
+  padding-left: 2rem;
+  border-bottom: 0;
+  border-left: 1px solid var(--qa-line);
+}
+.qa-steps--line .qa-step {
+  position: relative;
+  display: block;
+  max-width: 46rem;
+  padding: 0 0 2.75rem;
+  border-top: 0;
+}
+.qa-steps--line .qa-step:last-child {
+  padding-bottom: 0.5rem;
+}
+.qa-steps--line .qa-step::before {
+  content: "";
+  position: absolute;
+  top: 0.55rem;
+  left: calc(-2rem - 7px);
+  width: 13px;
+  height: 13px;
+  border-radius: var(--qa-pill);
+  border: 3px solid var(--qa-canvas);
+  background-color: var(--qa-accent);
+}
+.qa-steps--line .qa-step__num {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.qa-steps--line.qa-steps--plain .qa-step__num {
+  display: none;
+}
+.qa-steps--line .qa-step__body {
+  margin-top: 0.75rem;
+}
+
+.qa-steps + .qa-actions,
+.qa-grid + .qa-actions {
+  margin-top: 2rem;
+}
+
+/* -------------------------------------------------------------------------
+   Imagen destacada a lo ancho (qa/showcase), como la portada de midday.ai
+   ------------------------------------------------------------------------- */
+.qa-showcase {
+  --qa-showcase-h: auto;  /* el parámetro height lo fija; si no, manda la proporción */
+  --qa-showcase-size: 85%;
+  --qa-showcase-bg: #0e0e0e;
+  margin: var(--qa-section-gap) 0 0;
+}
+.qa-showcase--full {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.qa-showcase__frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 11;
+  width: 100%;
+  min-width: 0; /* evita que la proporción ensanche el bloque en móvil */
+  height: var(--qa-showcase-h);
+  min-height: 360px;
+  max-height: 900px;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: var(--qa-showcase-bg);
+}
+@media (min-width: 64rem) {
+  .qa-showcase__frame {
+    padding: 2rem;
+  }
+}
+.qa-showcase--dark .qa-showcase__frame {
+  --qa-showcase-bg: #0e0e0e;
+  /* Luz superior y grano, como el fondo de vídeo de midday.ai */
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(120% 70% at 50% 0%, #4a4a48 0%, #1c1c1b 45%, #0e0e0e 75%);
+}
+.qa-showcase--sand .qa-showcase__frame {
+  --qa-showcase-bg: var(--qa-sand);
+}
+.qa-showcase--paper .qa-showcase__frame {
+  --qa-showcase-bg: var(--qa-paper);
+  border: 1px solid var(--qa-line);
+}
+.qa-showcase--accent .qa-showcase__frame {
+  --qa-showcase-bg: #a10d2a;
+}
+.qa-showcase__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.qa-showcase__img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: var(--qa-showcase-size);
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.qa-showcase--fit-cover .qa-showcase__frame {
+  padding: 0;
+}
+.qa-showcase--fit-cover .qa-showcase__img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+.qa-showcase__caption {
+  margin-top: 0.75rem;
+  font-size: var(--qa-text-small);
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+.qa-showcase--full .qa-showcase__caption {
+  padding: 0 1.5rem;
+}
+/* Aparición al entrar en pantalla (navegadores con animaciones ligadas al scroll) */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .qa-showcase--animate .qa-showcase__frame {
+      animation: qa-showcase-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 35%;
+    }
+    .qa-showcase--animate .qa-showcase__img {
+      animation: qa-showcase-img-in linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 45%;
+    }
+  }
+}
+@keyframes qa-showcase-in {
+  from { opacity: 0.4; transform: scale(0.96); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes qa-showcase-img-in {
+  from { opacity: 0; transform: translateY(48px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* -------------------------------------------------------------------------
+   Pantalla dividida (qa/split + qa/split-item), como "How it works" de midday.ai
+   ------------------------------------------------------------------------- */
+.qa-split {
+  --qa-split-h: 560px;
+  display: grid;
+  gap: 2rem;
+  margin-top: var(--qa-section-gap);
+}
+.qa-split__head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.content .qa-split__heading,
+.qa-split__heading {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--qa-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+}
+.qa-split__list {
+  display: flex;
+  flex-direction: column;
+}
+.qa-split__item {
+  position: relative;
+}
+/* Línea vertical que une los puntos */
+.qa-split__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 1.125rem;
+  bottom: -0.375rem;
+  left: 3.5px;
+  width: 1px;
+  background-color: var(--qa-line);
+}
+.qa-split__tab {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  width: 100%;
+  min-height: 3.5rem;
+  padding: 0 0 1.25rem;
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+.qa-split__dot {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  margin-top: 0.5rem;
+  background-color: var(--qa-line);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.qa-split__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+.qa-split__tab:hover .qa-split__label {
+  opacity: 0.8;
+}
+.qa-split__tab:hover .qa-split__dot {
+  background-color: var(--qa-smoke);
+}
+.qa-split__title {
+  font-size: clamp(1.125rem, 1rem + 0.4vw, 1.25rem);
+  line-height: 1.4;
+  letter-spacing: var(--qa-track-large);
+  color: var(--qa-smoke);
+  transition: color 0.3s ease;
+}
+.qa-split__text {
+  display: none;
+  max-width: 28rem;
+  font-size: var(--qa-text-body);
+  line-height: 1.6;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-ink);
+}
+.qa-split__title p,
+.qa-split__text p {
+  margin: 0;
+}
+.qa-split__item[data-active] .qa-split__label {
+  opacity: 1;
+}
+.qa-split__item[data-active] .qa-split__title {
+  color: var(--qa-ink);
+}
+.qa-split__item[data-active] .qa-split__dot {
+  background-color: var(--qa-accent);
+  transform: scale(1.2);
+}
+.qa-split__item[data-active] .qa-split__text {
+  display: block;
+  animation: qa-fade-blur 0.35s ease-out both;
+}
+@keyframes qa-fade-blur {
+  from { opacity: 0; filter: blur(4px); transform: translateY(-2px); }
+  to { opacity: 1; filter: none; transform: none; }
+}
+.qa-split__tab:focus-visible {
+  outline: 2px solid var(--qa-accent);
+  outline-offset: 4px;
+}
+
+/* Panel derecho (y versión en línea para móvil) */
+.qa-split__stage {
+  display: none;
+}
+.qa-split__inline {
+  margin: 0 0 2rem 1.75rem;
+}
+.qa-split__panel,
+.qa-split__inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  border: 1px solid var(--qa-line);
+  background-color: var(--qa-paper);
+  overflow: hidden;
+}
+.qa-split__inline:not(:has(img, .qa-split__body)) {
+  display: none;
+}
+.qa-split__inline {
+  padding: 1.25rem;
+}
+.qa-split__img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+.qa-split__img--cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.qa-split__body {
+  max-width: 34rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-ink);
+}
+.qa-split__body > :first-child {
+  margin-top: 0;
+}
+.qa-split__body p + p {
+  margin-top: 0.75rem;
+}
+
+/* Escritorio: dos columnas, panel con alto fijo */
+@media (min-width: 64rem) {
+  .qa-split {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4rem;
+    height: var(--qa-split-h);
+  }
+  .qa-split__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .qa-split--left .qa-split__nav {
+    order: 2;
+  }
+  .qa-split__inline {
+    display: none !important;
+  }
+  .qa-split__text {
+    display: none;
+  }
+  .qa-split__stage {
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+  .qa-split__panel {
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+  }
+  .qa-split__panel[hidden] {
+    display: none;
+  }
+  .qa-split__panel[data-active] {
+    animation: qa-fade-blur 0.35s ease-out both;
+  }
+  .qa-split__panel:has(.qa-split__img--cover):not(:has(.qa-split__body)) {
+    padding: 0;
+  }
+}
+/* Móvil y tableta: todo desplegado, cada elemento con su panel debajo */
+@media (max-width: 63.99rem) {
+  .qa-split__label {
+    opacity: 1;
+  }
+  .qa-split__title {
+    color: var(--qa-ink);
+  }
+  .qa-split__text {
+    display: block;
+  }
+  .qa-split__dot {
+    background-color: var(--qa-accent);
+  }
+  .qa-split__item:not(:last-child)::after {
+    bottom: 0;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Noticias (layouts/blog)
+   ------------------------------------------------------------------------- */
+.qa-posts {
+  border-bottom: 1px solid var(--qa-line);
+}
+.qa-post {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--qa-line);
+  color: var(--qa-ink) !important;
+  text-decoration: none !important;
+}
+@media (min-width: 48rem) {
+  .qa-post {
+    grid-template-columns: 11rem minmax(0, 1fr);
+    gap: 2rem;
+    align-items: baseline;
+  }
+}
+.qa-post__date,
+.qa-post-meta {
+  font-size: var(--qa-text-small);
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+.qa-post__title {
+  margin: 0;
+  font-family: var(--qa-serif);
+  font-size: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+  transition: color 0.15s ease;
+}
+.qa-post__summary {
+  margin-top: 0.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+.qa-post__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.875rem;
+}
+.qa-post__more {
+  display: inline-flex;
+  margin-top: 0.875rem;
+  font-size: var(--qa-text-small);
+  font-weight: 500;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-accent);
+}
+.qa-post__title a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.qa-post__title a:hover {
+  color: var(--qa-accent) !important;
+}
+.qa-post__more:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.qa-post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.qa-empty {
+  padding: 2rem 0;
+  color: var(--qa-smoke);
+}
+
+/* Cifras (tarjeta de dato) */
+.qa-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.25rem;
+  border-radius: var(--qa-radius);
+  border: 1px solid var(--qa-line-soft);
+  background-color: var(--qa-paper);
+}
+.qa-stat__label {
+  font-size: var(--qa-text-small);
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+.qa-stat__value {
+  margin-top: 0.75rem;
+  font-family: var(--qa-serif);
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+}
+.qa-stat__value em {
+  font-style: normal;
+  color: var(--qa-accent);
+}
+.qa-stat__note {
+  margin-top: 0.375rem;
+  font-size: var(--qa-text-small);
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+
+/* Lista sencilla con viñetas de acento */
+.qa-ledger {
+  max-width: 44rem;
+}
+.content .qa-ledger ul,
+.content .qa-ledger ol,
+.qa-ledger ul,
+.qa-ledger ol {
+  margin: 0 !important;
+  padding: 0 0 0 1.25rem !important;
+  list-style: disc !important;
+}
+.content .qa-ledger li,
+.qa-ledger li {
+  margin: 0.5rem 0 0 !important;
+  padding-left: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--qa-ink);
+}
+.qa-ledger li::marker {
+  color: var(--qa-accent);
+}
+
+/* Cita editorial */
+.qa-quote {
+  margin: var(--qa-section-gap) 0 0;
+  padding: 3rem 0;
+  border-top: 1px solid var(--qa-line);
+  border-bottom: 1px solid var(--qa-line);
+  text-align: center;
+}
+.qa-quote__mark {
+  display: block;
+  height: 2.5rem;
+  font-family: var(--qa-serif);
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--qa-accent);
+}
+.content .qa-quote__text,
+.qa-quote__text {
+  max-width: 50rem;
+  margin: 0.5rem auto 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--qa-serif);
+  font-style: normal;
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.625rem);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--qa-ink);
+  text-wrap: pretty;
+}
+.qa-quote__text p {
+  margin: 0;
+}
+.qa-quote__cite {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: var(--qa-text-small);
+  font-style: normal;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+
+/* Banda de contacto: única superficie oscura del sistema */
+.qa-cta {
+  display: grid;
+  gap: 2rem;
+  margin-top: var(--qa-section-gap);
+  padding: 3rem 2rem;
+  border-radius: var(--qa-radius);
+  background-color: #f6f6f6; /* 121212 / f4f3f1*/
+  color: #f6f6f6;
+}
+@media (min-width: 48rem) {
+  .qa-cta {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: end;
+    padding: 3.5rem 3rem;
+  }
+}
+.content .qa-cta__title,
+.qa-cta__title {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--qa-serif);
+  font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: var(--qa-track-serif);
+  color: #a10d2a;
+}
+.qa-cta .qa-eyebrow {
+  color: #a10d2a;
+}
+.qa-cta__text {
+  margin-top: 1rem;
+  max-width: 34rem;
+  font-size: var(--qa-text-body);
+  line-height: 1.6;
+  letter-spacing: var(--qa-track-small);
+  color: #121212;
+}
+.qa-cta__text p {
+  margin: 0;
+}
+.qa-cta__aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+@media (min-width: 48rem) {
+  .qa-cta__aside {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+.content .qa-cta__phone,
+.qa-cta__phone {
+  font-family: var(--qa-serif);
+  font-size: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: var(--qa-track-serif);
+  color: #121212 !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.qa-cta__phone:hover {
+  color: #a10d2a !important;
+}
+.qa-cta .qa-btn--primary {
+  background-color: #121212;
+  color: #fcfcfc !important;
+}
+.qa-cta .qa-btn--primary:hover {
+  background-color: #a10d2a;
+  color: #fcfcfc !important;
+}
+.qa-cta .qa-btn--ghost {
+  border-color: #3a3936;
+  color: #f4f3f1 !important;
+}
+.qa-cta .qa-btn--ghost:hover {
+  background-color: #1f1e1d;
+  border-color: #f4f3f1;
+}
+
+/* Modo oscuro: superficie de papel con acento claro */
+.dark .qa-cta {
+  background-color: var(--qa-paper);
+  border: 1px solid var(--qa-line);
+  color: var(--qa-ink);
+}
+.dark .qa-cta__title,
+.dark .qa-cta__phone {
+  color: var(--qa-ink) !important;
+}
+.dark .qa-cta .qa-eyebrow {
+  color: var(--qa-accent);
+}
+.dark .qa-cta__text {
+  color: var(--qa-smoke);
+}
+.dark .qa-cta .qa-btn--primary {
+  background-color: var(--qa-ink);
+  color: #121212 !important;
+}
+.dark .qa-cta .qa-btn--primary:hover {
+  background-color: var(--qa-accent);
+  color: #121212 !important;
+}
+
+/* Perfil de abogado */
+.qa-profile {
+  margin-top: 0.75rem;
+  padding: 2rem;
+  border-radius: var(--qa-radius);
+  border: 1px solid var(--qa-line-soft);
+  background-color: var(--qa-paper);
+}
+.content > p.not-prose + .qa-profile {
+  margin-top: 2.5rem;
+}
+
+/* Idiomas: cada uno con su tono suave */
+.qa-pill--lang {
+  border-color: transparent;
+}
+.qa-pill--lang-es {
+  background-color: #fbf0cc;
+  color: #7a5800 !important;
+}
+.qa-pill--lang-en {
+  background-color: #fbe3e8;
+  color: #a10d2a !important;
+}
+.qa-pill--lang-fr {
+  background-color: #e2ebf8;
+  color: #1d4f91 !important;
+}
+.dark .qa-pill--lang-es {
+  background-color: rgba(234, 190, 60, 0.16);
+  color: #f0cf6e !important;
+}
+.dark .qa-pill--lang-en {
+  background-color: rgba(236, 106, 131, 0.16);
+  color: #f29aab !important;
+}
+.dark .qa-pill--lang-fr {
+  background-color: rgba(96, 150, 230, 0.16);
+  color: #9cbdf0 !important;
+}
+.content .qa-profile__name,
+.qa-profile__name {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--qa-serif);
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+  scroll-margin-top: 6rem;
+}
+.qa-profile__role {
+  margin-top: 0.375rem;
+  font-size: var(--qa-text-small);
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+.qa-profile .qa-pills {
+  margin-top: 1rem;
+}
+.qa-profile__bio {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--qa-line-soft);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--qa-ink);
+}
+.qa-profile__bio p {
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------
+   8. Maquetación de páginas
+   ------------------------------------------------------------------------- */
+.qa-home main {
+  max-width: var(--hextra-max-page-width) !important;
+}
+
+.qa-spacer {
+  height: 2.5rem;
+}
+
+.qa-page-header {
+  padding: 2.5rem 0 2rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--qa-line);
+}
+.qa-page-title {
+  margin: 0;
+  font-family: var(--qa-serif);
+  font-size: var(--qa-text-title);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+  text-wrap: balance;
+}
+.qa-page-header .qa-eyebrow {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Migas de pan */
+.qa-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+  margin-bottom: 1.25rem;
+  font-size: var(--qa-text-small);
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+.qa-breadcrumb a {
+  color: var(--qa-smoke);
+  text-decoration: none;
+}
+.qa-breadcrumb a:hover {
+  color: var(--qa-accent);
+}
+.qa-breadcrumb svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  opacity: 0.6;
+}
+.qa-breadcrumb [aria-current] {
+  color: var(--qa-ink);
+}
+
+/* Índice lateral (TOC) */
+.hextra-toc {
+  font-size: var(--qa-text-small);
+  letter-spacing: var(--qa-track-small);
+}
+.hextra-toc a {
+  color: var(--qa-smoke) !important;
+}
+.hextra-toc a:hover {
+  color: var(--qa-accent) !important;
+}
+.hextra-toc a.hextra-toc-active,
+.hextra-toc a[aria-current] {
+  color: var(--qa-ink) !important;
+}
+.hextra-toc p.hx\:font-semibold {
+  margin-top: 2.5rem;
+  font-size: var(--qa-text-caption);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--qa-smoke);
+}
+.hextra-toc .hx\:sticky.hx\:bottom-0 {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* -------------------------------------------------------------------------
+   9. Contenido (prosa de las páginas Markdown)
+   ------------------------------------------------------------------------- */
+.content {
+  font-size: var(--qa-text-prose);
+  line-height: 1.7;
+  letter-spacing: var(--qa-track-large);
+  color: var(--qa-ink);
+}
+
+.content :where(h1):not(:where(.not-prose, .not-prose *)) {
+  font-family: var(--qa-serif);
+  font-weight: 400;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+}
+.content :where(h2):not(:where(.not-prose, .not-prose *)) {
+  margin-top: 3rem;
+  padding-bottom: 0.5rem;
+  border-color: var(--qa-line);
+  font-family: var(--qa-serif);
+  font-size: clamp(1.625rem, 1.3rem + 1.2vw, 2.125rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+}
+.content :where(h3):not(:where(.not-prose, .not-prose *)) {
+  margin-top: 2.75rem;
+  font-family: var(--qa-serif);
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+}
+.content :where(h4, h5, h6):not(:where(.not-prose, .not-prose *)) {
+  margin-top: 2rem;
+  font-family: var(--qa-sans);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: var(--qa-track-large);
+  color: var(--qa-ink);
+}
+
+.content :where(a):not(:where(.not-prose, .not-prose *, .qa-btn, .qa-pill, .qa-card, .hextra-card, .subheading-anchor)) {
+  color: var(--qa-accent);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, var(--qa-accent) 40%, transparent);
+  transition: text-decoration-color 0.15s ease;
+}
+.content :where(a):not(:where(.not-prose, .not-prose *, .qa-btn, .qa-pill, .qa-card, .hextra-card, .subheading-anchor)):hover {
+  text-decoration-color: var(--qa-accent);
+}
+
+.content strong {
+  font-weight: 600;
+  color: var(--qa-ink);
+}
+
+.content :where(ul):not(:where(.not-prose, .not-prose *)) > li::marker {
+  color: var(--qa-accent);
+}
+
+.content hr {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--qa-line);
+}
+
+/* Citas en prosa */
+.content :where(blockquote):not(:where(.not-prose, .not-prose *)) {
+  margin: 2rem 0;
+  padding: 0.25rem 0 0.25rem 1.5rem;
+  border-left: 2px solid var(--qa-accent);
+  font-family: var(--qa-serif);
+  font-style: normal;
+  font-size: 1.1875rem;
+  line-height: 1.55;
+  letter-spacing: -0.005em;
+  color: var(--qa-ink);
+}
+
+/* Tablas */
+.content :where(table):not(:where(.not-prose, .not-prose *)) {
+  border: 1px solid var(--qa-line-soft);
+  border-radius: var(--qa-radius);
+  background-color: var(--qa-paper);
+  font-size: var(--qa-text-body);
+  letter-spacing: var(--qa-track-small);
+}
+.content table thead {
+  background-color: var(--qa-sand) !important;
+}
+.content table th,
+.content table td {
+  border: 0 !important;
+  border-bottom: 1px solid var(--qa-line-soft) !important;
+  padding: 0.75rem 1rem !important;
+}
+.content table tr {
+  border: 0 !important;
+  background: transparent !important;
+}
+.content table tbody tr:nth-child(even) {
+  background-color: color-mix(in srgb, var(--qa-sand) 55%, var(--qa-paper)) !important;
+}
+
+/* Notas al pie */
+.content .footnotes {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--qa-line);
+  font-size: var(--qa-text-small);
+  line-height: 1.6;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-smoke);
+}
+.content .footnotes hr {
+  display: none;
+}
+
+/* Subtítulo de hero de Hextra → entradilla editorial */
+.content p.not-prose.hx\:text-xl {
+  max-width: 44rem;
+  font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem) !important;
+  line-height: 1.6;
+  letter-spacing: var(--qa-track-large);
+  color: var(--qa-smoke) !important;
+}
+.content p.not-prose.hx\:text-xl strong {
+  font-weight: 500;
+  color: var(--qa-ink);
+}
+
+/* Espaciadores heredados del contenido */
+.content > br.hx\:sm\:block:first-child {
+  display: none;
+}
+
+/* Botón de hero de Hextra → píldora oscura */
+.content a.not-prose.hx\:rounded-full {
+  padding: 0.5rem 1.125rem !important;
+  background-color: var(--qa-charcoal) !important;
+  color: var(--qa-on-charcoal) !important;
+  font-size: var(--qa-text-body);
+  font-weight: 500;
+  letter-spacing: var(--qa-track-small);
+}
+.content a.not-prose.hx\:rounded-full:hover {
+  background-color: var(--qa-accent) !important;
+}
+
+/* Callout de Hextra → franja de contacto sobre papel.
+   Todos los callouts del sitio son de tipo "error" (llamadas a la acción). */
+.content div.hx\:rounded-lg.hx\:border:has(> div > svg) {
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.25rem 0.75rem 0 !important;
+  border: 1px solid var(--qa-line-soft) !important;
+  border-radius: var(--qa-radius) !important;
+  background-color: var(--qa-paper) !important;
+  color: var(--qa-ink) !important;
+  font-size: 0.9375rem;
+  letter-spacing: var(--qa-track-small);
+}
+.content div.hx\:rounded-lg.hx\:border:has(> div > svg) > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.875rem 0 0.75rem;
+  padding: 0 !important;
+  flex-shrink: 0;
+  border-radius: var(--qa-pill);
+  background-color: var(--qa-accent-soft);
+  color: var(--qa-accent);
+}
+.content div.hx\:rounded-lg.hx\:border:has(> div > svg) > div:first-child svg {
+  height: 1rem;
+  width: 1rem;
+}
+.content div.hx\:rounded-lg.hx\:border:has(> div > svg) a {
+  color: var(--qa-ink) !important;
+  font-weight: 500;
+  text-decoration-color: var(--qa-accent) !important;
+}
+.content div.hx\:rounded-lg.hx\:border:has(> div > svg) a:hover {
+  color: var(--qa-accent) !important;
+}
+
+/* Badges de Hextra → píldoras neutras */
+.hextra-badge > div {
+  padding: 0.125rem 0.625rem !important;
+  border: 1px solid var(--qa-line) !important;
+  background-color: var(--qa-paper) !important;
+  color: var(--qa-ink) !important;
+  font-size: var(--qa-text-caption) !important;
+  font-weight: 500;
+  letter-spacing: var(--qa-track-small);
+}
+
+/* Desplegables (details) → acordeón de línea fina */
+.content details {
+  margin-top: 0.5rem !important;
+  padding: 0 !important;
+  border: 1px solid var(--qa-line-soft);
+  border-radius: var(--qa-radius) !important;
+  background-color: var(--qa-paper) !important;
+}
+.content details > summary {
+  padding: 0.875rem 1.25rem !important;
+  border-radius: var(--qa-radius) !important;
+}
+.content details > summary:hover {
+  background-color: color-mix(in srgb, var(--qa-sand) 55%, var(--qa-paper)) !important;
+}
+.content details > summary strong {
+  font-family: var(--qa-serif);
+  font-size: 1.1875rem !important;
+  font-weight: 400;
+  letter-spacing: var(--qa-track-serif);
+}
+.content details[open] > summary {
+  border-bottom: 1px solid var(--qa-line-soft);
+  border-radius: var(--qa-radius) var(--qa-radius) 0 0 !important;
+}
+.content details > div {
+  padding: 1rem 1.25rem 1.25rem !important;
+  font-size: 0.9375rem;
+}
+.content details ul {
+  margin-top: 0 !important;
+}
+
+/* Pasos (steps) */
+.hextra-steps {
+  border-color: var(--qa-line) !important;
+}
+.hextra-steps :where(h2, h3, h4, h5, h6):not(.no-step-marker)::before {
+  background-color: var(--qa-paper) !important;
+  border-color: var(--qa-canvas) !important;
+  color: var(--qa-accent) !important;
+  font-family: var(--qa-sans);
+  font-size: var(--qa-text-small) !important;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+/* Tarjetas de Hextra */
+.hextra-card {
+  border-color: var(--qa-line-soft) !important;
+  background-color: var(--qa-paper) !important;
+  border-radius: var(--qa-radius) !important;
+}
+.hextra-card:hover {
+  border-color: var(--qa-ink) !important;
+}
+.hextra-card .hextra-card-icon {
+  font-weight: 500;
+  letter-spacing: var(--qa-track-small);
+  color: var(--qa-ink) !important;
+}
+.hextra-card .hextra-card-icon svg {
+  color: var(--qa-accent) !important;
+}
+
+/* Código en línea */
+.content :where(code):not(:where(.hextra-code-block code, .not-prose, .not-prose *)) {
+  border-color: var(--qa-line-soft);
+  background-color: var(--qa-sand);
+}
+
+/* Enlace "Contacte con nosotros" destacado al inicio de las áreas */
+.content > p:first-child > strong:only-child > a:only-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.875rem;
+  border: 1px solid var(--qa-line);
+  border-radius: var(--qa-pill);
+  background-color: var(--qa-paper);
+  color: var(--qa-ink) !important;
+  font-size: var(--qa-text-small);
+  font-weight: 500;
+  letter-spacing: var(--qa-track-small);
+  text-decoration: none !important;
+}
+.content > p:first-child > strong:only-child > a:only-child:hover {
+  border-color: var(--qa-ink);
+}
+.content > p:first-child > strong:only-child > a:only-child svg {
+  color: var(--qa-accent);
+}
+
+/* -------------------------------------------------------------------------
+   10. Pie de página
+   ------------------------------------------------------------------------- */
+.hextra-footer,
+.dark .hextra-footer {
+  background-color: var(--qa-canvas) !important;
+}
+
+.qa-footer {
+  border-top: 1px solid var(--qa-line);
+  color: var(--qa-smoke);
+  font-size: var(--qa-text-body);
+  letter-spacing: var(--qa-track-small);
+}
+.qa-footer__inner {
+  max-width: var(--hextra-max-footer-width);
+  margin: 0 auto;
+  padding: 4rem max(env(safe-area-inset-right), 1.5rem) 2rem max(env(safe-area-inset-left), 1.5rem);
+}
+.qa-footer__grid {
+  display: grid;
+  gap: 2.5rem;
+}
+@media (min-width: 48rem) {
+  .qa-footer__grid {
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+.qa-footer__brand img {
+  height: 2.5rem;
+  width: auto;
+}
+.qa-footer__heading {
+  margin-bottom: 1rem;
+  font-size: var(--qa-text-caption);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--qa-ink);
+}
+.qa-footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 1.5;
+}
+.qa-footer a {
+  color: var(--qa-smoke);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.qa-footer a:hover {
+  color: var(--qa-accent);
+}
+.qa-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--qa-line);
+  font-size: var(--qa-text-small);
+}
+.qa-footer__switches {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* Botones que abren los selectores de idioma y de modo (solo los botones,
+   no las opciones de dentro: así ambos desplegables son idénticos) */
+.qa-footer__switches .hextra-language-switcher,
+.qa-footer__switches .hextra-theme-toggle {
+  height: 2rem !important;
+  padding: 0 0.875rem !important;
+  border: 1px solid var(--qa-line) !important;
+  border-radius: var(--qa-pill) !important;
+  background-color: transparent !important;
+  color: var(--qa-ink) !important;
+  font-size: var(--qa-text-small) !important;
+  letter-spacing: var(--qa-track-small);
+}
+.qa-footer__switches .hextra-language-switcher:hover,
+.qa-footer__switches .hextra-theme-toggle:hover {
+  background-color: var(--qa-paper) !important;
+}
+
+/* Opciones de los desplegables: mismo aspecto en ambos (los de modo son
+   <button> y los de idioma <a>; se igualan tipografía y alineación) */
+.hextra-language-options [role="menuitem"],
+.hextra-theme-toggle-options [role="menuitemradio"] {
+  font-family: var(--qa-sans);
+  font-size: var(--qa-text-body);
+  font-weight: 400;
+  letter-spacing: var(--qa-track-small);
+  line-height: 1.43;
+  text-align: left;
+  color: var(--qa-ink) !important;
+  background-color: transparent;
+}
+.hextra-language-options [role="menuitem"]:hover,
+.hextra-theme-toggle-options [role="menuitemradio"]:hover {
+  color: var(--qa-ink) !important;
+  background-color: var(--qa-sand) !important;
+}
+
+/* -------------------------------------------------------------------------
+   11. Movimiento reducido
+   ------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .qa-btn,
+  .qa-card,
+  .qa-card__more svg {
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+   qa/split — panel solo de texto (sin imagen): más vistoso
+   Fondo sand, título serif grande con filete de acento, listas con
+   marcadores de acento entre líneas finas y el último enlace como botón.
+   ========================================================================== */
+.qa-split__panel:not(:has(img)),
+.qa-split__inline:not(:has(img)) {
+  align-items: stretch;
+  justify-content: flex-end;
+  background-color: var(--qa-sand);
+  border-color: transparent;
+  border-radius: var(--qa-radius);
+  background-image: radial-gradient(circle at 100% 0%, var(--qa-accent-soft), transparent 55%);
+}
+@media (min-width: 64rem) {
+  .qa-split__panel:not(:has(img)) {
+    padding: 3rem;
+  }
+}
+.qa-split__panel:not(:has(img)) .qa-split__body,
+.qa-split__inline:not(:has(img)) .qa-split__body {
+  max-width: none;
+  width: 100%;
+  font-size: var(--qa-text-prose);
+  color: var(--qa-smoke);
+}
+.qa-split__body h3 {
+  margin: 0 0 1.25rem;
+  font-family: var(--qa-serif);
+  font-weight: 400;
+  font-size: clamp(1.875rem, 1.4rem + 1.6vw, 2.75rem);
+  line-height: 1.1;
+  letter-spacing: var(--qa-track-serif);
+  color: var(--qa-ink);
+}
+.qa-split__body h3::before {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin-bottom: 1.25rem;
+  background-color: var(--qa-accent);
+}
+.qa-split__body ul {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--qa-line);
+}
+.qa-split__body li {
+  position: relative;
+  margin: 0;
+  padding: 0.75rem 0 0.75rem 1.75rem;
+  border-bottom: 1px solid var(--qa-line);
+  color: var(--qa-ink);
+}
+.qa-split__body li::before {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  top: 1.3rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: var(--qa-pill);
+  background-color: var(--qa-accent);
+}
+/* Párrafo final que solo contiene un enlace → botón píldora negro */
+.qa-split__body > p:last-child:has(> a:only-child) {
+  margin-top: 2rem;
+}
+.qa-split__body > p:last-child > a:only-child {
+  display: inline-flex;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  border-radius: var(--qa-pill);
+  background-color: var(--qa-charcoal);
+  color: var(--qa-on-charcoal);
+  font-size: var(--qa-text-body);
+  letter-spacing: var(--qa-track-small);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.qa-split__body > p:last-child > a:only-child:hover {
+  background-color: var(--qa-accent);
+  color: #fff;
+}
+/* Entrada escalonada al cambiar de área */
+@media (prefers-reduced-motion: no-preference) {
+  .qa-split__panel[data-active] .qa-split__body > * {
+    animation: qa-split-rise 0.5s ease-out both;
+  }
+  .qa-split__panel[data-active] .qa-split__body > :nth-child(2) { animation-delay: 0.06s; }
+  .qa-split__panel[data-active] .qa-split__body > :nth-child(3) { animation-delay: 0.12s; }
+  .qa-split__panel[data-active] .qa-split__body > :nth-child(n+4) { animation-delay: 0.18s; }
+}
+@keyframes qa-split-rise {
+  from { opacity: 0; transform: translateY(0.75rem); }
+  to { opacity: 1; transform: none; }
+}
+
+/* qa/split — opciones de fondo (bg, textColor) y sin borde (border="false") */
+.qa-split__panel.qa-split-skin,
+.qa-split__inline.qa-split-skin {
+  background-color: var(--qa-split-bg);
+  background-image: none;
+}
+.qa-split-skin--paper { --qa-split-bg: var(--qa-paper); }
+.qa-split-skin--sand { --qa-split-bg: var(--qa-sand); }
+.qa-split-skin--accent { --qa-split-bg: #a10d2a; }
+.qa-split-skin--dark { --qa-split-bg: #121212; }
+/* Texto claro: se redefinen los colores dentro del panel */
+.qa-split-skin--light {
+  --qa-ink: #ffffff;
+  --qa-smoke: rgba(255, 255, 255, 0.78);
+  --qa-line: rgba(255, 255, 255, 0.22);
+  --qa-charcoal: #ffffff;
+  --qa-on-charcoal: #121212;
+  --qa-accent: #ec6a83;
+}
+.qa-split-skin--accent.qa-split-skin--light {
+  --qa-accent: rgba(255, 255, 255, 0.8);
+}
+.qa-split-skin--dark-text {
+  --qa-ink: #121212;
+  --qa-smoke: #595959;
+  --qa-line: rgba(0, 0, 0, 0.14);
+  --qa-charcoal: #121212;
+  --qa-on-charcoal: #ffffff;
+  --qa-accent: #a10d2a;
+}
+.qa-split-skin .qa-split__body > p:last-child > a:only-child:hover {
+  color: var(--qa-on-charcoal);
+}
+.qa-split-skin--accent .qa-split__body > p:last-child > a:only-child:hover {
+  background-color: #121212;
+  color: #ffffff;
+}
+.qa-split--noborder .qa-split__panel,
+.qa-split--noborder .qa-split__inline {
+  border-color: transparent;
+}
+
+/* qa/split style="minimal" — blanco, sin borde, título arriba, sin adornos */
+.qa-split--minimal .qa-split__panel,
+.qa-split--minimal .qa-split__inline,
+.qa-split--minimal .qa-split__panel.qa-split-skin,
+.qa-split--minimal .qa-split__inline.qa-split-skin {
+  justify-content: flex-start;
+  align-items: stretch;
+  border-color: transparent;
+  border-radius: 0;
+  background-color: var(--qa-split-bg, var(--qa-canvas));
+  background-image: none;
+}
+@media (min-width: 64rem) {
+  .qa-split--minimal .qa-split__panel:not(:has(img)) {
+    padding: 0.25rem 0 0;
+  }
+}
+.qa-split--minimal .qa-split__inline:not(:has(img)) {
+  padding: 0;
+}
+.qa-split--minimal .qa-split__body {
+  font-size: var(--qa-text-prose);
+  color: var(--qa-smoke);
+}
+.qa-split--minimal .qa-split__body h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.25rem);
+}
+.qa-split--minimal .qa-split__body h3::before {
+  content: none;
+}
+.qa-split--minimal .qa-split__body ul {
+  margin-top: 1.25rem;
+}
+.qa-split--minimal .qa-split__body li {
+  padding-left: 0;
+}
+.qa-split--minimal .qa-split__body li::before {
+  content: none;
+}
+.qa-split--minimal .qa-split__body > p:last-child:has(> a:only-child) {
+  margin-top: 1.5rem;
+}
+.qa-split--minimal .qa-split__body > p:last-child > a:only-child,
+.qa-split--minimal .qa-split__body > p:last-child > a:only-child:hover {
+  display: inline;
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--qa-ink);
+  font-size: var(--qa-text-body);
+  text-decoration: underline;
+  text-decoration-color: var(--qa-line);
+  text-underline-offset: 0.3em;
+}
+.qa-split--minimal .qa-split__body > p:last-child > a:only-child:hover {
+  color: var(--qa-accent);
+  text-decoration-color: currentColor;
+}
+
+/* qa/split style="minimal" en escritorio: el título del panel, a la misma
+   altura y tamaño que el título de la sección (columna izquierda arriba) */
+@media (min-width: 64rem) {
+  .qa-split--minimal .qa-split__nav {
+    justify-content: flex-start;
+  }
+  .qa-split--minimal .qa-split__head .qa-eyebrow {
+    line-height: 1.25rem;
+  }
+  .qa-split--minimal .qa-split__panel:not(:has(img)) {
+    padding: 0;
+  }
+  /* Con antetítulo: se baja el panel lo que ocupa el antetítulo + su separación */
+  .qa-split--minimal:has(.qa-split__head .qa-eyebrow) .qa-split__panel:not(:has(img)) {
+    padding-top: 1.75rem;
+  }
+}
+.qa-split--minimal .qa-split__body h3 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+
+/* qa/split divider="true": línea vertical en el centro del hueco entre columnas */
+@media (min-width: 64rem) {
+  .qa-split--divider {
+    position: relative;
+  }
+  .qa-split--divider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: var(--qa-line);
+    pointer-events: none;
+  }
 }

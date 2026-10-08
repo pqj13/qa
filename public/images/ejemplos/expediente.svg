@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" font-family="Georgia, serif">
+  <!-- Ilustración de muestra: vista de un expediente (sustituir por una imagen real) -->
+  <rect width="1200" height="760" rx="10" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="1199" height="759" rx="10" fill="none" stroke="#dbdad7"/>
+  <!-- Barra superior -->
+  <rect x="0" y="0" width="1200" height="56" rx="10" fill="#ffffff"/>
+  <line x1="0" y1="56" x2="1200" y2="56" stroke="#dbdad7"/>
+  <circle cx="32" cy="28" r="9" fill="#a10d2a"/>
+  <text x="54" y="34" font-size="17" fill="#121212">Quintana Abogados</text>
+  <rect x="900" y="16" width="200" height="24" rx="12" fill="#f1f0ee"/>
+  <circle cx="1150" cy="28" r="12" fill="#e6e4e0"/>
+  <!-- Lateral -->
+  <line x1="220" y1="56" x2="220" y2="760" stroke="#dbdad7"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#616161">
+    <rect x="16" y="84" width="188" height="32" rx="6" fill="#f1f0ee"/>
+    <text x="32" y="105" fill="#121212">Expedientes</text>
+    <text x="32" y="149">Agenda</text>
+    <text x="32" y="189">Documentos</text>
+    <text x="32" y="229">Clientes</text>
+    <text x="32" y="269">Honorarios</text>
+  </g>
+  <!-- Cabecera del expediente -->
+  <text x="260" y="118" font-size="34" fill="#121212">Expediente 2026/0142</text>
+  <g font-family="Arial, sans-serif" font-size="13">
+    <rect x="260" y="138" width="86" height="26" rx="13" fill="#fbe3e8"/>
+    <text x="276" y="156" fill="#a10d2a">En curso</text>
+    <rect x="356" y="138" width="70" height="26" rx="13" fill="#ffffff" stroke="#dbdad7"/>
+    <text x="374" y="156" fill="#121212">Penal</text>
+  </g>
+  <!-- Tarjetas -->
+  <g font-family="Arial, sans-serif">
+    <rect x="260" y="196" width="290" height="120" rx="8" fill="#ffffff" stroke="#dbdad7"/>
+    <text x="280" y="226" font-size="12" fill="#616161">Próxima vista</text>
+    <text x="280" y="270" font-size="30" font-family="Georgia, serif" fill="#121212">14 nov.</text>
+    <text x="280" y="296" font-size="12" fill="#616161">Juzgado de lo Penal n.º 1</text>
+    <rect x="570" y="196" width="290" height="120" rx="8" fill="#ffffff" stroke="#dbdad7"/>
+    <text x="590" y="226" font-size="12" fill="#616161">Documentos</text>
+    <text x="590" y="270" font-size="30" font-family="Georgia, serif" fill="#121212">23</text>
+    <text x="590" y="296" font-size="12" fill="#616161">4 pendientes de revisión</text>
+    <rect x="880" y="196" width="280" height="120" rx="8" fill="#ffffff" stroke="#dbdad7"/>
+    <text x="900" y="226" font-size="12" fill="#616161">Plazo</text>
+    <text x="900" y="270" font-size="30" font-family="Georgia, serif" fill="#a10d2a">5 días</text>
+    <text x="900" y="296" font-size="12" fill="#616161">Escrito de defensa</text>
+  </g>
+  <!-- Tabla -->
+  <g font-family="Arial, sans-serif" font-size="13">
+    <rect x="260" y="340" width="900" height="380" rx="8" fill="#ffffff" stroke="#dbdad7"/>
+    <rect x="261" y="341" width="898" height="44" fill="#f1f0ee"/>
+    <text x="284" y="368" fill="#616161">Fecha</text>
+    <text x="420" y="368" fill="#616161">Actuación</text>
+    <text x="900" y="368" fill="#616161">Estado</text>
+    <g fill="#121212">
+      <text x="284" y="420">07/10/2026</text><text x="420" y="420">Presentación de escrito de alegaciones</text>
+      <text x="284" y="474">02/10/2026</text><text x="420" y="474">Declaración en sede judicial</text>
+      <text x="284" y="528">25/09/2026</text><text x="420" y="528">Solicitud de diligencias de prueba</text>
+      <text x="284" y="582">18/09/2026</text><text x="420" y="582">Personación en el procedimiento</text>
+      <text x="284" y="636">15/09/2026</text><text x="420" y="636">Primera consulta con el cliente</text>
+    </g>
+    <g stroke="#e6e4e0"><line x1="261" y1="440" x2="1159" y2="440"/><line x1="261" y1="494" x2="1159" y2="494"/><line x1="261" y1="548" x2="1159" y2="548"/><line x1="261" y1="602" x2="1159" y2="602"/></g>
+    <g>
+      <rect x="900" y="404" width="84" height="24" rx="12" fill="#fbe3e8"/><text x="914" y="421" fill="#a10d2a">Pendiente</text>
+      <rect x="900" y="458" width="84" height="24" rx="12" fill="#f1f0ee"/><text x="914" y="475" fill="#121212">Hecho</text>
+      <rect x="900" y="512" width="84" height="24" rx="12" fill="#f1f0ee"/><text x="914" y="529" fill="#121212">Hecho</text>
+      <rect x="900" y="566" width="84" height="24" rx="12" fill="#f1f0ee"/><text x="914" y="583" fill="#121212">Hecho</text>
+      <rect x="900" y="620" width="84" height="24" rx="12" fill="#f1f0ee"/><text x="914" y="637" fill="#121212">Hecho</text>
+    </g>
+  </g>
+</svg>

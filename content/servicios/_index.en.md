@@ -6,34 +6,28 @@ linkTitle: Expertise
 toc: false
 breadcrumbs: true
 ---
-<br class="hx:sm:block hx:hidden" />
 {{< hextra/hero-subtitle >}}
   At Quintana Abogados, we offer services in the following areas
 {{< /hextra/hero-subtitle >}}
 
-{{% steps %}}
+<div class="qa-spacer"></div>
 
-### CRIMINAL LAW
+{{< qa/steps numbered="false" layout="line" >}}
+  {{< qa/step title="Criminal Law" >}}
+  Defense, assistance, and intervention in all types of criminal procedures and against all types of crimes.
+  {{< /qa/step >}}
+  {{< qa/step title="Family Law" >}}
+  Advice and defense in family matters: divorces, adoption of measures regarding minor children, alimony, etc.
+  {{< /qa/step >}}
+  {{< qa/step title="Civil Law" >}}
+  Advice and defense in other civil matters: inheritances, leases, evictions, claims for amounts, etc.
+  {{< /qa/step >}}
+  {{< qa/step title="Labor Law" >}}
+  Advice and defense in individual labor matters and before Social Security: dismissals, claims for amounts, permanent disability procedures, etc.
+  {{< /qa/step >}}
+  {{< qa/step title="Administrative Law" >}}
+  Advice and defense before the Administration and in judicial proceedings in the Administrative Jurisdiction.
+  {{< /qa/step >}}
+{{< /qa/steps >}}
 
-Defense, assistance, and intervention in all types of criminal procedures and against all types of crimes.
-
-### FAMILY LAW
-
-Advice and defense in family matters: divorces, adoption of measures regarding minor children, alimony, etc.
-
-### CIVIL LAW
-
-Advice and defense in other civil matters: inheritances, leases, evictions, claims for amounts, etc.
-
-### LABOR LAW
-
-Advice and defense in individual labor matters and before Social Security: dismissals, claims for amounts, permanent disability procedures, etc.
-
-### ADMINISTRATIVE LAW
-
-Advice and defense before the Administration and in judicial proceedings in the Administrative Jurisdiction.
-
-{{% /steps %}}
-
-{{< callout type="error" icon="arrow-circle-right">}} [Contact us](/contacto)
-{{< /callout >}}
+{{< qa/cta />}}

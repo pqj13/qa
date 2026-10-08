@@ -1,0 +1,16 @@
+{{- /*
+Lista editorial de pasos o elementos. Contiene shortcodes qa/step.
+
+@param {string} numbered "false" para ocultar la numeración (por defecto se numera 01, 02…).
+@param {string} start    Número por el que empieza la numeración (por defecto 1).
+@param {string} layout   "rows" (filas en columnas separadas por líneas finas, por defecto)
+                         o "line" (línea vertical a la izquierda con un punto por elemento).
+
+@example {{< qa/steps numbered="false" layout="line" >}}{{< qa/step title="Penal" >}}Texto{{< /qa/step >}}{{< /qa/steps >}}
+*/ -}}
+{{- $numbered := ne (.Get "numbered") "false" -}}
+{{- $start := int (.Get "start" | default 1) -}}
+{{- $line := eq (.Get "layout") "line" -}}
+<div class="qa-steps not-prose{{ if not $numbered }} qa-steps--plain{{ end }}{{ if $line }} qa-steps--line{{ end }}"{{ if ne $start 1 }} style="counter-reset: qa-step {{ sub $start 1 }}"{{ end }}>
+{{- .Inner -}}
+</div>

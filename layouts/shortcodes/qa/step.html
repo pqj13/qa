@@ -1,0 +1,33 @@
+{{- /*
+Fila de una lista qa/steps. Si lleva enlace, toda la fila es clicable.
+
+@param {string} title Título serif (admite Markdown).
+@param {string} label Texto que sustituye al número automático, p. ej. "Fase 1" (opcional).
+@param {string} link  Enlace (opcional).
+@param {string} more  Texto del enlace con flecha (opcional; requiere link).
+
+@example {{< qa/step title="Penal" link="servicios/penal" more="Más información" >}}Texto{{< /qa/step >}}
+*/ -}}
+{{- $link := .Get "link" | default "" -}}
+{{- if $link -}}
+<a class="qa-step qa-step--link" href="{{ partial "qa/href.html" $link }}"{{ if hasPrefix $link "http" }} target="_blank" rel="noreferrer"{{ end }}>
+  {{- template "qa-step-body" . -}}
+</a>
+{{- else -}}
+<div class="qa-step">
+  {{- template "qa-step-body" . -}}
+</div>
+{{- end -}}
+
+{{- define "qa-step-body" -}}
+  <span class="qa-step__num" aria-hidden="true">{{ .Get "label" }}</span>
+  <h3 class="qa-step__title">{{ .Get "title" | markdownify }}</h3>
+  <div class="qa-step__body">
+  {{- with .Inner }}
+    <div class="qa-step__text">{{ . | $.Page.RenderString (dict "display" "block") }}</div>
+  {{- end }}
+  {{- with .Get "more" }}
+    <span class="qa-step__more">{{ . }}{{ partial "utils/icon.html" (dict "name" "arrow-right" "attributes" "aria-hidden=true") }}</span>
+  {{- end }}
+  </div>
+{{- end -}}

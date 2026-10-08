@@ -48,7 +48,6 @@ En Quintana Abogados contamos con más de 40 años de experiencia en procedimien
 
 Nuestro enfoque combina rigor técnico, protección del interés de los menores y acompañamiento cercano en un proceso que suele ser emocionalmente complejo.
 
-{{< callout type="error" icon="arrow-circle-right">}} Si se enfrenta a un problema de Familia y necesita asistencia jurídica, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.
-
-[**Contacte con nosotros**](/contacto)
-{{< /callout >}}
+{{< qa/cta >}}
+Si se enfrenta a un problema de Familia y necesita asistencia jurídica, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.
+{{< /qa/cta >}}

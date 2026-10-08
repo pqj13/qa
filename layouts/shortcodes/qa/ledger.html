@@ -1,0 +1,11 @@
+{{- /*
+Lista en formato de libro de registro: filas numeradas con línea fina.
+
+@example {{< qa/ledger >}}
+* Primer elemento
+* Segundo elemento
+{{< /qa/ledger >}}
+*/ -}}
+<div class="qa-ledger not-prose">
+{{ .InnerDeindent | .Page.RenderString (dict "display" "block") }}
+</div>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="420" viewBox="0 0 560 420" font-family="Arial, sans-serif">
+  <!-- Ilustración de muestra: agenda de primera consulta -->
+  <rect x="60" y="50" width="440" height="320" rx="10" fill="#ffffff" stroke="#dbdad7"/>
+  <text x="90" y="98" font-family="Georgia, serif" font-size="26" fill="#121212">Octubre 2026</text>
+  <g font-size="12" fill="#616161">
+    <text x="92" y="138">L</text><text x="150" y="138">M</text><text x="208" y="138">X</text><text x="266" y="138">J</text><text x="324" y="138">V</text>
+  </g>
+  <g fill="#f1f0ee">
+    <rect x="84" y="152" width="46" height="40" rx="6"/><rect x="142" y="152" width="46" height="40" rx="6"/><rect x="200" y="152" width="46" height="40" rx="6"/><rect x="258" y="152" width="46" height="40" rx="6"/><rect x="316" y="152" width="46" height="40" rx="6"/>
+    <rect x="84" y="202" width="46" height="40" rx="6"/><rect x="142" y="202" width="46" height="40" rx="6"/><rect x="258" y="202" width="46" height="40" rx="6"/><rect x="316" y="202" width="46" height="40" rx="6"/>
+    <rect x="84" y="252" width="46" height="40" rx="6"/><rect x="142" y="252" width="46" height="40" rx="6"/><rect x="200" y="252" width="46" height="40" rx="6"/><rect x="258" y="252" width="46" height="40" rx="6"/><rect x="316" y="252" width="46" height="40" rx="6"/>
+  </g>
+  <rect x="200" y="202" width="46" height="40" rx="6" fill="#a10d2a"/>
+  <text x="216" y="227" font-size="13" fill="#ffffff">14</text>
+  <rect x="380" y="152" width="96" height="140" rx="8" fill="#ffffff" stroke="#dbdad7"/>
+  <text x="392" y="176" font-size="11" fill="#616161">Cita</text>
+  <text x="392" y="200" font-family="Georgia, serif" font-size="20" fill="#121212">10:30</text>
+  <text x="392" y="222" font-size="11" fill="#616161">Despacho</text>
+  <rect x="392" y="240" width="72" height="22" rx="11" fill="#fbe3e8"/>
+  <text x="402" y="255" font-size="11" fill="#a10d2a">Confirmada</text>
+  <line x1="84" y1="320" x2="476" y2="320" stroke="#e6e4e0"/>
+  <text x="84" y="346" font-size="12" fill="#616161">c/ Santander 11, 2º C · Burgos</text>
+</svg>

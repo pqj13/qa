@@ -41,7 +41,6 @@ El plazo para reclamar es de un año contado desde que la empresa debió pagar o
 
 En Quintana Abogados, despacho de abogados ofrecemos asesoramiento y defensa jurídica integral en todo tipo de conflictos laborales. Nuestro enfoque combina solvencia técnica, conocimiento actualizado de la normativa laboral y un trato cercano que garantiza soluciones claras, seguras y adaptadas a cada caso.
 
-{{< callout type="error" icon="arrow-circle-right">}} Si se enfrenta a un problema de laboral y necesita asistencia jurídica, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.
-
-[**Contacte con nosotros**](/contacto)
-{{< /callout >}}
+{{< qa/cta >}}
+Si se enfrenta a un problema de laboral y necesita asistencia jurídica, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.
+{{< /qa/cta >}}

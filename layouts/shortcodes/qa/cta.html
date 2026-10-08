@@ -1,0 +1,30 @@
+{{- /*
+Banda de contacto oscura con el teléfono del despacho (params.contact) y un botón.
+Sin parámetros toma el título y el botón de i18n (ctaTitle, ctaButton), así que
+basta con cambiarlos allí para que cambien en todas las páginas.
+
+@param {string} title   Título (por defecto, i18n ctaTitle).
+@param {string} button  Texto del botón (por defecto, i18n ctaButton; "" lo oculta).
+@param {string} link    Enlace del botón (por defecto, contacto).
+@param {string} intl    "true" / "false": teléfono en formato internacional
+                        (por defecto, sí en inglés y francés, no en español).
+@param {string} eyebrow Antetítulo (opcional; por defecto no hay).
+Contenido interior: texto bajo el título (opcional, admite Markdown).
+
+@example {{< qa/cta />}}
+@example {{< qa/cta >}}Texto propio de esta página.{{< /qa/cta >}}
+*/ -}}
+{{- $text := "" -}}
+{{- with .Inner }}{{ $text = . | $.Page.RenderString (dict "display" "block") }}{{ end -}}
+{{- $intl := ne site.Language.Lang "es" -}}
+{{- with .Get "intl" }}{{ $intl = eq . "true" }}{{ end -}}
+{{- $button := T "ctaButton" -}}
+{{- with .Params }}{{ if isset . "button" }}{{ $button = index . "button" }}{{ end }}{{ end -}}
+{{- partial "qa/cta.html" (dict
+  "eyebrow" (.Get "eyebrow")
+  "title" (.Get "title" | default (T "ctaTitle"))
+  "text" $text
+  "button" $button
+  "link" (.Get "link" | default "contacto")
+  "intl" $intl
+) -}}

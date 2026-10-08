@@ -1,0 +1,25 @@
+{{- /* Banda de contacto. La usan el shortcode qa/cta y la plantilla de noticias.
+     Recibe un dict: eyebrow, title, text (HTML ya renderizado), button, link, intl (bool). */ -}}
+{{- $contact := site.Params.contact -}}
+{{- $phone := cond (.intl | default false) ($contact.phoneIntl | default $contact.phone) $contact.phone -}}
+<section class="qa-cta not-prose">
+  <div>
+  {{- with .eyebrow }}
+    <span class="qa-eyebrow">{{ . }}</span>
+  {{- end }}
+    <h2 class="qa-cta__title">{{ .title | markdownify }}</h2>
+  {{- with .text }}
+    <div class="qa-cta__text">{{ . }}</div>
+  {{- end }}
+  </div>
+  <div class="qa-cta__aside">
+  {{- with $phone }}
+    <a class="qa-cta__phone" href="tel:{{ $contact.phoneLink }}">{{ . }}</a>
+  {{- end }}
+  {{- with .button }}
+    <div class="qa-actions">
+      <a class="qa-btn qa-btn--primary" href="{{ partial "qa/href.html" ($.link | default "contacto") }}">{{ . }}{{ partial "utils/icon.html" (dict "name" "arrow-right" "attributes" "aria-hidden=true") }}</a>
+    </div>
+  {{- end }}
+  </div>
+</section>

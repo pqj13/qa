@@ -1,0 +1,54 @@
+{{- /*
+Imagen destacada a lo ancho, como la que aparece en la portada de midday.ai al
+hacer scroll: un fondo (color, degradado, imagen o vídeo) que ocupa todo el
+ancho y, centrada encima, la imagen principal. Aparece con un suave efecto al
+entrar en pantalla.
+
+@param {string} src      Imagen principal, centrada (opcional si solo se quiere el fondo).
+@param {string} alt      Texto alternativo de la imagen principal.
+@param {string} bg       Fondo: "dark" (por defecto, negro con grano), "sand", "paper", "accent",
+                         un color CSS ("#1d1d1f"), o una imagen ("/images/fondo.jpg").
+@param {string} video    Vídeo de fondo .mp4 (opcional; se reproduce en bucle y sin sonido).
+@param {string} width    "page" (ancho de la página, por defecto) o "full" (todo el ancho de la ventana).
+@param {string} height   Alto del bloque (CSS). Por defecto se adapta: de 420px en móvil a 900px.
+@param {string} size     Ancho máximo de la imagen principal en %, por defecto 85.
+@param {string} fit      "contain" (imagen principal entera, por defecto) o "cover" (la imagen
+                         principal rellena todo el bloque).
+@param {string} caption  Pie de foto bajo el bloque (opcional, admite Markdown).
+@param {string} animate  "false" para desactivar el efecto de aparición.
+
+@example {{< qa/showcase src="/images/despacho.jpg" alt="Despacho" bg="dark" >}}
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $bg := .Get "bg" | default "dark" -}}
+{{- $video := .Get "video" -}}
+{{- $width := .Get "width" | default "page" -}}
+{{- $fit := .Get "fit" | default "contain" -}}
+{{- $presets := slice "dark" "sand" "paper" "accent" -}}
+{{- $isImageBg := or (hasPrefix $bg "/") (hasPrefix $bg "http") (findRE `\.(jpe?g|png|webp|avif|gif|svg)$` $bg) -}}
+
+{{- $class := slice "qa-showcase" "not-prose" (printf "qa-showcase--%s" $width) (printf "qa-showcase--fit-%s" $fit) -}}
+{{- if in $presets $bg }}{{ $class = $class | append (printf "qa-showcase--%s" $bg) }}{{ end -}}
+{{- if ne (.Get "animate") "false" }}{{ $class = $class | append "qa-showcase--animate" }}{{ end -}}
+
+{{- $style := slice -}}
+{{- with .Get "height" }}{{ $style = $style | append (printf "--qa-showcase-h: %s" .) }}{{ end -}}
+{{- with .Get "size" }}{{ $style = $style | append (printf "--qa-showcase-size: %s%%" .) }}{{ end -}}
+{{- if and (not (in $presets $bg)) (not $isImageBg) }}{{ $style = $style | append (printf "--qa-showcase-bg: %s" $bg) }}{{ end -}}
+
+<figure class="{{ delimit $class " " }}"{{ with $style }} style="{{ delimit . "; " | safeCSS }}"{{ end }}>
+  <div class="qa-showcase__frame">
+  {{- if $isImageBg }}
+    <img class="qa-showcase__bg" src="{{ partial "qa/src.html" $bg }}" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+  {{- end }}
+  {{- with $video }}
+    <video class="qa-showcase__bg" src="{{ partial "qa/src.html" . }}"{{ if $isImageBg }} poster="{{ partial "qa/src.html" $bg }}"{{ end }} autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+  {{- end }}
+  {{- with $src }}
+    <img class="qa-showcase__img" src="{{ partial "qa/src.html" . }}" alt="{{ $.Get "alt" }}" loading="lazy" decoding="async" />
+  {{- end }}
+  </div>
+{{- with .Get "caption" }}
+  <figcaption class="qa-showcase__caption">{{ . | markdownify }}</figcaption>
+{{- end }}
+</figure>

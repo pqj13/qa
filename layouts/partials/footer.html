@@ -1,0 +1,64 @@
+{{- /* Pie de página editorial: marca, despacho, navegación y legal. */ -}}
+{{- $contact := site.Params.contact -}}
+{{- $displayThemeToggle := site.Params.theme.displayToggle | default true -}}
+{{- $logo := site.Params.navbar.logo -}}
+
+<footer class="hextra-footer qa-footer hx:pb-[env(safe-area-inset-bottom)] hx:print:bg-transparent">
+  <div class="qa-footer__inner">
+    <div class="qa-footer__grid">
+      <div class="qa-footer__brand">
+        <a href="{{ "" | relLangURL }}" aria-label="{{ site.Title }}">
+          <img class="hx:block hx:dark:hidden" src="{{ $logo.path | relURL }}" alt="Quintana Abogados" width="{{ $logo.width }}" height="{{ $logo.height }}" loading="lazy" />
+          <img class="hx:hidden hx:dark:block" src="{{ $logo.dark | default $logo.path | relURL }}" alt="Quintana Abogados" width="{{ $logo.width }}" height="{{ $logo.height }}" loading="lazy" />
+        </a>
+      </div>
+
+      <div>
+        <p class="qa-footer__heading">{{ T "footerOffice" }}</p>
+        <div class="qa-footer__list">
+          {{- with $contact.address }}
+            <a href="{{ $contact.maps }}" target="_blank" rel="noreferrer">{{ . }}</a>
+          {{- end }}
+          {{- with $contact.phone }}
+            <a href="tel:{{ $contact.phoneLink }}">{{ T "footerPhone" }} {{ . }}</a>
+          {{- end }}
+        </div>
+      </div>
+
+      <div>
+        <p class="qa-footer__heading">{{ T "footerHours" }}</p>
+        <div class="qa-footer__list">
+          <span>{{ T "footerHoursWeek" }}</span>
+          <span>{{ T "footerHoursFriday" }}</span>
+        </div>
+      </div>
+
+      <div>
+        <p class="qa-footer__heading">{{ T "footerSite" }}</p>
+        <div class="qa-footer__list">
+          {{- range site.Menus.main }}
+            {{- if ne .Params.type "search" }}
+              {{- $link := .URL -}}
+              {{- with .PageRef }}{{ $link = relLangURL (strings.TrimPrefix "/" .) }}{{ end -}}
+              <a href="{{ $link }}">{{ or (T .Identifier) .Name }}</a>
+            {{- end }}
+          {{- end }}
+          <a href="{{ "cookies_y_privacidad/" | relLangURL }}">{{ T "footerPrivacy" }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-footer__bottom">
+      <span>© {{ now.Year }} Quintana Abogados · {{ T "footerCredits" }}</span>
+      <div class="qa-footer__switches">
+        {{- partial "language-switch.html" (dict "context" .) -}}
+        {{- if $displayThemeToggle }}{{ partial "theme-toggle.html" }}{{ end -}}
+      </div>
+    </div>
+  </div>
+</footer>
+
+{{- /* Interacciones propias: menús desplegables y qa/split */}}
+{{- $qaJS := resources.Get "js/qa.js" -}}
+{{- if hugo.IsProduction }}{{ $qaJS = $qaJS | minify | fingerprint }}{{ end }}
+<script src="{{ $qaJS.RelPermalink }}" defer{{ with $qaJS.Data.Integrity }} integrity="{{ . }}"{{ end }}></script>

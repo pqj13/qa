@@ -44,7 +44,6 @@ En Quintana Abogados ofrecemos una defensa técnica especializada tanto si es Vd
 
 Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.
 
-{{< callout type="error" icon="arrow-circle-right">}} Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.
-
-[**Contacte con nosotros**](/contacto)
-{{< /callout >}}
+{{< qa/cta >}}
+Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.
+{{< /qa/cta >}}

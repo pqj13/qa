@@ -1,1 +1,18 @@
 copyright: "© 2025 Quintana Abogados · c/ Santander 11, 2º C, 09004 Burgos · [Tel: 947 273 101](tel:+34947273101) · [Cookies y Privacidad](/cookies_y_privacidad) · Diseño web: Quintana Abogados"
+# Diseño editorial
+llamar: Llamar al despacho
+footerOffice: Despacho
+footerPhone: "Tel."
+footerHours: Horario
+footerHoursWeek: "Lunes a jueves: 9:00–14:30 y 17:00–19:30"
+footerHoursFriday: "Viernes: 9:00–14:30"
+footerSite: Navegación
+footerPrivacy: Cookies y privacidad
+footerCredits: "Diseño web: Quintana Abogados"
+
+# Noticias
+noticias: Noticias
+noticiasVacio: Todavía no hay noticias publicadas.
+# Tarjeta de contacto (qa/cta y noticias): título y botón por defecto
+ctaTitle: Contacte con nosotros
+ctaButton: Contacto

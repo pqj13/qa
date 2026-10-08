@@ -2,3 +2,21 @@ copyright: "© 2025 Quintana Abogados · c/ Santander 11, 2º C, 09004 Burgos ·
 contacto: Nous contacter
 abogados: Advocats
 servicios: Expertises
+
+# Design éditorial
+llamar: Appeler le cabinet
+footerOffice: Cabinet
+footerPhone: "Tél."
+footerHours: Horaires
+footerHoursWeek: "Du lundi au jeudi : 9h00–14h30 et 17h00–19h30"
+footerHoursFriday: "Vendredi : 9h00–14h30"
+footerSite: Navigation
+footerPrivacy: Cookies et confidentialité
+footerCredits: "Conception web : Quintana Abogados"
+
+# Actualités
+noticias: Actualités
+noticiasVacio: Aucune actualité publiée pour le moment.
+# Tarjeta de contacto (qa/cta y noticias): título y botón por defecto
+ctaTitle: Contactez-nous
+ctaButton: Nous contacter

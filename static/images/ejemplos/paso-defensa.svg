@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="420" viewBox="0 0 560 420" font-family="Arial, sans-serif">
+  <!-- Ilustración de muestra: balanza de la justicia -->
+  <line x1="280" y1="90" x2="280" y2="330" stroke="#121212" stroke-width="6" stroke-linecap="round"/>
+  <rect x="220" y="330" width="120" height="14" rx="7" fill="#121212"/>
+  <line x1="150" y1="120" x2="410" y2="120" stroke="#121212" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="280" cy="90" r="12" fill="#a10d2a"/>
+  <line x1="160" y1="120" x2="120" y2="220" stroke="#616161" stroke-width="2"/>
+  <line x1="160" y1="120" x2="200" y2="220" stroke="#616161" stroke-width="2"/>
+  <line x1="400" y1="120" x2="360" y2="220" stroke="#616161" stroke-width="2"/>
+  <line x1="400" y1="120" x2="440" y2="220" stroke="#616161" stroke-width="2"/>
+  <path d="M110 220 h100 a50 30 0 0 1 -100 0z" fill="#e6e4e0" stroke="#121212" stroke-width="3"/>
+  <path d="M350 220 h100 a50 30 0 0 1 -100 0z" fill="#fbe3e8" stroke="#121212" stroke-width="3"/>
+  <text x="280" y="386" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#121212">Defensa en juicio</text>
+</svg>

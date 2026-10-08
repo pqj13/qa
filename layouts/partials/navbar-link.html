@@ -1,0 +1,72 @@
+{{- /* Enlace de la barra de navegación, al estilo de midday.ai: texto gris sin
+     fondos ni bordes; el elemento activo, en negrita y color tinta.
+     Si el elemento tiene hijos (menú anidado, "parent:" en hugo.yaml), se
+     muestra un panel desplegable a todo el ancho bajo la barra con título y
+     descripción (params.description) e icono opcional (params.menuIcon) de cada hijo. */ -}}
+{{- $currentPage := .currentPage -}}
+{{- $link := .link -}}
+{{- $item := .item -}}
+{{- $icon := .icon -}}
+{{- $external := .external -}}
+
+{{- $active := or ($currentPage.HasMenuCurrent "main" $item) ($currentPage.IsMenuCurrent "main" $item) -}}
+{{- if and (not $active) $link -}}
+  {{- $currentPath := strings.TrimSuffix "/" $currentPage.RelPermalink -}}
+  {{- $linkPath := strings.TrimSuffix "/" $link -}}
+  {{- if and $linkPath (or (eq $currentPath $linkPath) (hasPrefix $currentPath (printf "%s/" $linkPath))) -}}
+    {{- $active = true -}}
+  {{- end -}}
+{{- end -}}
+{{- $label := or (T $item.Identifier) $item.Name -}}
+
+{{- if $item.HasChildren -}}
+{{- $menuID := printf "qa-mega-%s" ($item.Identifier | default ($item.Name | anchorize)) -}}
+<div class="qa-nav-item qa-nav-item--menu" data-qa-menu>
+  <button
+    type="button"
+    class="qa-nav-link"
+    aria-expanded="false"
+    aria-controls="{{ $menuID }}"
+    {{ if $active }}data-active="true"{{ end }}
+  >
+    {{- with $icon }}{{ partial "utils/icon" (dict "name" . "attributes" `height="1em" aria-hidden="true"`) }}{{ end -}}
+    <span>{{ $label | safeHTML }}</span>
+    {{- partial "utils/icon.html" (dict "name" "chevron-down" "attributes" `class="qa-nav-chevron" aria-hidden="true"`) -}}
+  </button>
+  <div class="qa-mega" id="{{ $menuID }}">
+    <div class="qa-mega__inner">
+      {{- with $item.Params.description }}
+        <p class="qa-mega__intro">{{ . | markdownify }}</p>
+      {{- end }}
+      <ul class="qa-mega__list">
+      {{- range $i, $child := $item.Children }}
+        {{- $childLink := $child.URL -}}
+        {{- with $child.PageRef }}{{ if hasPrefix . "/" }}{{ $childLink = relLangURL (strings.TrimPrefix "/" .) }}{{ end }}{{ end -}}
+        {{- $childExternal := hasPrefix $childLink "http" -}}
+        {{- $childActive := $currentPage.IsMenuCurrent "main" $child -}}
+        <li style="animation-delay: {{ mul $i 30 }}ms">
+          <a class="qa-mega__link" href="{{ $childLink }}"{{ if $childExternal }} target="_blank" rel="noreferrer"{{ end }}{{ if $childActive }} aria-current="page"{{ end }}>
+            {{- with $child.Params.menuIcon }}<span class="qa-mega__icon">{{ partial "utils/icon" (dict "name" . "attributes" `aria-hidden="true"`) }}</span>{{ end }}
+            <span class="qa-mega__text">
+              <span class="qa-mega__title">{{ or (T $child.Identifier) $child.Name | safeHTML }}</span>
+              {{- with $child.Params.description }}<span class="qa-mega__desc">{{ . }}</span>{{ end }}
+            </span>
+          </a>
+        </li>
+      {{- end }}
+      </ul>
+    </div>
+  </div>
+</div>
+{{- else -}}
+<a
+  title="{{ $label | safeHTML }}"
+  href="{{ $link }}"
+  {{ if $external }}target="_blank" rel="noreferrer"{{ end }}
+  {{ if $active }}aria-current="page"{{ end }}
+  class="qa-nav-link qa-nav-link--top"
+>
+  {{- with $icon }}{{ partial "utils/icon" (dict "name" . "attributes" `height="1em" aria-hidden="true"`) }}{{ end -}}
+  <span>{{ $label | safeHTML }}</span>
+</a>
+{{- end -}}

@@ -1,0 +1,16 @@
+{{- /*
+Botón en píldora.
+
+@param {string} text  Texto del botón.
+@param {string} link  Enlace.
+@param {string} style "primary" (oscuro, por defecto), "accent" (granate) o "ghost" (contorno).
+@param {string} icon  Icono de Hextra (opcional).
+
+@example {{< qa/button text="Contacto" link="contacto" style="ghost" >}}
+*/ -}}
+{{- $link := .Get "link" -}}
+{{- $external := hasPrefix $link "http" -}}
+<a class="qa-btn qa-btn--{{ .Get "style" | default "primary" }} not-prose" href="{{ partial "qa/href.html" $link }}"{{ if $external }} target="_blank" rel="noreferrer"{{ end }}>
+{{- with .Get "icon" }}{{ partial "utils/icon.html" (dict "name" . "attributes" "aria-hidden=true") }}{{ end -}}
+{{ .Get "text" }}</a>
+{{- /* Strip trailing newline. */ -}}

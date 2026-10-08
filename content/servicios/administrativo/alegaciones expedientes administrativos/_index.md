@@ -43,8 +43,6 @@ En Quintana Abogados contamos con más de 40 años de experiencia en Derecho Adm
 El Derecho Administrativo es un área jurídica especialmente compleja, sujeta a plazos estrictos, trámites formales y normativa cambiante. Por ello, disponer de abogados administrativistas con formación específica resulta fundamental para actuar a tiempo, evitar sanciones y plantear recursos bien fundamentados que incrementen las posibilidades de éxito.
 
 
-{{< callout type="error" icon="arrow-circle-right">}} 
+{{< qa/cta >}}
 Si necesita asesoramiento frente a cualquier actuación administrativa en Burgos, estamos preparados para ayudarle.
-
-[**Contacte con nosotros**](/contacto)
-{{< /callout >}}
+{{< /qa/cta >}}

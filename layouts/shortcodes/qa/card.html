@@ -1,0 +1,60 @@
+{{- /*
+Tarjeta con borde fino. Si lleva enlace, toda la tarjeta es clicable.
+
+@param {string} title Título serif.
+@param {string} label Etiqueta superior (opcional).
+@param {string} icon  Icono de Hextra (opcional).
+@param {string} link  Enlace (opcional).
+@param {string} more  Texto del enlace inferior (opcional; requiere link).
+@param {string} bg    Fondo: "paper" (blanco, por defecto), "sand", "accent", "dark"
+                      o cualquier color CSS ("#f4efe6", "rgb(…)", "hsl(…)").
+@param {string} text  Color del texto: "light" (claro) o "dark" (oscuro). Solo hace falta
+                      con colores propios; "accent" y "dark" ya usan texto claro.
+
+@example {{< qa/card title="Penal" link="servicios/penal" more="Más información" bg="sand" >}}Texto{{< /qa/card >}}
+*/ -}}
+{{- $link := .Get "link" | default "" -}}
+{{- $bg := .Get "bg" | default "" -}}
+{{- $text := .Get "text" | default "" -}}
+{{- $presets := slice "paper" "sand" "accent" "dark" -}}
+{{- $class := "qa-card" -}}
+{{- $style := "" -}}
+{{- with $link }}{{ $class = printf "%s qa-card--link" $class }}{{ end -}}
+{{- if $bg -}}
+  {{- if in $presets $bg -}}
+    {{- $class = printf "%s qa-card--%s" $class $bg -}}
+    {{- if and (not $text) (in (slice "accent" "dark") $bg) }}{{ $text = "light" }}{{ end -}}
+  {{- else -}}
+    {{- $class = printf "%s qa-card--custom" $class -}}
+    {{- $style = printf "--qa-card-bg: %s;" $bg -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $text "light" }}{{ $class = printf "%s qa-card--text-light" $class }}{{ end -}}
+{{- if eq $text "dark" }}{{ $class = printf "%s qa-card--text-dark" $class }}{{ end -}}
+{{- if $link -}}
+<a class="{{ $class }}"{{ with $style }} style="{{ . | safeCSS }}"{{ end }} href="{{ partial "qa/href.html" $link }}"{{ if hasPrefix $link "http" }} target="_blank" rel="noreferrer"{{ end }}>
+  {{- template "qa-card-body" . -}}
+</a>
+{{- else -}}
+<div class="{{ $class }}"{{ with $style }} style="{{ . | safeCSS }}"{{ end }}>
+  {{- template "qa-card-body" . -}}
+</div>
+{{- end -}}
+
+{{- define "qa-card-body" -}}
+{{- with .Get "icon" }}
+  <span class="qa-card__icon">{{ partial "utils/icon.html" (dict "name" . "attributes" "aria-hidden=true") }}</span>
+{{- end }}
+{{- with .Get "label" }}
+  <span class="qa-card__label">{{ . }}</span>
+{{- end }}
+{{- with .Get "title" }}
+  <h3 class="qa-card__title">{{ . | markdownify }}</h3>
+{{- end }}
+{{- with .Inner }}
+  <div class="qa-card__text">{{ . | $.Page.RenderString (dict "display" "block") }}</div>
+{{- end }}
+{{- with .Get "more" }}
+  <span class="qa-card__more">{{ . }}{{ partial "utils/icon.html" (dict "name" "arrow-right" "attributes" "aria-hidden=true") }}</span>
+{{- end }}
+{{- end -}}

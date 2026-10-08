@@ -60,15 +60,19 @@
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -124,15 +128,19 @@
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -181,15 +189,19 @@
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -239,15 +251,19 @@
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -296,15 +312,19 @@
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -356,15 +376,19 @@
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -422,15 +446,19 @@
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -480,15 +508,19 @@
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -547,15 +579,19 @@ Puede aplicarse de forma acumulada.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -604,15 +640,19 @@ Puede aplicarse de forma acumulada.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -668,15 +708,19 @@ Puede aplicarse de forma acumulada.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -735,15 +779,19 @@ Puede aplicarse de forma acumulada.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -791,15 +839,19 @@ Puede aplicarse de forma acumulada.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -847,15 +899,19 @@ Puede aplicarse de forma acumulada.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -912,15 +968,19 @@ Puede aplicarse de forma acumulada.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -974,15 +1034,19 @@ Puede aplicarse de forma acumulada.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1042,15 +1106,19 @@ Prisión de 6 meses a 2 años.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1098,15 +1166,19 @@ Prisión de 6 meses a 2 años.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1166,15 +1238,19 @@ Prisión de 6 meses a 2 años.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1222,15 +1298,19 @@ Prisión de 6 meses a 2 años.&lt;/p&gt;
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1290,15 +1370,19 @@ Se permite una reducción de la pena si el declarante rectifica espontáneamente
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1358,15 +1442,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1423,15 +1511,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1493,15 +1585,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1561,15 +1657,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1618,15 +1718,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1687,15 +1791,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1743,15 +1851,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1805,15 +1917,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1869,15 +1985,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1926,15 +2046,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -1993,15 +2117,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -2050,15 +2178,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -2112,15 +2244,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -2169,15 +2305,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -2227,15 +2367,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -2294,15 +2438,19 @@ exista grupo u organización, se utilicen empresas pantalla, concurra situación
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -2359,15 +2507,19 @@ Pena de 6 meses a 3 años de prisión, además de posibles penas accesorias de a
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -2419,15 +2571,19 @@ Pena de 6 meses a 3 años de prisión, además de posibles penas accesorias de a
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -2476,15 +2632,19 @@ Pena de 6 meses a 3 años de prisión, además de posibles penas accesorias de a
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>
@@ -2534,15 +2694,19 @@ favorecimiento de la inmigración irregular, de falsedad documental o de fraude 
 &lt;li&gt;Interposición de recursos ante resoluciones desfavorables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Nuestro enfoque parte de la base de un trato personalizado y directo con una comunicación transparente durante todo el proceso.&lt;/p&gt;
-&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
-  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
-
-  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
-    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contacto/&#34;&gt;&lt;strong&gt;Contacte con nosotros&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;qa-cta not-prose&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 class=&#34;qa-cta__title&#34;&gt;Contacte con nosotros&lt;/h2&gt;
+    &lt;div class=&#34;qa-cta__text&#34;&gt;&lt;p&gt;Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere. En Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.&lt;/p&gt;
 &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&#34;qa-cta__aside&#34;&gt;
+    &lt;a class=&#34;qa-cta__phone&#34; href=&#34;tel:&amp;#43;34947273101&#34;&gt;947 27 31 01&lt;/a&gt;
+    &lt;div class=&#34;qa-actions&#34;&gt;
+      &lt;a class=&#34;qa-btn qa-btn--primary&#34; href=&#34;http://localhost:1313/contacto&#34;&gt;Contacto&lt;svg aria-hidden=true xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M14 5l7 7m0 0l-7 7m7-7H3&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 
 
       </description>

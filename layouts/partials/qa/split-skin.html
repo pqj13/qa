@@ -1,0 +1,20 @@
+{{- /*
+Clases y estilo del fondo de un panel de qa/split.
+Recibe (dict "bg" … "text" …) y devuelve (dict "class" … "style" …).
+*/ -}}
+{{- $bg := .bg | default "" -}}
+{{- $text := .text | default "" -}}
+{{- $class := "" -}}
+{{- $style := "" -}}
+{{- if $bg -}}
+  {{- if in (slice "paper" "sand" "accent" "dark") $bg -}}
+    {{- $class = printf "qa-split-skin qa-split-skin--%s" $bg -}}
+    {{- if and (not $text) (in (slice "accent" "dark") $bg) }}{{ $text = "light" }}{{ end -}}
+  {{- else -}}
+    {{- $class = "qa-split-skin" -}}
+    {{- $style = printf "--qa-split-bg: %s;" $bg -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $text "light" }}{{ $class = printf "%s qa-split-skin--light" $class }}{{ end -}}
+{{- if eq $text "dark" }}{{ $class = printf "%s qa-split-skin--dark-text" $class }}{{ end -}}
+{{- return (dict "class" $class "style" $style) -}}

@@ -1,0 +1,22 @@
+{{- /*
+Píldora de anuncio o etiqueta.
+
+@param {string} text   Texto.
+@param {string} link   Enlace (opcional).
+@param {string} icon   Icono de Hextra (opcional).
+@param {string} accent "true" para la variante con color de acento.
+
+@example {{< qa/pill text="Novedad" link="servicios" >}}
+*/ -}}
+{{- $link := .Get "link" -}}
+{{- $class := cond (eq (.Get "accent") "true") "qa-pill qa-pill--accent not-prose" "qa-pill not-prose" -}}
+{{- if $link -}}
+<a class="{{ $class }}" href="{{ partial "qa/href.html" $link }}">
+{{- with .Get "icon" }}{{ partial "utils/icon.html" (dict "name" . "attributes" "aria-hidden=true") }}{{ end -}}
+{{ .Get "text" }}</a>
+{{- else -}}
+<span class="{{ $class }}">
+{{- with .Get "icon" }}{{ partial "utils/icon.html" (dict "name" . "attributes" "aria-hidden=true") }}{{ end -}}
+{{ .Get "text" }}</span>
+{{- end -}}
+{{- /* Strip trailing newline. */ -}}

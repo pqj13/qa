@@ -71,7 +71,6 @@ En Quintana Abogados, despacho especializado en Derecho Civil en Burgos con una 
 * Análisis documental y patrimonial para asegurar la coherencia jurídica de cada actuación.
 * Asistencia en fase judicial y en ejecución de resoluciones, garantizando la protección efectiva de los derechos del cliente.
 
-{{< callout type="error" icon="arrow-circle-right">}} Si tiene un problema que requiera de asistencia jurídica en el ámbito civil, en Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.
-
-[**Contacte con nosotros**](/contacto)
-{{< /callout >}}
+{{< qa/cta >}}
+Si tiene un problema que requiera de asistencia jurídica en el ámbito civil, en Quintana Abogados estamos preparados para analizar su caso de modo inmediato y ofrecerle una solución eficaz.
+{{< /qa/cta >}}

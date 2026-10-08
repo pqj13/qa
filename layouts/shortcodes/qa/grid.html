@@ -1,0 +1,11 @@
+{{- /*
+Rejilla de tarjetas (qa/card, qa/stat).
+
+@param {int} cols Número de columnas en escritorio: 2, 3 o 4 (por defecto 3).
+
+@example {{< qa/grid cols="3" >}}{{< qa/card ... >}}{{< /qa/grid >}}
+*/ -}}
+{{- $cols := .Get "cols" | default 3 -}}
+<div class="qa-grid qa-grid--{{ $cols }} not-prose">
+{{- .Inner -}}
+</div>

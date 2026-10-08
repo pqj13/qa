@@ -1,0 +1,1403 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Manual del tema · Quintana Abogados</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --panel: #f6f5f3;
+    --line: #e2e0dc;
+    --ink: #121212;
+    --smoke: #5c5c5c;
+    --accent: #a10d2a;
+    --accent-soft: #fbe9ec;
+    --code-bg: #f6f5f3;
+    --ok: #2f6b3a;
+    --ok-soft: #e8f2ea;
+    --warn: #7a5800;
+    --warn-soft: #fbf0cc;
+    --serif: "Hedvig Letters Serif", Georgia, "Times New Roman", serif;
+    --sans: "Hedvig Letters Sans", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+    --mono: ui-monospace, "Cascadia Code", Consolas, "Courier New", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161514; --panel: #1f1e1c; --line: #34322f; --ink: #edebe7; --smoke: #a6a39d;
+      --accent: #ec6a83; --accent-soft: rgba(236,106,131,.12); --code-bg: #1f1e1c;
+      --ok: #8fd19e; --ok-soft: rgba(143,209,158,.1); --warn: #f0cf6e; --warn-soft: rgba(240,207,110,.1);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.65; letter-spacing: .01em; }
+  a { color: var(--accent); text-underline-offset: .2em; }
+  .layout { display: grid; grid-template-columns: 18rem minmax(0, 1fr); min-height: 100vh; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .toc { position: static !important; height: auto !important; border-right: 0 !important; border-bottom: 1px solid var(--line); } }
+
+  /* Índice lateral */
+  .toc { position: sticky; top: 0; height: 100vh; overflow-y: auto; padding: 1.5rem 1.25rem 3rem; border-right: 1px solid var(--line); background: var(--panel); font-size: 14px; }
+  .toc .brand { font-family: var(--serif); font-size: 1.35rem; line-height: 1.2; margin: 0 0 .25rem; }
+  .toc .brand small { display: block; font-family: var(--sans); font-size: 12px; color: var(--smoke); letter-spacing: .04em; margin-top: .25rem; }
+  .toc input { width: 100%; margin: 1rem 0; padding: .55rem .9rem; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--ink); font: inherit; }
+  .toc ol { list-style: none; margin: 0; padding: 0; }
+  .toc li a { display: block; padding: .3rem .6rem; border-radius: 6px; color: var(--smoke); text-decoration: none; }
+  .toc li a:hover { background: var(--bg); color: var(--ink); }
+  .toc li a.active { color: var(--ink); font-weight: 600; background: var(--bg); }
+  .toc li.sub a { padding-left: 1.5rem; font-size: 13px; }
+  .toc .hidden { display: none; }
+  #toc-toggle { display: none; margin-top: 1rem; padding: .45rem 1rem; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--ink); font: 14px var(--sans); cursor: pointer; }
+  @media (max-width: 900px) {
+    html { scroll-padding-top: 10rem; } /* altura del índice plegado + aire */
+    .toc { position: sticky !important; top: 0; z-index: 10; padding-bottom: 1rem; }
+    #toc-toggle { display: inline-block; }
+    .toc:not(.open) #filtro, .toc:not(.open) #indice { display: none; }
+    .toc.open { max-height: 100vh; overflow-y: auto; }
+  }
+
+  /* Contenido */
+  main { padding: 3rem clamp(1.25rem, 4vw, 4rem) 6rem; max-width: 56rem; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -.02em; line-height: 1.15; }
+  h1 { font-size: clamp(2.2rem, 4vw, 3.2rem); margin: 0 0 1rem; }
+  h2 { font-size: 2rem; margin: 4.5rem 0 1rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  h2 .num { color: var(--accent); font-family: var(--sans); font-size: .9rem; letter-spacing: .1em; display: block; margin-bottom: .5rem; }
+  h3 { font-size: 1.45rem; margin: 2.75rem 0 .75rem; }
+  h3 code { font-family: var(--mono); font-size: .8em; letter-spacing: 0; background: var(--accent-soft); color: var(--accent); padding: .1em .45em; border-radius: 6px; }
+  h4 { font-size: 1rem; margin: 1.75rem 0 .5rem; text-transform: uppercase; letter-spacing: .08em; color: var(--smoke); font-weight: 600; }
+  p { margin: .6rem 0; }
+  .lead { font-size: 1.15rem; color: var(--smoke); max-width: 42rem; }
+  ul, ol { padding-left: 1.3rem; }
+  li { margin: .25rem 0; }
+  li::marker { color: var(--accent); }
+  code { font-family: var(--mono); font-size: .88em; background: var(--code-bg); border: 1px solid var(--line); border-radius: 5px; padding: .05em .35em; letter-spacing: 0; }
+  kbd { font-family: var(--mono); font-size: .85em; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; padding: .05em .4em; }
+
+  /* Bloques de código copiables */
+  .code { position: relative; margin: .9rem 0 1.2rem; }
+  .code textarea { display: block; width: 100%; field-sizing: content; min-height: 2.6rem; resize: none; overflow: auto; padding: .9rem 1rem; padding-right: 5.5rem; border: 1px solid var(--line); border-radius: 8px; background: var(--code-bg); color: var(--ink); font-family: var(--mono); font-size: 13.5px; line-height: 1.6; white-space: pre; tab-size: 2; }
+  .code textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .code .label { position: absolute; top: -.65rem; left: .8rem; padding: 0 .4rem; background: var(--bg); color: var(--smoke); font-size: 12px; }
+  .code button { position: absolute; top: .5rem; right: .5rem; padding: .3rem .75rem; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--ink); font: 12px var(--sans); cursor: pointer; }
+  .code button:hover { border-color: var(--ink); }
+
+  /* Tablas */
+  .table { overflow-x: auto; margin: 1rem 0 1.4rem; border: 1px solid var(--line); border-radius: 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  th { text-align: left; background: var(--panel); font-weight: 600; font-size: 12.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--smoke); }
+  th, td { padding: .65rem .85rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { white-space: nowrap; }
+  td:first-child code { background: var(--accent-soft); border-color: transparent; color: var(--accent); font-weight: 600; }
+  .req { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .04em; padding: .05rem .5rem; border-radius: 999px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+  .opt { display: inline-block; font-size: 11px; padding: .05rem .5rem; border-radius: 999px; background: var(--panel); color: var(--smoke); border: 1px solid var(--line); white-space: nowrap; }
+
+  /* Avisos */
+  .note, .tip, .warn { margin: 1rem 0; padding: .85rem 1.1rem; border-radius: 8px; border-left: 3px solid; }
+  .note { background: var(--panel); border-color: var(--smoke); }
+  .tip { background: var(--ok-soft); border-color: var(--ok); }
+  .warn { background: var(--warn-soft); border-color: var(--warn); }
+  .note > :first-child, .tip > :first-child, .warn > :first-child { margin-top: 0; }
+  .note > :last-child, .tip > :last-child, .warn > :last-child { margin-bottom: 0; }
+  .note b:first-child, .tip b:first-child, .warn b:first-child { display: block; margin-bottom: .2rem; }
+
+  /* Ficha de shortcode */
+  .card { border: 1px solid var(--line); border-radius: 10px; padding: .25rem 1.5rem 1rem; margin: 2rem 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin: .5rem 0 1rem; font-size: 14px; color: var(--smoke); }
+  .meta b { color: var(--ink); font-weight: 600; }
+  .quick td:first-child { white-space: normal; }
+  .grid-icons { columns: 4 11rem; font-family: var(--mono); font-size: 13px; color: var(--smoke); margin: 1rem 0; }
+  .grid-icons span { display: block; }
+  .tree { font-family: var(--mono); font-size: 13.5px; white-space: pre; background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px; padding: 1rem; overflow-x: auto; line-height: 1.55; }
+  .tree b { color: var(--accent); font-weight: 600; }
+  .tree i { color: var(--smoke); font-style: normal; }
+  @media print { .toc { display: none; } .layout { display: block; } .code button { display: none; } h2 { break-before: page; } }
+</style>
+</head>
+<body>
+<div class="layout">
+
+<nav class="toc" aria-label="Índice">
+  <p class="brand">Manual del tema<small>QUINTANA ABOGADOS · HUGO + HEXTRA</small></p>
+  <button id="toc-toggle" type="button" aria-expanded="false" aria-controls="indice">Mostrar índice</button>
+  <input id="filtro" type="search" placeholder="Buscar en el índice…" aria-label="Buscar en el índice" />
+  <ol id="indice"></ol>
+</nav>
+
+<main>
+
+<h1>Manual de uso del tema</h1>
+<p class="lead">Todo lo necesario para editar la web de Quintana Abogados: páginas, noticias, menú, tarjeta de contacto, componentes (shortcodes), textos, colores y configuración. Cada apartado explica qué hace cada cosa, dónde está y cómo se cambia, con ejemplos listos para copiar.</p>
+
+<div class="tip"><b>Cómo leer este manual</b>
+<ul>
+  <li>Usa el <b>índice de la izquierda</b> (o el buscador que hay encima) para saltar a cualquier apartado.</li>
+  <li>Los cuadros grises con el botón <b>Copiar</b> contienen texto listo para pegar en los archivos.</li>
+  <li>En las tablas de parámetros, <span class="req">Obligatorio</span> significa que sin él no funciona; <span class="opt">Opcional</span>, que puede omitirse.</li>
+  <li>Si tienes prisa, empieza por <a href="#esencial">Lo esencial</a> y <a href="#recetas">Tareas habituales</a>.</li>
+</ul>
+</div>
+
+
+<!-- ===================================================================== -->
+<h2 id="esencial"><span class="num">01</span>Lo esencial en dos minutos</h2>
+
+<p>La web está hecha con <b>Hugo</b> (genera las páginas) y el tema <b>Hextra</b> (la base), al que se le ha añadido un diseño propio. Todo se edita en archivos de texto:</p>
+
+<div class="table"><table class="quick">
+<tr><th>Quiero cambiar…</th><th>Dónde</th><th>Apartado</th></tr>
+<tr><td>El texto de una página</td><td>El archivo <code>.md</code> de esa página en <code>content/</code></td><td><a href="#paginas">Páginas</a></td></tr>
+<tr><td>El teléfono, la dirección o el enlace de Google Maps</td><td><code>hugo.yaml</code> → <code>params.contact</code></td><td><a href="#receta-telefono">Receta</a></td></tr>
+<tr><td>El horario del pie de página</td><td><code>i18n/es.yaml</code>, <code>en.yaml</code>, <code>fr.yaml</code></td><td><a href="#receta-horario">Receta</a></td></tr>
+<tr><td>La tarjeta negra de contacto</td><td>Depende: ver el apartado</td><td><a href="#contacto">Tarjeta de contacto</a></td></tr>
+<tr><td>Los enlaces de la barra de navegación</td><td><code>hugo.yaml</code> → <code>menu.main</code></td><td><a href="#menu">Barra y menús</a></td></tr>
+<tr><td>Publicar una noticia</td><td>Un archivo nuevo en <code>content/noticias/</code></td><td><a href="#noticias">Noticias</a></td></tr>
+<tr><td>Los colores o la tipografía</td><td><code>assets/css/custom.css</code></td><td><a href="#diseno">Diseño</a></td></tr>
+<tr><td>El logotipo</td><td><code>static/images/</code> + <code>hugo.yaml</code></td><td><a href="#receta-logo">Receta</a></td></tr>
+<tr><td>Añadir un bloque visual (tarjetas, cita, imagen…)</td><td>Escribir un <i>shortcode</i> en el <code>.md</code></td><td><a href="#shortcodes">Shortcodes</a></td></tr>
+</table></div>
+
+<div class="note"><b>Tres reglas que conviene recordar</b>
+<ol>
+  <li>Cada página existe en tres idiomas: <code>_index.md</code> (español), <code>_index.en.md</code> (inglés) y <code>_index.fr.md</code> (francés). Si cambias una, revisa las otras dos.</li>
+  <li>Los shortcodes se escriben siempre con <code>{{&lt; … &gt;}}</code> (con ángulos), salvo <code>details</code> y <code>steps</code> de Hextra, que van con <code>{{% … %}}</code>.</li>
+  <li>Antes de publicar, mira el resultado en local con <code>hugo server</code> (ver el apartado siguiente).</li>
+</ol>
+</div>
+
+
+<!-- ===================================================================== -->
+<h2 id="local"><span class="num">02</span>Ver la web en local y publicarla</h2>
+
+<h3 id="local-ver">Ver la web en tu ordenador</h3>
+<p>Abre una terminal en la carpeta del proyecto (<code>Desktop/qa</code>) y ejecuta:</p>
+<div class="code"><span class="label">Terminal</span><textarea readonly spellcheck="false">hugo server</textarea><button type="button">Copiar</button></div>
+<p>Después abre <a href="http://localhost:1313/">http://localhost:1313/</a> en el navegador. La página se actualiza sola cada vez que guardas un archivo.</p>
+
+<div class="table"><table>
+<tr><th>Orden</th><th>Para qué</th></tr>
+<tr><td><code>hugo server</code></td><td>Ver la web tal y como se publicará.</td></tr>
+<tr><td><code>hugo server -D</code></td><td>Ver también los <b>borradores</b> (páginas con <code>draft: true</code>), por ejemplo la página de ejemplos <code>/ejemplos/</code>.</td></tr>
+<tr><td><code>hugo --gc --minify</code></td><td>Generar la web final en la carpeta <code>public/</code> (lo mismo que hace Netlify al publicar). Sirve para comprobar que no hay errores.</td></tr>
+</table></div>
+
+<div class="warn"><b>Si tras editar una plantilla no ves el cambio</b>
+En Windows, <code>hugo server</code> a veces no detecta los cambios en los archivos de <code>layouts/</code>. Para el servidor con <kbd>Ctrl</kbd>+<kbd>C</kbd>, vuelve a lanzarlo y recarga el navegador con <kbd>Ctrl</kbd>+<kbd>F5</kbd>. No afecta a la web publicada.</div>
+
+<h3 id="local-publicar">Publicar</h3>
+<p>La web se publica en <b>Netlify</b>, que compila automáticamente el repositorio <code>github.com/pqj13/qa</code> con la configuración de <code>netlify.toml</code> (orden <code>hugo --gc --minify</code>, Hugo <b>0.147.7</b>). En la práctica: guarda los cambios, haz <i>commit</i> y súbelos (<i>push</i>) a GitHub; Netlify publica la nueva versión en uno o dos minutos.</p>
+<div class="note"><b>Versión de Hugo</b>
+En el ordenador está instalado Hugo 0.160 y Netlify usa 0.147.7. El tema funciona con ambas, pero si alguna vez algo se ve distinto en la web publicada que en local, conviene igualar las versiones (cambiando <code>HUGO_VERSION</code> en <code>netlify.toml</code>).</div>
+<div class="note"><b>La carpeta <code>public/</code></b>
+Contiene una copia generada de la web. Netlify la regenera al publicar, así que no hace falta editarla nunca.</div>
+
+
+<!-- ===================================================================== -->
+<h2 id="carpetas"><span class="num">03</span>Estructura de carpetas</h2>
+
+<div class="tree">qa/
+├── <b>content/</b>                   <i>← EL CONTENIDO: un archivo .md por página</i>
+│   ├── _index.md / .en.md / .fr.md   <i>Portada</i>
+│   ├── abogados/                 <i>Página de abogados</i>
+│   ├── servicios/                <i>Índice de servicios</i>
+│   │   ├── penal/                <i>Un área (con su _index.md)</i>
+│   │   │   ├── estafa/           <i>Un servicio dentro del área</i>
+│   │   │   └── …
+│   │   ├── familia/ civil/ laboral/ administrativo/
+│   ├── noticias/                 <i>Noticias (cada archivo .md es una noticia)</i>
+│   ├── contacto/
+│   ├── cookies_y_privacidad/
+│   └── ejemplos/                 <i>Página de pruebas (borrador, no se publica)</i>
+├── <b>static/images/</b>             <i>← IMÁGENES: logotipos, fotos…</i>
+├── <b>assets/css/custom.css</b>      <i>← DISEÑO: colores, tipografía, estilos</i>
+├── <b>assets/js/qa.js</b>            <i>Interacciones: menú desplegable, qa/split, imagen a todo el ancho</i>
+├── <b>i18n/</b> es.yaml en.yaml fr.yaml   <i>← TEXTOS FIJOS traducidos (pie, botones…)</i>
+├── <b>layouts/</b>                   <i>Plantillas HTML (técnico, ver apartado 16)</i>
+│   ├── shortcodes/qa/            <i>Los componentes propios (qa/…)</i>
+│   ├── partials/                 <i>Barra de navegación, pie, cabecera de página…</i>
+│   └── blog/                     <i>Listado y página de noticias</i>
+├── <b>hugo.yaml</b>                  <i>← CONFIGURACIÓN: menú, contacto, logotipo, idiomas…</i>
+├── netlify.toml                  <i>Publicación en Netlify</i>
+├── INSTRUCCIONES.html            <i>Este manual</i>
+└── SHORTCODES.md                 <i>Versión anterior (resumida) de la guía de shortcodes</i></div>
+
+
+<!-- ===================================================================== -->
+<h2 id="paginas"><span class="num">04</span>Páginas: crear y editar</h2>
+
+<h3 id="paginas-anatomia">Cómo es un archivo de página</h3>
+<p>Cada página es un archivo de texto <code>.md</code> con dos partes: la <b>cabecera</b> (entre las dos líneas <code>---</code>) con los datos de la página, y debajo el <b>contenido</b> en Markdown, que puede incluir shortcodes.</p>
+<div class="code"><span class="label">content/servicios/penal/estafa/_index.md</span><textarea readonly spellcheck="false">---
+title: Abogados de estafa en Burgos
+description: Quintana Abogados - Abogados penalistas en Burgos especializados en delitos de estafa.
+linkTitle: Estafa
+toc: true
+breadcrumbs: true
+draft: false
+---
+{{< hextra/hero-subtitle >}}
+Entradilla grande en gris bajo el título.
+{{< /hextra/hero-subtitle >}}
+
+### ¿Qué es el delito de estafa?
+
+Texto normal en Markdown: **negrita**, *cursiva*, [enlaces](/contacto), listas…
+
+{{< qa/cta >}}
+Texto de la tarjeta de contacto.
+{{< /qa/cta >}}</textarea><button type="button">Copiar</button></div>
+
+<h3 id="paginas-cabecera">Campos de la cabecera</h3>
+<div class="table"><table>
+<tr><th>Campo</th><th></th><th>Qué hace</th></tr>
+<tr><td><code>title</code></td><td><span class="req">Obligatorio</span></td><td>Título grande de la página y de la pestaña del navegador (y el que muestra Google).</td></tr>
+<tr><td><code>description</code></td><td><span class="opt">Recomendado</span></td><td>Resumen para Google y redes sociales. No se ve en la página (salvo en el listado de noticias).</td></tr>
+<tr><td><code>linkTitle</code></td><td><span class="opt">Opcional</span></td><td>Título corto que se usa en las migas de pan (ruta "Servicios › Penal › Estafa"). Si no se pone, se usa <code>title</code>.</td></tr>
+<tr><td><code>toc</code></td><td><span class="opt">Opcional</span></td><td><code>true</code> muestra a la derecha el índice "En esta página" con los subtítulos (<code>##</code> y <code>###</code>). <code>false</code> lo oculta.</td></tr>
+<tr><td><code>breadcrumbs</code></td><td><span class="opt">Opcional</span></td><td><code>true</code> muestra las migas de pan sobre el título ("Servicios › Penal › Estafa").</td></tr>
+<tr><td><code>draft</code></td><td><span class="opt">Opcional</span></td><td><code>true</code> = borrador: no se publica (solo se ve con <code>hugo server -D</code>).</td></tr>
+<tr><td><code>comments</code></td><td><span class="opt">Opcional</span></td><td>Comentarios de Hextra. Están desactivados en todo el sitio; no hace falta tocarlo.</td></tr>
+<tr><td><code>weight</code></td><td><span class="opt">Opcional</span></td><td>Número para ordenar páginas hermanas (menor = antes).</td></tr>
+<tr><td><code>cascade</code></td><td><span class="opt">Opcional</span></td><td>Aplica campos a todas las subpáginas. En las áreas de servicio se usa <code>cascade: sidebar: exclude: true</code> para que sus servicios no aparezcan listados en el menú del móvil. En Noticias, para convertirlas en noticias (ver <a href="#noticias">Noticias</a>).</td></tr>
+<tr><td><code>noindex</code></td><td><span class="opt">Opcional</span></td><td><code>true</code> pide a Google que no indexe la página.</td></tr>
+</table></div>
+
+<h3 id="paginas-urls">Direcciones (URL) de las páginas</h3>
+<p>La dirección sale del nombre de la carpeta: Hugo pasa a minúsculas y cambia los espacios por guiones.</p>
+<div class="table"><table>
+<tr><th>Archivo</th><th>Dirección</th></tr>
+<tr><td><code>content/servicios/penal/estafa/_index.md</code></td><td><code>/servicios/penal/estafa/</code></td></tr>
+<tr><td><code>content/servicios/administrativo/multas de trafico/_index.md</code></td><td><code>/servicios/administrativo/multas-de-trafico/</code></td></tr>
+<tr><td><code>content/contacto/_index.en.md</code></td><td><code>/en/contacto/</code> (inglés) · <code>.fr.md</code> → <code>/fr/contacto/</code></td></tr>
+<tr><td><code>content/noticias/nueva-ley.md</code></td><td><code>/noticias/nueva-ley/</code></td></tr>
+</table></div>
+<div class="warn"><b>Cambiar el nombre de una carpeta cambia su dirección</b>
+Los enlaces que apunten a la dirección antigua dejarán de funcionar y Google tardará en actualizarse. Evítalo en páginas ya publicadas.</div>
+
+<h3 id="paginas-idiomas">Idiomas</h3>
+<ul>
+  <li>Español es el idioma principal (dirección sin prefijo). Inglés va en <code>/en/</code> y francés en <code>/fr/</code>.</li>
+  <li>Para traducir una página, crea a su lado el mismo archivo con <code>.en.md</code> o <code>.fr.md</code>.</li>
+  <li>Si una página no tiene traducción, simplemente no existe en ese idioma. Las páginas de cada área y servicio solo están en español.</li>
+  <li>El selector de idioma está en el pie de página.</li>
+</ul>
+
+<h3 id="paginas-markdown">Markdown básico</h3>
+<div class="table"><table>
+<tr><th>Escribes</th><th>Resultado</th></tr>
+<tr><td><code>## Subtítulo</code></td><td>Subtítulo grande en serif, con línea debajo</td></tr>
+<tr><td><code>### Subtítulo</code></td><td>Subtítulo mediano en serif</td></tr>
+<tr><td><code>**negrita**</code> · <code>*cursiva*</code></td><td><b>negrita</b> · <i>cursiva</i></td></tr>
+<tr><td><code>[texto](/contacto)</code></td><td>Enlace granate subrayado</td></tr>
+<tr><td><code>* elemento</code></td><td>Lista con viñeta granate</td></tr>
+<tr><td><code>1. elemento</code></td><td>Lista numerada</td></tr>
+<tr><td><code>&gt; texto</code></td><td>Cita con una línea granate a la izquierda</td></tr>
+<tr><td><code>---</code></td><td>Línea separadora fina</td></tr>
+<tr><td><code>Texto[^1]</code> y abajo <code>[^1]: Nota</code></td><td>Nota a pie de página (se reúnen al final)</td></tr>
+</table></div>
+
+
+<!-- ===================================================================== -->
+<h2 id="recetas"><span class="num">05</span>Tareas habituales, paso a paso</h2>
+
+<h3 id="receta-telefono">Cambiar el teléfono, la dirección o el enlace del mapa</h3>
+<ol>
+  <li>Abre <code>hugo.yaml</code> y busca <code>params:</code> → <code>contact:</code>.</li>
+  <li>Cambia los valores que necesites:</li>
+</ol>
+<div class="code"><span class="label">hugo.yaml</span><textarea readonly spellcheck="false">params:
+  contact:
+    phone: "947 27 31 01"            # Formato nacional (barra, pie, tarjeta de contacto en español)
+    phoneIntl: "(+34) 947 27 31 01"  # Formato internacional (tarjeta de contacto en inglés y francés)
+    phoneLink: "+34947273101"        # Número que se marca al pulsar: sin espacios
+    address: "c/ Santander 11, 2º C, 09004 Burgos"   # Dirección del pie de página
+    maps: "https://maps.app.goo.gl/tUnp3YdsnFdcqDZM7"  # A dónde lleva la dirección del pie
+    form: "https://forms.office.com/e/H4qwDRuGdY"      # Formulario (reservado)</textarea><button type="button">Copiar</button></div>
+<p>Esto actualiza a la vez: el botón del teléfono de la barra, el pie de página y todas las tarjetas de contacto.</p>
+<div class="warn"><b>Además, a mano</b>
+El teléfono también está escrito directamente en estos sitios, que hay que cambiar uno a uno:
+<ul>
+  <li>Portada (<code>content/_index*.md</code>): botón secundario de <code>qa/hero</code>.</li>
+  <li>Contacto (<code>content/contacto/_index*.md</code>): tarjeta "Teléfono".</li>
+  <li>Datos para Google (<code>layouts/partials/custom/head-end.html</code>): <code>"telephone"</code> y la dirección.</li>
+  <li><code>hugo.yaml</code> → <code>params.description</code>.</li>
+</ul>
+Truco: en el editor, usa "Buscar en archivos" con <code>947 27 31 01</code> y <code>947273101</code>.</div>
+
+<h3 id="receta-horario">Cambiar el horario del pie de página</h3>
+<p>Está en los archivos de textos, uno por idioma. Cambia estas dos líneas en <code>i18n/es.yaml</code>, <code>i18n/en.yaml</code> e <code>i18n/fr.yaml</code>:</p>
+<div class="code"><span class="label">i18n/es.yaml</span><textarea readonly spellcheck="false">footerHoursWeek: "Lunes a jueves: 9:00–14:30 y 17:00–19:30"
+footerHoursFriday: "Viernes: 9:00–14:30"</textarea><button type="button">Copiar</button></div>
+<p>Si el horario cambia, actualiza también <code>openingHoursSpecification</code> en <code>layouts/partials/custom/head-end.html</code> (es lo que lee Google).</p>
+
+<h3 id="receta-servicio">Añadir un servicio dentro de un área</h3>
+<ol>
+  <li>Copia una carpeta de servicio parecida, por ejemplo <code>content/servicios/penal/estafa/</code>, y renómbrala (el nombre será la dirección): <code>content/servicios/penal/nuevo servicio/</code>.</li>
+  <li>Edita su <code>_index.md</code>: <code>title</code>, <code>description</code>, <code>linkTitle</code> y el texto.</li>
+  <li>Añade el enlace en la lista del área (<code>content/servicios/penal/_index.md</code>), dentro del desplegable que corresponda:</li>
+</ol>
+<div class="code"><textarea readonly spellcheck="false">{{% details title="Delitos contra el patrimonio y el orden socioeconómico" closed="true" %}}
+* Estafa [→](/servicios/penal/estafa)
+* Nuevo servicio [→](/servicios/penal/nuevo-servicio)
+{{% /details %}}</textarea><button type="button">Copiar</button></div>
+<p>Hay una plantilla completa en <a href="#plantilla-servicio">Plantillas para copiar</a>.</p>
+
+<h3 id="receta-area">Añadir un área de práctica nueva</h3>
+<ol>
+  <li>Crea <code>content/servicios/nueva-area/_index.md</code> copiando el de otra área (incluye <code>cascade: sidebar: exclude: true</code>).</li>
+  <li>Añade el área a la lista de <code>content/servicios/_index.md</code> (y sus versiones <code>.en.md</code>/<code>.fr.md</code>) con un <code>qa/step</code>.</li>
+  <li>Añádela también a la portada, en la sección "Diversas áreas del Derecho" (otro <code>qa/step</code>).</li>
+</ol>
+
+<h3 id="receta-abogado">Añadir o editar un abogado</h3>
+<p>En <code>content/abogados/_index.md</code> (y <code>.en.md</code>, <code>.fr.md</code>), cada abogado es un bloque <a href="#sc-lawyer"><code>qa/lawyer</code></a>. Copia uno y cambia los datos:</p>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/lawyer name="Nombre Apellido Apellido" role="Abogada · Graduada en Derecho por la Universidad de …" langs="ES, EN" >}}
+Biografía en uno o varios párrafos.
+{{< /qa/lawyer >}}</textarea><button type="button">Copiar</button></div>
+
+<h3 id="receta-noticia">Publicar una noticia</h3>
+<p>Ver <a href="#noticias-crear">Noticias → Crear una noticia</a>.</p>
+
+<h3 id="receta-menu">Añadir, quitar u ordenar un enlace del menú</h3>
+<p>Ver <a href="#menu">Barra y menús</a>. Resumen: en <code>hugo.yaml</code>, dentro de <code>menu: main:</code>, cada enlace es un bloque con <code>identifier</code>, <code>name</code>, <code>pageRef</code> y <code>weight</code> (orden).</p>
+
+<h3 id="receta-imagen">Poner una imagen</h3>
+<ol>
+  <li>Guarda la imagen en <code>static/images/</code> (por ejemplo <code>static/images/despacho.jpg</code>). Usa nombres sin espacios ni tildes.</li>
+  <li>En la página, escríbela sin la palabra <code>static</code>: <code>/images/despacho.jpg</code>.</li>
+</ol>
+<div class="code"><textarea readonly spellcheck="false">![Descripción de la foto](/images/despacho.jpg)
+
+{{< qa/showcase src="/images/despacho.jpg" alt="Despacho de Quintana Abogados" >}}</textarea><button type="button">Copiar</button></div>
+<div class="tip"><b>Tamaños recomendados</b>
+Fotos a lo ancho: 2000 px de ancho, en <code>.jpg</code> o <code>.webp</code>, por debajo de 400 KB. Imágenes de <code>qa/split</code>: unos 1200 px. Capturas o ilustraciones: <code>.svg</code> o <code>.png</code>.</div>
+
+<h3 id="receta-logo">Cambiar el logotipo</h3>
+<ol>
+  <li>Guarda las dos versiones en <code>static/images/</code>: una para fondo claro y otra para fondo oscuro (modo oscuro).</li>
+  <li>En <code>hugo.yaml</code> → <code>params.navbar.logo</code>, cambia <code>path</code> (claro), <code>dark</code> (oscuro), y <code>width</code>/<code>height</code> (tamaño en píxeles en la barra).</li>
+  <li>El pie de página usa los mismos archivos automáticamente.</li>
+  <li>El icono de la pestaña (favicon) son los archivos <code>favicon*</code> y <code>*-icon*.png</code> de <code>static/</code>.</li>
+</ol>
+
+<h3 id="receta-color">Cambiar el color de acento</h3>
+<p>Ver <a href="#diseno-acento">Diseño → Cambiar el color de acento</a>.</p>
+
+
+<!-- ===================================================================== -->
+<h2 id="shortcodes"><span class="num">06</span>Shortcodes propios (componentes <code>qa/…</code>)</h2>
+
+<p>Un <b>shortcode</b> es una etiqueta que se escribe dentro del texto de una página y se convierte en un bloque con diseño (una tarjeta, una cita, una imagen a lo ancho…). Los propios del sitio empiezan por <code>qa/</code>. Sus plantillas están en <code>layouts/shortcodes/qa/</code>.</p>
+
+<h3 id="sc-sintaxis">Cómo se escriben</h3>
+<div class="table"><table>
+<tr><th>Forma</th><th>Cuándo</th><th>Ejemplo</th></tr>
+<tr><td>Sin contenido</td><td>El shortcode no admite texto interior</td><td><code>{{&lt; qa/button text="Contacto" link="contacto" &gt;}}</code></td></tr>
+<tr><td>Con contenido</td><td>Admite texto interior y lo usas</td><td><code>{{&lt; qa/card title="Penal" &gt;}}</code> Texto… <code>{{&lt; /qa/card &gt;}}</code></td></tr>
+<tr><td>Auto-cerrado</td><td>Admite texto interior pero no lo usas</td><td><code>{{&lt; qa/section title="Equipo" /&gt;}}</code></td></tr>
+</table></div>
+<ul>
+  <li>Los valores van <b>entre comillas dobles</b>: <code>title="Texto"</code>. Si necesitas comillas dentro, usa las tipográficas “así”.</li>
+  <li>Los parámetros pueden ir en una línea o en varias (útil cuando son muchos).</li>
+  <li>Los valores de sí/no se escriben como texto: <code>numbered="false"</code>, <code>intl="true"</code>.</li>
+  <li>Donde la tabla dice <b>Markdown</b>, el valor admite <code>*cursiva*</code>, <code>**negrita**</code> y <code>[enlaces](url)</code>.</li>
+</ul>
+
+<h3 id="sc-enlaces">Cómo funcionan los enlaces</h3>
+<p>Todos los parámetros de enlace (<code>link</code>, <code>primaryLink</code>, <code>secondaryLink</code>, <code>pillLink</code>) entienden lo mismo:</p>
+<div class="table"><table>
+<tr><th>Escribes</th><th>Resultado</th></tr>
+<tr><td><code>contacto</code></td><td><b>Recomendado.</b> Lleva a <code>/contacto/</code> en el idioma de la página (en inglés a <code>/en/contacto/</code>).</td></tr>
+<tr><td><code>/contacto</code></td><td>Lo mismo (se ignora la barra inicial).</td></tr>
+<tr><td><code>servicios/penal</code></td><td>Subpágina, también en el idioma de la página.</td></tr>
+<tr><td><code>https://…</code></td><td>Enlace externo; se abre en pestaña nueva.</td></tr>
+<tr><td><code>tel:+34947273101</code></td><td>Llama por teléfono.</td></tr>
+<tr><td><code>mailto:correo@dominio.es</code></td><td>Abre el correo.</td></tr>
+<tr><td><code>#ancla</code></td><td>Salta a una sección de la misma página.</td></tr>
+</table></div>
+<div class="warn"><b>Áreas solo en español</b>
+Las páginas de las áreas (<code>servicios/penal</code>, etc.) no existen en inglés ni francés. En las páginas <code>.en.md</code> y <code>.fr.md</code> no enlaces a ellas: darían error 404.</div>
+
+<h3 id="sc-resumen">Resumen de todos los shortcodes</h3>
+<div class="table"><table class="quick">
+<tr><th>Shortcode</th><th>Qué es</th><th>Dónde se usa ahora</th></tr>
+<tr><td><a href="#sc-hero"><code>qa/hero</code></a></td><td>Cabecera de portada a pantalla completa</td><td>Portada</td></tr>
+<tr><td><a href="#sc-section"><code>qa/section</code></a></td><td>Encabezado de sección (antetítulo + título)</td><td>Portada</td></tr>
+<tr><td><a href="#sc-steps"><code>qa/steps</code></a> + <a href="#sc-step"><code>qa/step</code></a></td><td>Lista editorial en filas o en línea vertical</td><td>Portada (áreas), Servicios</td></tr>
+<tr><td><a href="#sc-grid"><code>qa/grid</code></a> + <a href="#sc-card"><code>qa/card</code></a></td><td>Rejilla de tarjetas (con color de fondo a elegir)</td><td>Contacto</td></tr>
+<tr><td><a href="#sc-stat"><code>qa/stat</code></a></td><td>Tarjeta con una cifra grande</td><td>— (disponible)</td></tr>
+<tr><td><a href="#sc-ledger"><code>qa/ledger</code></a></td><td>Lista sencilla con viñetas granates</td><td>Portada (principios)</td></tr>
+<tr><td><a href="#sc-quote"><code>qa/quote</code></a></td><td>Cita grande centrada</td><td>Portada</td></tr>
+<tr><td><a href="#sc-cta"><code>qa/cta</code></a></td><td>Tarjeta negra de contacto con el teléfono</td><td>Portada, Abogados, Servicios, todas las áreas y servicios; noticias (automática)</td></tr>
+<tr><td><a href="#sc-lawyer"><code>qa/lawyer</code></a></td><td>Ficha de abogado</td><td>Abogados</td></tr>
+<tr><td><a href="#sc-button"><code>qa/button</code></a> + <a href="#sc-actions"><code>qa/actions</code></a></td><td>Botón en píldora / fila de botones</td><td>Portada</td></tr>
+<tr><td><a href="#sc-pill"><code>qa/pill</code></a></td><td>Píldora o etiqueta pequeña</td><td>— (disponible)</td></tr>
+<tr><td><a href="#sc-showcase"><code>qa/showcase</code></a></td><td>Imagen destacada a lo ancho (estilo midday.ai)</td><td>Página de ejemplos</td></tr>
+<tr><td><a href="#sc-split"><code>qa/split</code></a> + <a href="#sc-split-item"><code>qa/split-item</code></a></td><td>Pantalla dividida: lista + panel (estilo midday.ai)</td><td>Página de ejemplos</td></tr>
+</table></div>
+
+<!-- ---------------- qa/hero ---------------- -->
+<div class="card">
+<h3 id="sc-hero"><code>qa/hero</code> · Cabecera de portada</h3>
+<p>Titular grande en serif, entradilla, hasta dos botones y una línea final. Ocupa <b>toda la altura de la pantalla</b> (menos la barra) con el contenido centrado.</p>
+<div class="meta"><span><b>Contenido interior:</b> opcional → la entradilla (Markdown)</span><span><b>Plantilla:</b> <code>layouts/shortcodes/qa/hero.html</code></span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>title</code></td><td><span class="opt">Opcional</span></td><td>Por defecto: el <code>title</code> de la página</td><td>Titular. <b>Markdown</b>: lo escrito entre <code>*asteriscos*</code> sale en cursiva granate.</td></tr>
+<tr><td><code>pill</code></td><td><span class="opt">Opcional</span></td><td>Texto</td><td>Píldora pequeña encima del titular, con un punto granate.</td></tr>
+<tr><td><code>pillLink</code></td><td><span class="opt">Opcional</span></td><td>Enlace</td><td>Convierte la píldora en enlace (añade una flecha →).</td></tr>
+<tr><td><code>primary</code></td><td><span class="opt">Opcional</span></td><td>Texto</td><td>Botón principal: negro, granate al pasar el ratón.</td></tr>
+<tr><td><code>primaryLink</code></td><td><span class="req">Si hay primary</span></td><td>Enlace</td><td>A dónde lleva el botón principal.</td></tr>
+<tr><td><code>secondary</code></td><td><span class="opt">Opcional</span></td><td>Texto</td><td>Botón secundario: transparente con borde.</td></tr>
+<tr><td><code>secondaryLink</code></td><td><span class="req">Si hay secondary</span></td><td>Enlace</td><td>A dónde lleva el botón secundario.</td></tr>
+<tr><td><code>secondaryIcon</code></td><td><span class="opt">Opcional</span></td><td><a href="#iconos">Nombre de icono</a></td><td>Icono a la izquierda del texto del botón secundario.</td></tr>
+<tr><td><code>note</code></td><td><span class="opt">Opcional</span></td><td>Texto (Markdown)</td><td>Línea pequeña gris bajo los botones.</td></tr>
+</table></div>
+<div class="note"><b>Notas</b>
+<ul>
+  <li>Una sola vez por página y al principio: genera el título principal (<code>h1</code>).</li>
+  <li>Pensado para la portada, donde sustituye al título automático. En otras páginas el título saldría duplicado.</li>
+</ul></div>
+<div class="code"><span class="label">Ejemplo (el de la portada)</span><textarea readonly spellcheck="false">{{< qa/hero
+  title="Abogados en Burgos desde hace *más de 40 años*"
+  primary="Concierte una cita"
+  primaryLink="contacto"
+  secondary="947 27 31 01"
+  secondaryLink="tel:+34947273101"
+  secondaryIcon="phone"
+  note="c/ Santander 11, 2º C · 09004 Burgos"
+>}}
+**Abogado:** del lat. *advocatus (ad auxilium vocatus)*: el llamado para auxiliar.
+{{< /qa/hero >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/section ---------------- -->
+<div class="card">
+<h3 id="sc-section"><code>qa/section</code> · Encabezado de sección</h3>
+<p>Abre una sección nueva con espacio arriba (64 px): antetítulo pequeño en mayúsculas granate, título en serif y entradilla opcional. No "envuelve" nada: se pone encima de lo que venga después.</p>
+<div class="meta"><span><b>Contenido interior:</b> opcional → entradilla gris (Markdown)</span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>title</code></td><td><span class="opt">Recomendado</span></td><td>Texto (Markdown)</td><td>Título de la sección (<code>h2</code>).</td></tr>
+<tr><td><code>eyebrow</code></td><td><span class="opt">Opcional</span></td><td>Texto</td><td>Antetítulo en mayúsculas granate.</td></tr>
+<tr><td><code>id</code></td><td><span class="opt">Opcional</span></td><td>Por defecto: el título en minúsculas con guiones</td><td>Ancla para enlazar con <code>#id</code>.</td></tr>
+<tr><td><code>align</code></td><td><span class="opt">Opcional</span></td><td><code>center</code> · por defecto a la izquierda</td><td>Centra antetítulo, título y entradilla.</td></tr>
+</table></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/section eyebrow="Áreas de práctica" title="Diversas áreas del Derecho" >}}
+Asesoramiento y defensa en los siguientes órdenes jurisdiccionales.
+{{< /qa/section >}}
+
+{{< qa/section title="Preguntas frecuentes" align="center" id="faq" />}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/steps ---------------- -->
+<div class="card">
+<h3 id="sc-steps"><code>qa/steps</code> · Lista editorial</h3>
+<p>Lista de elementos (<code>qa/step</code>) con dos formas de mostrarse:</p>
+<ul>
+  <li><b>En filas</b> (por defecto): número, título a la izquierda y texto a la derecha, separados por líneas finas. Es la de la portada.</li>
+  <li><b>En línea vertical</b> (<code>layout="line"</code>): una línea a la izquierda con un punto granate por elemento, y título, texto y enlace uno debajo de otro. Es la de Servicios.</li>
+</ul>
+<p>En móvil, ambas se apilan.</p>
+<div class="meta"><span><b>Contenido interior:</b> obligatorio → solo <code>qa/step</code></span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>layout</code></td><td><span class="opt">Opcional</span></td><td><code>rows</code> (por defecto) · <code>line</code></td><td>Forma de la lista: en filas o en línea vertical con puntos.</td></tr>
+<tr><td><code>numbered</code></td><td><span class="opt">Opcional</span></td><td><code>true</code> (por defecto) · <code>false</code></td><td><code>false</code> oculta los números (01, 02, 03…).</td></tr>
+<tr><td><code>start</code></td><td><span class="opt">Opcional</span></td><td>Número · por defecto <code>1</code></td><td>Por qué número empieza la cuenta (<code>start="4"</code> → 04, 05…).</td></tr>
+</table></div>
+<div class="code"><span class="label">En filas, sin números (portada)</span><textarea readonly spellcheck="false">{{< qa/steps numbered="false" >}}
+  {{< qa/step title="Penal" link="servicios/penal" more="Más información" >}}
+  Defensa, asistencia e intervención en todo tipo de procedimientos penales.
+  {{< /qa/step >}}
+  {{< qa/step title="Familia" link="servicios/familia" more="Más información" >}}
+  Divorcios, adopción de medidas sobre hijos menores, pensión de alimentos, etc.
+  {{< /qa/step >}}
+{{< /qa/steps >}}</textarea><button type="button">Copiar</button></div>
+<div class="code"><span class="label">En línea vertical (Servicios)</span><textarea readonly spellcheck="false">{{< qa/steps numbered="false" layout="line" >}}
+  {{< qa/step title="Penal" link="servicios/penal" more="Más información" >}}
+  Defensa, asistencia e intervención en todo tipo de procedimientos penales.
+  {{< /qa/step >}}
+{{< /qa/steps >}}</textarea><button type="button">Copiar</button></div>
+<div class="code"><span class="label">Numerada (pasos de un procedimiento)</span><textarea readonly spellcheck="false">{{< qa/steps >}}
+  {{< qa/step title="Primera consulta" >}}Estudiamos su caso.{{< /qa/step >}}
+  {{< qa/step title="Estrategia" >}}Le explicamos las opciones y los plazos.{{< /qa/step >}}
+{{< /qa/steps >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/step ---------------- -->
+<div class="card">
+<h3 id="sc-step"><code>qa/step</code> · Elemento de qa/steps</h3>
+<p>Una fila o elemento de la lista. Si lleva <code>link</code>, todo el elemento es clicable: al pasar el ratón, el título se pone granate y la flecha se mueve.</p>
+<div class="meta"><span><b>Contenido interior:</b> opcional → texto explicativo (Markdown, varios párrafos)</span><span><b>Solo dentro de</b> <code>qa/steps</code></span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>title</code></td><td><span class="req">Obligatorio</span></td><td>Texto (Markdown)</td><td>Título en serif.</td></tr>
+<tr><td><code>label</code></td><td><span class="opt">Opcional</span></td><td>Texto</td><td>Sustituye al número automático (p. ej. <code>"Fase 1"</code>). No se ve si la lista es <code>numbered="false"</code>.</td></tr>
+<tr><td><code>link</code></td><td><span class="opt">Opcional</span></td><td>Enlace</td><td>Hace clicable todo el elemento.</td></tr>
+<tr><td><code>more</code></td><td><span class="opt">Opcional</span></td><td>Texto</td><td>Enlace granate con flecha (p. ej. "Más información"). Solo con <code>link</code>.</td></tr>
+</table></div>
+<div class="note"><b>Nota</b> No pongas <code>[enlaces](…)</code> dentro del texto de un elemento que ya tiene <code>link</code>.</div>
+</div>
+
+<!-- ---------------- qa/grid ---------------- -->
+<div class="card">
+<h3 id="sc-grid"><code>qa/grid</code> · Rejilla de tarjetas</h3>
+<p>Coloca en columnas tarjetas (<code>qa/card</code>) o cifras (<code>qa/stat</code>).</p>
+<div class="meta"><span><b>Contenido interior:</b> obligatorio → solo <code>qa/card</code> o <code>qa/stat</code>, sin texto suelto</span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>cols</code></td><td><span class="opt">Opcional</span></td><td><code>2</code> · <code>3</code> (por defecto) · <code>4</code></td><td>Columnas en escritorio. En tableta siempre 2 y en móvil siempre 1.</td></tr>
+</table></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/grid cols="3" >}}
+  {{< qa/card title="Uno" >}}Texto.{{< /qa/card >}}
+  {{< qa/card title="Dos" >}}Texto.{{< /qa/card >}}
+  {{< qa/card title="Tres" >}}Texto.{{< /qa/card >}}
+{{< /qa/grid >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/card ---------------- -->
+<div class="card">
+<h3 id="sc-card"><code>qa/card</code> · Tarjeta</h3>
+<p>Tarjeta con esquinas redondeadas y borde fino. Si lleva <code>link</code>, toda la tarjeta es clicable. Orden de arriba abajo: icono → etiqueta → título → texto → enlace "más".</p>
+<div class="meta"><span><b>Contenido interior:</b> opcional → texto de la tarjeta (Markdown)</span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>title</code></td><td><span class="opt">Recomendado</span></td><td>Texto (Markdown)</td><td>Título en serif.</td></tr>
+<tr><td><code>label</code></td><td><span class="opt">Opcional</span></td><td>Texto</td><td>Etiqueta pequeña sobre el título ("01", "Teléfono"…).</td></tr>
+<tr><td><code>icon</code></td><td><span class="opt">Opcional</span></td><td><a href="#iconos">Nombre de icono</a></td><td>Icono en un cuadradito, arriba.</td></tr>
+<tr><td><code>link</code></td><td><span class="opt">Opcional</span></td><td>Enlace</td><td>Hace clicable toda la tarjeta.</td></tr>
+<tr><td><code>more</code></td><td><span class="opt">Opcional</span></td><td>Texto</td><td>Enlace granate con flecha al pie. Solo con <code>link</code>.</td></tr>
+<tr><td><code>bg</code></td><td><span class="opt">Opcional</span></td><td><code>paper</code> (por defecto) · <code>sand</code> · <code>accent</code> · <code>dark</code> · cualquier color CSS</td><td><b>Color de fondo.</b> Ver tabla siguiente.</td></tr>
+<tr><td><code>text</code></td><td><span class="opt">Opcional</span></td><td><code>light</code> · <code>dark</code></td><td>Color del texto. Solo hace falta con colores propios.</td></tr>
+</table></div>
+<h4>Colores de fondo</h4>
+<div class="table"><table>
+<tr><th>Valor de bg</th><th>Aspecto</th><th>Texto</th></tr>
+<tr><td><code>paper</code></td><td>Blanco con borde fino (por defecto)</td><td>Automático</td></tr>
+<tr><td><code>sand</code></td><td>Gris piedra muy claro, sin borde</td><td>Automático</td></tr>
+<tr><td><code>accent</code></td><td>Granate corporativo #a10d2a</td><td>Blanco automático</td></tr>
+<tr><td><code>dark</code></td><td>Negro #121212</td><td>Blanco automático</td></tr>
+<tr><td><code>#f4efe6</code>, <code>rgb(…)</code>, <code>hsl(…)</code>…</td><td>El color que indiques</td><td>Añade <code>text="dark"</code> si es claro o <code>text="light"</code> si es oscuro</td></tr>
+</table></div>
+<div class="note"><b>Notas</b>
+<ul>
+  <li>Los colores predefinidos se adaptan al modo oscuro; los colores propios no (se ven igual en ambos modos).</li>
+  <li>No pongas <code>[enlaces](…)</code> en el texto de una tarjeta que ya tiene <code>link</code>.</li>
+</ul></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/card icon="phone" label="Teléfono" title="947 27 31 01" link="tel:+34947273101" more="Llamar" >}}
+Concierte una cita con nosotros.
+{{< /qa/card >}}
+
+{{< qa/card title="Urgencias penales" bg="accent" link="contacto" more="Contactar" >}}
+Asistencia en comisaría y juzgado de guardia.
+{{< /qa/card >}}
+
+{{< qa/card title="Horario de verano" bg="#f4efe6" text="dark" >}}
+Julio y agosto: de 9:00 a 14:30.
+{{< /qa/card >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/stat ---------------- -->
+<div class="card">
+<h3 id="sc-stat"><code>qa/stat</code> · Tarjeta de cifra</h3>
+<p>Tarjeta con una cifra grande en serif. Pensada para <code>qa/grid cols="4"</code>.</p>
+<div class="meta"><span><b>Contenido interior:</b> no</span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>label</code></td><td><span class="req">Obligatorio</span></td><td>Texto</td><td>Etiqueta superior ("Experiencia").</td></tr>
+<tr><td><code>value</code></td><td><span class="req">Obligatorio</span></td><td>Texto</td><td>Cifra o dato ("40", "Burgos").</td></tr>
+<tr><td><code>accent</code></td><td><span class="opt">Opcional</span></td><td>Texto</td><td>Sufijo pegado a la cifra en granate ("+", "%").</td></tr>
+<tr><td><code>note</code></td><td><span class="opt">Opcional</span></td><td>Texto (Markdown)</td><td>Nota pequeña debajo.</td></tr>
+</table></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/grid cols="4" >}}
+  {{< qa/stat label="Experiencia" value="40" accent="+" note="años de ejercicio" >}}
+  {{< qa/stat label="Idiomas" value="3" note="Español, inglés y francés" >}}
+{{< /qa/grid >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/ledger ---------------- -->
+<div class="card">
+<h3 id="sc-ledger"><code>qa/ledger</code> · Lista sencilla</h3>
+<p>Lista con viñetas granates, letra algo mayor y ancho limitado. Sin fondo ni numeración.</p>
+<div class="meta"><span><b>Contenido interior:</b> obligatorio → lista Markdown (<code>* </code> o <code>- </code>)</span><span><b>Parámetros:</b> ninguno</span></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/ledger >}}
+* Lealtad a los clientes.
+* Competencia profesional.
+{{< /qa/ledger >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/quote ---------------- -->
+<div class="card">
+<h3 id="sc-quote"><code>qa/quote</code> · Cita destacada</h3>
+<p>Cita centrada en serif grande, con comillas granates y líneas finas arriba y abajo. Deja espacio de sección encima.</p>
+<div class="meta"><span><b>Contenido interior:</b> obligatorio → texto de la cita (Markdown)</span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>cite</code></td><td><span class="opt">Opcional</span></td><td>Texto (Markdown)</td><td>Autor o fuente; sale debajo con "—".</td></tr>
+</table></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/quote cite="Código Deontológico de la Abogacía Española" >}}
+La honradez, probidad, rectitud, lealtad, diligencia y veracidad son virtudes…
+{{< /qa/quote >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/cta ---------------- -->
+<div class="card">
+<h3 id="sc-cta"><code>qa/cta</code> · Tarjeta de contacto</h3>
+<p>Banda negra (gris con borde en modo oscuro) con título, texto, el <b>teléfono del despacho en grande</b> y un botón. Deja espacio de sección encima. Todo lo relativo a esta tarjeta está reunido en <a href="#contacto">su propio apartado</a>.</p>
+<div class="meta"><span><b>Contenido interior:</b> opcional → texto bajo el título (Markdown)</span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>title</code></td><td><span class="opt">Opcional</span></td><td>Texto (Markdown) · por defecto <code>ctaTitle</code> de <code>i18n</code></td><td>Título grande en serif.</td></tr>
+<tr><td><code>button</code></td><td><span class="opt">Opcional</span></td><td>Texto · por defecto <code>ctaButton</code> de <code>i18n</code></td><td>Texto del botón. <code>button=""</code> lo quita.</td></tr>
+<tr><td><code>link</code></td><td><span class="opt">Opcional</span></td><td>Enlace · por defecto <code>contacto</code></td><td>A dónde lleva el botón.</td></tr>
+<tr><td><code>intl</code></td><td><span class="opt">Opcional</span></td><td><code>true</code> · <code>false</code> · por defecto: sí en EN y FR, no en ES</td><td>Muestra el teléfono internacional "(+34) 947 27 31 01".</td></tr>
+<tr><td><code>eyebrow</code></td><td><span class="opt">Opcional</span></td><td>Texto · por defecto ninguno</td><td>Antetítulo pequeño. Ya no se usa en ninguna página.</td></tr>
+</table></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/cta >}}
+Si necesita asesoramiento, estamos preparados para ayudarle.
+{{< /qa/cta >}}
+
+{{< qa/cta />}}
+
+{{< qa/cta title="Concierte una cita con nosotros" >}}
+Título propio solo en esta página.
+{{< /qa/cta >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/lawyer ---------------- -->
+<div class="card">
+<h3 id="sc-lawyer"><code>qa/lawyer</code> · Ficha de abogado</h3>
+<p>Tarjeta con el nombre en serif, cargo, etiquetas (colegiación, idiomas) y biografía separada por una línea fina. Las fichas se apilan una bajo otra.</p>
+<div class="meta"><span><b>Contenido interior:</b> opcional → biografía (Markdown)</span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>name</code></td><td><span class="req">Obligatorio</span></td><td>Texto</td><td>Nombre completo. También crea un ancla (<code>#pablo-quintana-jabato</code>).</td></tr>
+<tr><td><code>role</code></td><td><span class="opt">Opcional</span></td><td>Texto (Markdown)</td><td>Línea gris bajo el nombre (cargo, titulación).</td></tr>
+<tr><td><code>tags</code></td><td><span class="opt">Opcional</span></td><td>Textos separados por <b>punto y coma</b></td><td>Etiquetas grises. <code>tags="Col. 1.178 ICA Burgos; Mediador"</code></td></tr>
+<tr><td><code>langs</code></td><td><span class="opt">Opcional</span></td><td>Códigos separados por <b>comas</b></td><td>Idiomas con color: <b>ES</b> amarillo · <b>EN</b> rosa · <b>FR</b> azul. Otros códigos salen en blanco (añade su color en <code>custom.css</code>: <code>.qa-pill--lang-de { … }</code>).</td></tr>
+</table></div>
+<div class="note"><b>Nota</b> No metas las fichas dentro de <code>qa/grid</code>.</div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/lawyer name="Pablo Quintana Jabato" role="Abogado · Graduado en Derecho por la Universidad de Navarra" tags="Col. 3.308 ICA Burgos" langs="ES, EN, FR" >}}
+Graduado en Derecho por la Universidad de Navarra…
+{{< /qa/lawyer >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/button ---------------- -->
+<div class="card">
+<h3 id="sc-button"><code>qa/button</code> · Botón</h3>
+<p>Botón suelto en forma de píldora. Para varios seguidos, mételos en <code>qa/actions</code>.</p>
+<div class="meta"><span><b>Contenido interior:</b> no</span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>text</code></td><td><span class="req">Obligatorio</span></td><td>Texto</td><td>Texto del botón.</td></tr>
+<tr><td><code>link</code></td><td><span class="req">Obligatorio</span></td><td>Enlace</td><td>A dónde lleva.</td></tr>
+<tr><td><code>style</code></td><td><span class="opt">Opcional</span></td><td><code>primary</code> (por defecto) · <code>accent</code> · <code>ghost</code></td><td>Negro (granate al pasar el ratón) · granate · transparente con borde.</td></tr>
+<tr><td><code>icon</code></td><td><span class="opt">Opcional</span></td><td><a href="#iconos">Nombre de icono</a></td><td>Icono a la izquierda del texto.</td></tr>
+</table></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/button text="Contacto" link="contacto" >}}
+{{< qa/button text="947 27 31 01" link="tel:+34947273101" style="ghost" icon="phone" >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/actions ---------------- -->
+<div class="card">
+<h3 id="sc-actions"><code>qa/actions</code> · Fila de botones</h3>
+<p>Agrupa varios <code>qa/button</code> en una fila con la separación correcta (en móvil pasan a varias líneas). Justo después de <code>qa/steps</code> o <code>qa/grid</code> deja un espacio encima automáticamente.</p>
+<div class="meta"><span><b>Contenido interior:</b> obligatorio → <code>qa/button</code></span><span><b>Parámetros:</b> ninguno</span></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/actions >}}
+  {{< qa/button text="Concierte una cita" link="contacto" >}}
+  {{< qa/button text="Ver todos los servicios" link="servicios" style="ghost" >}}
+{{< /qa/actions >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/pill ---------------- -->
+<div class="card">
+<h3 id="sc-pill"><code>qa/pill</code> · Píldora o etiqueta</h3>
+<p>Etiqueta pequeña y redondeada, con o sin enlace.</p>
+<div class="meta"><span><b>Contenido interior:</b> no</span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>text</code></td><td><span class="req">Obligatorio</span></td><td>Texto</td><td>Texto de la píldora.</td></tr>
+<tr><td><code>link</code></td><td><span class="opt">Opcional</span></td><td>Enlace</td><td>La convierte en enlace.</td></tr>
+<tr><td><code>icon</code></td><td><span class="opt">Opcional</span></td><td><a href="#iconos">Nombre de icono</a></td><td>Icono a la izquierda.</td></tr>
+<tr><td><code>accent</code></td><td><span class="opt">Opcional</span></td><td><code>true</code> · por defecto no</td><td>Fondo rosado y texto granate (en vez de blanco con borde).</td></tr>
+</table></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/pill text="Novedad" accent="true" >}}
+{{< qa/pill text="Ver servicios" link="servicios" icon="arrow-right" >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/showcase ---------------- -->
+<div class="card">
+<h3 id="sc-showcase"><code>qa/showcase</code> · Imagen destacada a lo ancho</h3>
+<p>Bloque grande como el de la portada de midday.ai al hacer scroll: un fondo (por defecto negro con grano y una luz arriba) y, centrada encima, la imagen principal. Al entrar en pantalla aparece con un efecto suave (la imagen sube y el bloque crece un poco). Deja espacio de sección encima.</p>
+<div class="meta"><span><b>Contenido interior:</b> no</span><span><b>Ejemplo vivo:</b> <code>/ejemplos/</code> con <code>hugo server -D</code></span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>src</code></td><td><span class="opt">Opcional</span></td><td>Ruta o URL de imagen</td><td>Imagen principal, centrada. <code>/images/despacho.jpg</code></td></tr>
+<tr><td><code>alt</code></td><td><span class="opt">Recomendado</span></td><td>Texto</td><td>Descripción de la imagen (accesibilidad y Google).</td></tr>
+<tr><td><code>bg</code></td><td><span class="opt">Opcional</span></td><td><code>dark</code> (por defecto) · <code>sand</code> · <code>paper</code> · <code>accent</code> · color CSS · degradado · imagen</td><td>Fondo del bloque. Un color: <code>bg="#1d1d1f"</code>. Un degradado: <code>bg="linear-gradient(#fff, #e6e4e0)"</code>. Una imagen (cubre todo): <code>bg="/images/fondo.jpg"</code>.</td></tr>
+<tr><td><code>video</code></td><td><span class="opt">Opcional</span></td><td>Ruta o URL <code>.mp4</code></td><td>Vídeo de fondo en bucle y sin sonido. Si <code>bg</code> es una imagen, se usa de portada mientras carga.</td></tr>
+<tr><td><code>width</code></td><td><span class="opt">Opcional</span></td><td><code>page</code> (por defecto) · <code>full</code></td><td>Ancho del contenido de la página, o de borde a borde de la ventana.</td></tr>
+<tr><td><code>height</code></td><td><span class="opt">Opcional</span></td><td>CSS, p. ej. <code>560px</code></td><td>Alto fijo. Por defecto, proporción 16:11 entre 360 y 900 px.</td></tr>
+<tr><td><code>size</code></td><td><span class="opt">Opcional</span></td><td>Número · por defecto <code>85</code></td><td>Ancho máximo de la imagen principal, en %.</td></tr>
+<tr><td><code>fit</code></td><td><span class="opt">Opcional</span></td><td><code>contain</code> (por defecto) · <code>cover</code></td><td>Imagen entera con margen, o rellenando todo el bloque (como una foto).</td></tr>
+<tr><td><code>caption</code></td><td><span class="opt">Opcional</span></td><td>Texto (Markdown)</td><td>Pie de foto pequeño bajo el bloque.</td></tr>
+<tr><td><code>animate</code></td><td><span class="opt">Opcional</span></td><td><code>false</code> · por defecto activado</td><td>Desactiva el efecto de aparición.</td></tr>
+</table></div>
+<div class="note"><b>Notas</b>
+<ul>
+  <li>El efecto de aparición funciona en Chrome, Edge y Safari recientes. En el resto la imagen se ve igual, sin animación.</li>
+  <li>Quien tiene activado "reducir movimiento" en su sistema no ve la animación.</li>
+</ul></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/showcase src="/images/ejemplos/expediente.svg" alt="Vista de un expediente" >}}
+
+{{< qa/showcase src="/images/despacho.jpg" alt="Despacho" bg="sand" width="full" height="560px" size="70" >}}
+
+{{< qa/showcase src="/images/burgos.jpg" alt="Burgos" fit="cover" caption="Burgos, sede del despacho." >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/split ---------------- -->
+<div class="card">
+<h3 id="sc-split"><code>qa/split</code> · Pantalla dividida</h3>
+<p>Divide la pantalla en dos, como la sección "How it works" de midday.ai:</p>
+<ul>
+  <li><b>Izquierda:</b> título y lista de elementos unidos por una línea vertical con puntos cuadrados. El activo, en negro con su punto granate y su descripción; los demás, en gris.</li>
+  <li><b>Derecha:</b> panel con borde fino que muestra la imagen y/o el texto del elemento activo.</li>
+  <li>Se cambia pulsando un elemento (o con las flechas del teclado) y avanza solo cada 8 segundos mientras está en pantalla. Se detiene al pasar el ratón por encima.</li>
+  <li>En móvil y tableta se apila: cada elemento con su descripción y su panel debajo.</li>
+</ul>
+<div class="meta"><span><b>Contenido interior:</b> obligatorio → dos o más <code>qa/split-item</code></span><span><b>Ejemplo vivo:</b> <code>/ejemplos/</code></span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>title</code></td><td><span class="opt">Opcional</span></td><td>Texto (Markdown)</td><td>Título en serif sobre la lista.</td></tr>
+<tr><td><code>eyebrow</code></td><td><span class="opt">Opcional</span></td><td>Texto</td><td>Antetítulo en mayúsculas granate.</td></tr>
+<tr><td><code>interval</code></td><td><span class="opt">Opcional</span></td><td>Segundos · por defecto <code>8</code></td><td>Tiempo entre cambios automáticos. <code>0</code> lo desactiva.</td></tr>
+<tr><td><code>height</code></td><td><span class="opt">Opcional</span></td><td>CSS · por defecto <code>560px</code></td><td>Alto del bloque en escritorio.</td></tr>
+<tr><td><code>side</code></td><td><span class="opt">Opcional</span></td><td><code>right</code> (por defecto) · <code>left</code></td><td>Lado del panel.</td></tr>
+<tr><td><code>style</code></td><td><span class="opt">Opcional</span></td><td><code>minimal</code></td><td>Versión sobria: panel blanco sin borde, lista sin puntos y enlace subrayado en lugar de botón. En escritorio, el título <code>###</code> del panel queda a la misma altura y tamaño que el título del bloque.</td></tr>
+<tr><td><code>divider</code></td><td><span class="opt">Opcional</span></td><td><code>true</code></td><td>Línea vertical fina entre la lista y el panel (solo escritorio).</td></tr>
+<tr><td><code>border</code></td><td><span class="opt">Opcional</span></td><td><code>false</code></td><td>Quita el borde fino de los paneles.</td></tr>
+<tr><td><code>bg</code></td><td><span class="opt">Opcional</span></td><td><code>paper</code> · <code>sand</code> · <code>accent</code> · <code>dark</code> · cualquier color CSS (<code>#f4efe6</code>, <code>rgb(…)</code>)</td><td>Fondo de todos los paneles. Sin él: blanco si hay imagen, gris piedra si solo hay texto. <code>accent</code> y <code>dark</code> ponen el texto en claro solos.</td></tr>
+<tr><td><code>textColor</code></td><td><span class="opt">Opcional</span></td><td><code>light</code> · <code>dark</code></td><td>Color del texto del panel. Solo hace falta con colores propios (p. ej. <code>bg="#1f3a5f" textColor="light"</code>).</td></tr>
+</table></div>
+<div class="note"><b>Notas</b>
+<ul>
+  <li>Necesita JavaScript (<code>assets/js/qa.js</code>, ya incluido en todas las páginas). Sin él se ve el primer elemento.</li>
+  <li>Quien tiene "reducir movimiento" activado no ve el avance automático.</li>
+  <li>Se puede usar varias veces en una misma página.</li>
+  <li>Panel solo de texto: escriba dentro de cada <code>qa/split-item</code> un subtítulo <code>###</code>, párrafos, una lista <code>*</code> y, al final, un enlace solo en su línea: el subtítulo sale en serif grande, la lista con puntos granate y el enlace como botón.</li>
+</ul></div>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/split eyebrow="Método" title="Cómo trabajamos" >}}
+  {{< qa/split-item title="Primera consulta" text="Estudiamos su caso con usted." image="/images/ejemplos/paso-consulta.svg" alt="Agenda" />}}
+  {{< qa/split-item title="Estudio del asunto" text="Analizamos la documentación." image="/images/ejemplos/paso-estudio.svg" alt="Documentos" />}}
+  {{< qa/split-item title="Defensa" text="Le defendemos en todas las fases." image="/images/ejemplos/paso-defensa.svg" alt="Balanza" />}}
+{{< /qa/split >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+<!-- ---------------- qa/split-item ---------------- -->
+<div class="card">
+<h3 id="sc-split-item"><code>qa/split-item</code> · Elemento de qa/split</h3>
+<p>Un elemento de la pantalla dividida. Su título y descripción van a la izquierda; su imagen y su texto, al panel de la derecha.</p>
+<div class="meta"><span><b>Contenido interior:</b> opcional → texto del <b>panel derecho</b> (Markdown: párrafos, listas, subtítulos, enlaces). Con imagen, va debajo de ella.</span><span><b>Solo dentro de</b> <code>qa/split</code> (fuera da error)</span></div>
+<div class="table"><table>
+<tr><th>Parámetro</th><th></th><th>Valores / por defecto</th><th>Descripción</th></tr>
+<tr><td><code>title</code></td><td><span class="req">Obligatorio</span></td><td>Texto (Markdown)</td><td>Título en la lista de la izquierda.</td></tr>
+<tr><td><code>text</code></td><td><span class="opt">Opcional</span></td><td>Texto (Markdown)</td><td>Descripción corta bajo el título (solo se ve en el activo; en móvil siempre).</td></tr>
+<tr><td><code>image</code></td><td><span class="opt">Opcional</span></td><td>Ruta o URL</td><td>Imagen del panel derecho.</td></tr>
+<tr><td><code>alt</code></td><td><span class="opt">Recomendado</span></td><td>Texto</td><td>Descripción de la imagen.</td></tr>
+<tr><td><code>fit</code></td><td><span class="opt">Opcional</span></td><td><code>contain</code> (por defecto) · <code>cover</code></td><td>Imagen entera con margen, o rellenando todo el panel.</td></tr>
+<tr><td><code>bg</code></td><td><span class="opt">Opcional</span></td><td>Igual que en <code>qa/split</code></td><td>Fondo solo de este panel; manda sobre el de <code>qa/split</code>.</td></tr>
+<tr><td><code>textColor</code></td><td><span class="opt">Opcional</span></td><td><code>light</code> · <code>dark</code></td><td>Color del texto solo de este panel.</td></tr>
+</table></div>
+<div class="code"><span class="label">Panel solo con texto</span><textarea readonly spellcheck="false">{{< qa/split-item title="Honorarios" text="Transparencia desde el principio." >}}
+### Presupuesto por escrito
+
+Antes de empezar le entregamos un presupuesto detallado.
+
+* Sin costes ocultos.
+* Pago fraccionado si lo necesita.
+{{< /qa/split-item >}}</textarea><button type="button">Copiar</button></div>
+</div>
+
+
+<!-- ===================================================================== -->
+<h2 id="hextra"><span class="num">07</span>Shortcodes de Hextra (siguen funcionando)</h2>
+<p>El tema base trae sus propios shortcodes. Los que usa el contenido actual se han restilizado para encajar con el diseño.</p>
+
+<div class="table"><table>
+<tr><th>Shortcode</th><th>Parámetros</th><th>Aspecto actual</th></tr>
+<tr><td><code>hextra/hero-subtitle</code></td><td><code>style</code> (CSS opcional)</td><td>Entradilla grande en gris bajo el título de la página.</td></tr>
+<tr><td><code>callout</code></td><td><code>type</code>: <code>default</code>, <code>info</code>, <code>warning</code>, <code>error</code>, <code>important</code> · <code>icon</code> · <code>emoji</code></td><td>Franja blanca con borde fino e icono granate en un círculo rosado. <b>Todos los tipos se ven igual</b> (el sitio solo usa <code>error</code>).</td></tr>
+<tr><td><code>details</code> <b>(con %)</b></td><td><code>title</code> · <code>closed="true"</code> para que empiece cerrado</td><td>Desplegable blanco con borde fino y título en serif. Es el que lista los servicios en cada área.</td></tr>
+<tr><td><code>badge</code></td><td><code>content</code> · <code>icon</code> · <code>link</code> · <code>border</code> · <code>color</code> (ya no cambia el color)</td><td>Píldora neutra blanca con borde.</td></tr>
+<tr><td><code>steps</code> <b>(con %)</b></td><td>—</td><td>Pasos numerados con línea vertical y número granate. Para listas nuevas, mejor <code>qa/steps</code>.</td></tr>
+<tr><td><code>cards</code> + <code>card</code></td><td><code>cards</code>: <code>cols</code> · <code>card</code>: <code>title</code>, <code>link</code>, <code>icon</code>, <code>subtitle</code>, <code>image</code>, <code>alt</code>, <code>tag</code>, <code>tagColor</code>, <code>tagIcon</code></td><td>Tarjeta blanca con icono granate. Para tarjetas nuevas, mejor <code>qa/card</code>.</td></tr>
+<tr><td><code>hextra/hero-button</code></td><td><code>text</code> · <code>link</code> · <code>style</code></td><td>Botón negro en píldora.</td></tr>
+<tr><td><code>icon</code></td><td>Nombre: <code>{{&lt; icon "phone" &gt;}}</code></td><td>Icono suelto dentro del texto.</td></tr>
+</table></div>
+<div class="code"><textarea readonly spellcheck="false">{{< hextra/hero-subtitle >}}
+Entradilla de la página.
+{{< /hextra/hero-subtitle >}}
+
+{{< callout type="error" icon="phone" >}}
+**[947 27 31 01](tel:+34947273101)** : Concierte una cita con nosotros.
+{{< /callout >}}
+
+{{% details title="Delitos contra las personas" closed="true" %}}
+* Homicidio y asesinato [→](/servicios/penal/homicidio-y-asesinato)
+* Lesiones [→](/servicios/penal/lesiones)
+{{% /details %}}</textarea><button type="button">Copiar</button></div>
+<p>Documentación completa de Hextra: <a href="https://imfing.github.io/hextra/docs/guide/shortcodes/">imfing.github.io/hextra</a>.</p>
+
+
+<!-- ===================================================================== -->
+<h2 id="contacto"><span class="num">08</span>La tarjeta de contacto</h2>
+<p>Es la banda negra con el teléfono en grande que cierra la portada, Abogados, Servicios, cada área, cada servicio y cada noticia. Toma sus datos de cuatro sitios:</p>
+
+<div class="table"><table>
+<tr><th>Qué cambiar</th><th>Dónde</th><th>Afecta a</th></tr>
+<tr><td>El teléfono</td><td><code>hugo.yaml</code> → <code>params.contact</code> (<code>phone</code>, <code>phoneIntl</code>, <code>phoneLink</code>)</td><td>Todas las tarjetas, la barra y el pie</td></tr>
+<tr><td>Título y botón de <b>todas</b> las tarjetas</td><td><code>i18n/*.yaml</code>: <code>ctaTitle</code>, <code>ctaButton</code></td><td>Todas las páginas y noticias de ese idioma (salvo las que llevan su propio <code>title</code>/<code>button</code>, como las portadas)</td></tr>
+<tr><td>Texto bajo el título, o título/botón de <b>una página</b></td><td>El shortcode <code>qa/cta</code> al final de su <code>.md</code></td><td>Solo esa página</td></tr>
+<tr><td>El aspecto (colores, tamaños)</td><td><code>assets/css/custom.css</code>, bloque <code>/* Banda de contacto</code></td><td>Todas</td></tr>
+<tr><td>La estructura HTML</td><td><code>layouts/partials/qa/cta.html</code></td><td>Todas (la comparten el shortcode y las noticias)</td></tr>
+</table></div>
+
+<h3 id="contacto-pagina">En una página</h3>
+<div class="code"><textarea readonly spellcheck="false">{{< qa/cta >}}
+Si se enfrenta a una acusación por un delito o si necesita asesoramiento como víctima, no espere.
+{{< /qa/cta >}}</textarea><button type="button">Copiar</button></div>
+<p>Parámetros completos en <a href="#sc-cta"><code>qa/cta</code></a>. Sin párrafo, ciérrala con <code>/&gt;}}</code>.</p>
+<div class="tip"><b>Cambiar el mismo texto en muchas páginas</b>
+El título y el botón se cambian en <code>i18n</code>. El texto bajo el título es propio de cada página: para cambiar una frase en todas, usa "Buscar y reemplazar en archivos" del editor sobre la carpeta <code>content/</code>.</div>
+
+<h3 id="contacto-noticias">En las noticias</h3>
+<p>Se añade sola al final de cada noticia (no hay que escribirla). Para quitarla en una noticia concreta, añade a su cabecera:</p>
+<div class="code"><textarea readonly spellcheck="false">contactCard: false</textarea><button type="button">Copiar</button></div>
+
+<h3 id="contacto-aspecto">Cambiar el aspecto</h3>
+<div class="table"><table>
+<tr><th>Elemento</th><th>Regla en custom.css</th><th>Valor actual</th></tr>
+<tr><td>Fondo</td><td><code>.qa-cta</code> → <code>background-color</code></td><td><code>#121212</code></td></tr>
+<tr><td>Antetítulo</td><td><code>.qa-cta .qa-eyebrow</code> → <code>color</code></td><td><code>#ec6a83</code></td></tr>
+<tr><td>Título</td><td><code>.qa-cta__title</code> → <code>color</code></td><td><code>#f4f3f1</code></td></tr>
+<tr><td>Texto</td><td><code>.qa-cta__text</code> → <code>color</code></td><td><code>#b9b7b2</code></td></tr>
+<tr><td>Teléfono</td><td><code>.qa-cta__phone</code> (color y <code>:hover</code>)</td><td><code>#f4f3f1</code> → <code>#ec6a83</code></td></tr>
+<tr><td>Botón</td><td><code>.qa-cta .qa-btn--primary</code> (y <code>:hover</code>)</td><td>Blanco roto → rosa</td></tr>
+<tr><td>En modo oscuro</td><td>Reglas que empiezan por <code>.dark .qa-cta</code></td><td>Gris con borde</td></tr>
+</table></div>
+
+
+<!-- ===================================================================== -->
+<h2 id="menu"><span class="num">09</span>Barra de navegación y menús</h2>
+
+<h3 id="menu-aspecto">Cómo se ve</h3>
+<ul>
+  <li>Alineada con el contenido (1200 px como máximo): logotipo a la izquierda; enlaces, buscador y teléfono a la derecha.</li>
+  <li>Enlaces en gris, sin fondos ni bordes. El de la sección actual sale en <b>negrita y negro</b>, también en sus subpáginas.</li>
+  <li>El botón negro del teléfono (granate al pasar el ratón) sale a partir de 1024 px de ancho. Toma el número de <code>params.contact.phone</code>. Para quitarlo, en <code>hugo.yaml</code> → <code>params.navbar</code> ponga <code>displayPhone: false</code> (<code>true</code> lo vuelve a mostrar).</li>
+  <li>En móvil, todo pasa al menú hamburguesa (de Hextra), con buscador y selector de idioma.</li>
+</ul>
+
+<h3 id="menu-config">Configurar los enlaces</h3>
+<p>En <code>hugo.yaml</code>, dentro de <code>menu: main:</code>. Cada elemento:</p>
+<div class="table"><table>
+<tr><th>Campo</th><th></th><th>Descripción</th></tr>
+<tr><td><code>identifier</code></td><td><span class="opt">Recomendado</span></td><td>Nombre interno. Si existe esa clave en <code>i18n/*.yaml</code>, se usa como texto traducido.</td></tr>
+<tr><td><code>name</code></td><td><span class="req">Obligatorio</span></td><td>Texto que se ve (si no hay traducción).</td></tr>
+<tr><td><code>pageRef</code></td><td><span class="opt">Uno de los dos</span></td><td>Página del sitio: <code>/noticias</code>. Se adapta al idioma.</td></tr>
+<tr><td><code>url</code></td><td><span class="opt">Uno de los dos</span></td><td>Enlace externo completo.</td></tr>
+<tr><td><code>weight</code></td><td><span class="opt">Recomendado</span></td><td>Orden (de menor a mayor).</td></tr>
+<tr><td><code>parent</code></td><td><span class="opt">Opcional</span></td><td>Lo convierte en hijo de otro elemento (menú anidado).</td></tr>
+<tr><td><code>params.type</code></td><td><span class="opt">Opcional</span></td><td><code>search</code> = el buscador (no tocar).</td></tr>
+<tr><td><code>params.description</code></td><td><span class="opt">Opcional</span></td><td>En un padre: texto a la izquierda del panel. En un hijo: línea gris bajo su título.</td></tr>
+<tr><td><code>params.menuIcon</code></td><td><span class="opt">Opcional</span></td><td>En un hijo: icono en un cuadradito. (Se llama <code>menuIcon</code> y no <code>icon</code> a propósito: con <code>icon</code> Hextra lo oculta en el menú del móvil.)</td></tr>
+</table></div>
+
+<h3 id="menu-anidado">Menús anidados (desplegables)</h3>
+<p>Un elemento con hijos deja de ser un enlace y, al pasar el ratón o pulsar, abre un panel a todo el ancho bajo la barra (como "Features" en midday.ai) con el título y la descripción de cada hijo. Se cierra al salir con el ratón, pulsando fuera o con <kbd>Esc</kbd>.</p>
+<ol>
+  <li>Añade el elemento padre <b>sin</b> <code>pageRef</code>.</li>
+  <li>Añade cada hijo con <code>parent:</code> igual al <code>identifier</code> del padre.</li>
+</ol>
+<div class="code"><span class="label">hugo.yaml (hay un ejemplo igual comentado, listo para activar)</span><textarea readonly spellcheck="false">menu:
+  main:
+    - identifier: recursos
+      name: Recursos
+      weight: 4
+      params:
+        description: Guías y documentos útiles.
+    - identifier: guias
+      name: Guías
+      parent: recursos
+      pageRef: /guias
+      weight: 1
+      params:
+        description: Explicaciones prácticas paso a paso
+        menuIcon: book-open
+    - identifier: formularios
+      name: Formularios
+      parent: recursos
+      url: https://forms.office.com/e/H4qwDRuGdY
+      weight: 2
+      params:
+        description: Escríbanos online</textarea><button type="button">Copiar</button></div>
+<div class="note"><b>En el móvil</b>
+El menú hamburguesa muestra el padre como grupo con sus hijos, pero no muestra los hijos cuya página tenga <code>sidebar: exclude: true</code> (como las páginas de cada área de Servicios).</div>
+
+<h3 id="menu-traducir">Traducir los enlaces</h3>
+<p>Añade el <code>identifier</code> como clave en cada <code>i18n/*.yaml</code>. Ya existen <code>abogados</code>, <code>servicios</code>, <code>contacto</code> y <code>noticias</code> en inglés y francés.</p>
+<div class="code"><span class="label">i18n/en.yaml</span><textarea readonly spellcheck="false">recursos: Resources
+guias: Guides</textarea><button type="button">Copiar</button></div>
+
+
+<!-- ===================================================================== -->
+<h2 id="pie"><span class="num">10</span>Pie de página</h2>
+<p>Plantilla: <code>layouts/partials/footer.html</code>. Está formado por:</p>
+<div class="table"><table>
+<tr><th>Parte</th><th>De dónde sale</th></tr>
+<tr><td>Logotipo</td><td><code>hugo.yaml</code> → <code>params.navbar.logo</code> (versión clara y oscura)</td></tr>
+<tr><td>Columna "Despacho"</td><td>Dirección y teléfono de <code>params.contact</code>; título <code>footerOffice</code>; prefijo <code>footerPhone</code></td></tr>
+<tr><td>Columna "Horario"</td><td><code>footerHours</code>, <code>footerHoursWeek</code>, <code>footerHoursFriday</code> en <code>i18n/*.yaml</code></td></tr>
+<tr><td>Columna "Navegación"</td><td>Los mismos enlaces del menú principal + "Cookies y privacidad" (<code>footerPrivacy</code>)</td></tr>
+<tr><td>Línea inferior</td><td>"© año Quintana Abogados" (el año se pone solo) + <code>footerCredits</code></td></tr>
+<tr><td>Selectores</td><td>Idioma y tema claro/oscuro (de Hextra). El de tema se oculta con <code>params.theme.displayToggle: false</code></td></tr>
+</table></div>
+
+
+<!-- ===================================================================== -->
+<h2 id="noticias"><span class="num">11</span>Noticias</h2>
+
+<h3 id="noticias-como">Cómo está montado</h3>
+<ul>
+  <li>Carpeta <code>content/noticias/</code>. Su <code>_index.md</code> (y <code>.en.md</code>, <code>.fr.md</code>) es la portada de la sección: título y entradilla.</li>
+  <li>Esa portada declara <code>cascade: type: blog</code>: <b>cualquier archivo</b> de la carpeta es automáticamente una noticia (usa el sistema de blog de Hextra con plantillas propias en <code>layouts/blog/</code>).</li>
+  <li>Listado de la más reciente a la más antigua, 10 por página, con paginación automática.</li>
+  <li>Cada noticia termina con la <a href="#contacto-noticias">tarjeta de contacto</a> automática.</li>
+  <li>Las noticias no aparecen una a una en el menú del móvil (<code>sidebar: exclude: true</code> en la cascada).</li>
+</ul>
+<div class="warn"><b>No borres <code>sidebar: exclude: false</code> de la cabecera de Noticias</b>
+Hugo aplica la cascada también a la propia página de la sección. Esa línea, en <code>content/noticias/_index.md</code> (y <code>.en.md</code>, <code>.fr.md</code>), hace que "Noticias" siga apareciendo en el menú del móvil mientras las noticias sueltas quedan ocultas. Lo mismo vale para cualquier sección nueva en la que uses <code>cascade: sidebar: exclude: true</code>.</div>
+
+<h3 id="noticias-crear">Crear una noticia</h3>
+<ol>
+  <li>Crea un archivo en <code>content/noticias/</code> con un nombre corto, en minúsculas y con guiones (será la dirección): <code>nueva-ley-de-eficiencia.md</code> → <code>/noticias/nueva-ley-de-eficiencia/</code>.</li>
+  <li>Pega y rellena esta cabecera:</li>
+</ol>
+<div class="code"><span class="label">content/noticias/nueva-ley-de-eficiencia.md</span><textarea readonly spellcheck="false">---
+title: Título de la noticia
+date: 2026-10-08
+description: Resumen de una o dos frases. Sale en el listado y en Google.
+tags: [Penal, Novedades legislativas]
+authors: [Quintana Abogados]
+draft: false
+---
+Primer párrafo de la noticia.
+
+## Un subtítulo
+
+Más texto…</textarea><button type="button">Copiar</button></div>
+<ol start="3">
+  <li>Para la versión en inglés o francés, crea al lado el mismo nombre con <code>.en.md</code> o <code>.fr.md</code>. Si no la creas, solo existe en español.</li>
+</ol>
+
+<h3 id="noticias-campos">Campos de la cabecera de una noticia</h3>
+<div class="table"><table>
+<tr><th>Campo</th><th></th><th>Descripción</th></tr>
+<tr><td><code>title</code></td><td><span class="req">Obligatorio</span></td><td>Título.</td></tr>
+<tr><td><code>date</code></td><td><span class="req">Obligatorio</span></td><td>Fecha <code>AAAA-MM-DD</code>. Ordena el listado y se muestra como "8 de octubre de 2026" (en el idioma de la página). <b>Una fecha futura no se publica hasta ese día.</b></td></tr>
+<tr><td><code>description</code></td><td><span class="opt">Recomendado</span></td><td>Resumen bajo el título en el listado y para Google. Si falta, se usa el comienzo del texto.</td></tr>
+<tr><td><code>tags</code></td><td><span class="opt">Opcional</span></td><td>Etiquetas entre corchetes, separadas por comas. Se ven como píldoras.</td></tr>
+<tr><td><code>authors</code></td><td><span class="opt">Opcional</span></td><td>Autor(es) entre corchetes. Aparecen junto a la fecha.</td></tr>
+<tr><td><code>draft</code></td><td><span class="opt">Opcional</span></td><td><code>true</code> = borrador, no se publica.</td></tr>
+<tr><td><code>toc</code></td><td><span class="opt">Opcional</span></td><td><code>true</code> muestra el índice lateral con los subtítulos. Desactivado por defecto en noticias.</td></tr>
+<tr><td><code>contactCard</code></td><td><span class="opt">Opcional</span></td><td><code>false</code> quita la tarjeta de contacto del final.</td></tr>
+</table></div>
+
+<h3 id="noticias-ajustes">Ajustes del listado (hugo.yaml → params.blog)</h3>
+<div class="table"><table>
+<tr><th>Ajuste</th><th>Valor actual</th><th>Qué hace</th></tr>
+<tr><td><code>list.sortBy</code></td><td><code>date</code></td><td>Criterio de orden: <code>date</code>, <code>title</code>, <code>weight</code>, <code>lastmod</code>, <code>publishDate</code>.</td></tr>
+<tr><td><code>list.sortOrder</code></td><td><code>desc</code></td><td><code>desc</code> = más recientes primero; <code>asc</code> = al revés.</td></tr>
+<tr><td><code>list.pagerSize</code></td><td><i>(sin poner = 10)</i></td><td>Noticias por página del listado.</td></tr>
+<tr><td><code>list.displayTags</code></td><td><code>true</code></td><td>Muestra las etiquetas en el listado.</td></tr>
+<tr><td><code>article.displayPagination</code></td><td><code>false</code></td><td><code>true</code> añade al final de cada noticia enlaces a la anterior y la siguiente.</td></tr>
+</table></div>
+
+<h3 id="noticias-prueba">Las noticias de prueba</h3>
+<p>"Lorem ipsum dolor sit amet" y "Sed ut perspiciatis unde omnis", en tres idiomas. Para quitarlas, borra los seis archivos <code>lorem-ipsum-dolor-sit-amet.*</code> y <code>sed-ut-perspiciatis.*</code> de <code>content/noticias/</code>. Si la sección se queda vacía, muestra el texto <code>noticiasVacio</code> de <code>i18n</code>.</p>
+
+
+<!-- ===================================================================== -->
+<h2 id="config"><span class="num">12</span>Configuración: hugo.yaml</h2>
+<p>Los ajustes que se usan, agrupados:</p>
+<div class="table"><table>
+<tr><th>Ajuste</th><th>Qué controla</th></tr>
+<tr><td><code>title</code></td><td>Nombre del sitio; se añade al título de cada pestaña ("Contacto – Abogados en Burgos | Quintana Abogados").</td></tr>
+<tr><td><code>baseURL</code></td><td>Dirección pública: <code>https://quintana-abogados.com/</code>.</td></tr>
+<tr><td><code>defaultContentLanguage</code>, <code>languages</code></td><td>Idioma principal (<code>es</code>) y lista de idiomas con su nombre y orden en el selector.</td></tr>
+<tr><td><code>menu.main</code></td><td>Enlaces de la barra (ver <a href="#menu">Barra y menús</a>).</td></tr>
+<tr><td><code>params.contact.*</code></td><td>Teléfono, dirección, mapa, formulario (ver <a href="#receta-telefono">receta</a>).</td></tr>
+<tr><td><code>params.description</code></td><td>Descripción para Google de la portada, si su <code>_index.md</code> no tiene <code>description</code>. (En el resto de páginas, si falta, se usa el comienzo del texto.)</td></tr>
+<tr><td><code>params.navbar.logo.*</code></td><td><code>path</code> (logotipo claro), <code>dark</code> (oscuro), <code>link</code>, <code>width</code>, <code>height</code>.</td></tr>
+<tr><td><code>params.navbar.displayTitle</code></td><td><code>false</code>: no escribe el nombre del sitio junto al logotipo.</td></tr>
+<tr><td><code>params.theme.default</code></td><td>Tema inicial: <code>light</code> (claro), <code>dark</code> o <code>system</code> (el del ordenador del visitante).</td></tr>
+<tr><td><code>params.theme.displayToggle</code></td><td>Muestra u oculta el selector claro/oscuro del pie.</td></tr>
+<tr><td><code>params.footer.enable</code></td><td>Muestra el pie de página.</td></tr>
+<tr><td><code>params.dateFormat</code></td><td><code>":date_long"</code> = fecha larga en el idioma de la página.</td></tr>
+<tr><td><code>params.search.*</code></td><td>Buscador de la barra (FlexSearch). <code>enable: false</code> lo quita.</td></tr>
+<tr><td><code>params.blog.*</code></td><td>Noticias (ver <a href="#noticias-ajustes">ajustes del listado</a>).</td></tr>
+<tr><td><code>params.page.width</code></td><td>Sin efecto: el ancho (1200 px) se fija en <code>custom.css</code> (<code>--hextra-max-page-width</code>).</td></tr>
+<tr><td><code>markup.goldmark.renderer.unsafe</code></td><td><code>true</code>: permite HTML dentro de los <code>.md</code> (necesario, no tocar).</td></tr>
+<tr><td><code>module.imports</code></td><td>Carga el tema Hextra (versión en <code>go.mod</code>). No tocar.</td></tr>
+</table></div>
+
+
+<!-- ===================================================================== -->
+<h2 id="textos"><span class="num">13</span>Textos fijos traducibles (i18n)</h2>
+<p>Los textos que no están en ninguna página (pie, botones, menú) viven en <code>i18n/es.yaml</code>, <code>en.yaml</code> y <code>fr.yaml</code>. Cambia el texto a la derecha de los dos puntos; <b>no cambies la clave</b> de la izquierda.</p>
+<div class="table"><table>
+<tr><th>Clave</th><th>Español</th><th>Inglés</th><th>Francés</th><th>Dónde sale</th></tr>
+<tr><td><code>abogados</code></td><td>—</td><td>Lawyers</td><td>Advocats</td><td>Menú</td></tr>
+<tr><td><code>servicios</code></td><td>—</td><td>Expertise</td><td>Expertises</td><td>Menú</td></tr>
+<tr><td><code>noticias</code></td><td>Noticias</td><td>News</td><td>Actualités</td><td>Menú</td></tr>
+<tr><td><code>contacto</code></td><td>—</td><td>Contact</td><td>Nous contacter</td><td>Menú</td></tr>
+<tr><td><code>llamar</code></td><td>Llamar al despacho</td><td>Call the firm</td><td>Appeler le cabinet</td><td>Texto al pasar el ratón por el teléfono de la barra</td></tr>
+<tr><td><code>footerOffice</code></td><td>Despacho</td><td>Office</td><td>Cabinet</td><td>Pie: título de columna</td></tr>
+<tr><td><code>footerPhone</code></td><td>Tel.</td><td>Tel.</td><td>Tél.</td><td>Pie: antes del teléfono</td></tr>
+<tr><td><code>footerHours</code></td><td>Horario</td><td>Office hours</td><td>Horaires</td><td>Pie: título de columna</td></tr>
+<tr><td><code>footerHoursWeek</code></td><td>Lunes a jueves…</td><td>Monday to Thursday…</td><td>Du lundi au jeudi…</td><td>Pie: horario</td></tr>
+<tr><td><code>footerHoursFriday</code></td><td>Viernes…</td><td>Friday…</td><td>Vendredi…</td><td>Pie: horario</td></tr>
+<tr><td><code>footerSite</code></td><td>Navegación</td><td>Navigation</td><td>Navigation</td><td>Pie: título de columna</td></tr>
+<tr><td><code>footerPrivacy</code></td><td>Cookies y privacidad</td><td>Cookies and privacy</td><td>Cookies et confidentialité</td><td>Pie: enlace</td></tr>
+<tr><td><code>footerCredits</code></td><td>Diseño web: …</td><td>Web design: …</td><td>Conception web : …</td><td>Pie: línea inferior</td></tr>
+<tr><td><code>noticiasVacio</code></td><td>Todavía no hay noticias…</td><td>No news has been…</td><td>Aucune actualité…</td><td>Noticias sin publicaciones</td></tr>
+<tr><td><code>ctaTitle</code></td><td>Contacte con nosotros</td><td>Contact us</td><td>Contactez-nous</td><td>Tarjeta de contacto de todas las páginas y noticias (por defecto)</td></tr>
+<tr><td><code>ctaButton</code></td><td>Contacto</td><td>Contact us</td><td>Nous contacter</td><td>Tarjeta de contacto de todas las páginas y noticias (por defecto)</td></tr>
+<tr><td><code>copyright</code></td><td colspan="3">(texto antiguo)</td><td>Ya no se usa</td></tr>
+</table></div>
+<p>"—" significa que en español se usa el <code>name</code> del menú. Hextra trae además sus propios textos (buscador, "Leer más →", "En esta página"…) ya traducidos; para cambiar uno, añade su clave al archivo <code>i18n</code> correspondiente (por ejemplo <code>readMore: "Leer más →"</code>).</p>
+
+
+<!-- ===================================================================== -->
+<h2 id="diseno"><span class="num">14</span>Diseño: colores, tipografía y modo oscuro</h2>
+<p>Todo el diseño está en <code>assets/css/custom.css</code>. Al principio del archivo están las <b>variables</b> (llamadas "tokens"): cambiando su valor cambia en todo el sitio.</p>
+
+<h3 id="diseno-colores">Colores (modo claro)</h3>
+<div class="table"><table>
+<tr><th>Variable</th><th>Valor</th><th>Para qué</th></tr>
+<tr><td><code>--qa-canvas</code></td><td>#ffffff</td><td>Fondo de la página</td></tr>
+<tr><td><code>--qa-sand</code></td><td>#f1f0ee</td><td>Fondos suaves: filas alternas, iconos, tarjetas <code>bg="sand"</code></td></tr>
+<tr><td><code>--qa-paper</code></td><td>#ffffff</td><td>Fondo de tarjetas, botones y campos</td></tr>
+<tr><td><code>--qa-line</code> / <code>--qa-line-soft</code></td><td>#dbdad7</td><td>Líneas finas y bordes</td></tr>
+<tr><td><code>--qa-ink</code></td><td>#121212</td><td>Texto principal</td></tr>
+<tr><td><code>--qa-smoke</code></td><td>#595959</td><td>Texto secundario (gris)</td></tr>
+<tr><td><code>--qa-charcoal</code> / <code>--qa-on-charcoal</code></td><td>#18181b / #ffffff</td><td>Botón principal negro y su texto</td></tr>
+<tr><td><code>--qa-accent</code></td><td>#a10d2a</td><td><b>Color de acento</b>: enlaces, antetítulos, viñetas, iconos</td></tr>
+<tr><td><code>--qa-accent-hover</code></td><td>#820a21</td><td>Acento al pasar el ratón</td></tr>
+<tr><td><code>--qa-accent-soft</code></td><td>granate al 8 %</td><td>Fondos rosados (iconos de avisos, píldoras de acento)</td></tr>
+</table></div>
+<p>El <b>modo oscuro</b> redefine las mismas variables en el bloque <code>.dark { … }</code> que hay justo debajo (fondo #161514, texto #edebe7, acento #ec6a83…).</p>
+
+<h3 id="diseno-acento">Cambiar el color de acento</h3>
+<ol>
+  <li>En <code>custom.css</code>, cambia <code>--qa-accent</code> y <code>--qa-accent-hover</code> en <code>:root</code>, y <code>--qa-accent</code> en <code>.dark</code> (una versión más clara del mismo color).</li>
+  <li>Cambia también <code>--primary-hue</code>, <code>--primary-saturation</code> y <code>--primary-lightness</code> (el color de Hextra, en formato HSL: tono en grados, saturación y luminosidad).</li>
+  <li>Algunos elementos llevan el color escrito directamente. Con "Buscar y reemplazar" en <code>custom.css</code>, cambia <code>#a10d2a</code> (claro) y <code>#ec6a83</code> (oscuro) por los nuevos.</li>
+  <li>El logotipo y las ilustraciones de ejemplo tienen su propio color (son imágenes).</li>
+</ol>
+
+<h3 id="diseno-tipografia">Tipografía</h3>
+<div class="table"><table>
+<tr><th>Variable</th><th>Fuente</th><th>Uso</th></tr>
+<tr><td><code>--qa-serif</code></td><td>Hedvig Letters Serif</td><td>Titulares, títulos de tarjetas, citas, teléfono de la tarjeta de contacto</td></tr>
+<tr><td><code>--qa-sans</code></td><td>Hedvig Letters Sans</td><td>Todo el texto, menús, botones</td></tr>
+</table></div>
+<p>Se cargan desde Google Fonts en <code>layouts/partials/custom/head-end.html</code>. Para cambiarlas: cambia el enlace de Google Fonts y el nombre en estas dos variables.</p>
+<div class="warn"><b>Privacidad (RGPD)</b>
+Cargar fuentes desde Google envía la IP del visitante a Google. Si se quiere evitar, las fuentes pueden alojarse en el propio sitio (en <code>static/fonts/</code>) y declararse con <code>@font-face</code>.</div>
+
+<h3 id="diseno-tamanos">Tamaños y espacios</h3>
+<div class="table"><table>
+<tr><th>Variable</th><th>Valor</th><th>Para qué</th></tr>
+<tr><td><code>--qa-text-display</code></td><td>40 → 72 px</td><td>Titular de la portada (se adapta a la pantalla)</td></tr>
+<tr><td><code>--qa-text-title</code></td><td>34 → 52 px</td><td>Título de las páginas</td></tr>
+<tr><td><code>--qa-text-prose</code></td><td>17 px</td><td>Texto de las páginas</td></tr>
+<tr><td><code>--qa-text-body</code> / <code>-small</code> / <code>-caption</code></td><td>14 / 12 / 11 px</td><td>Botones, etiquetas, textos pequeños</td></tr>
+<tr><td><code>--qa-radius</code></td><td>8 px</td><td>Esquinas de tarjetas</td></tr>
+<tr><td><code>--qa-section-gap</code></td><td>64 px</td><td>Espacio entre secciones</td></tr>
+<tr><td><code>--hextra-max-page-width</code></td><td>1200 px</td><td>Ancho máximo del contenido</td></tr>
+<tr><td><code>--hextra-max-navbar-width</code></td><td>75rem</td><td>Ancho máximo de la barra (igual que el contenido; <code>100%</code> la lleva a todo el ancho)</td></tr>
+</table></div>
+
+<h3 id="diseno-secciones">Mapa de custom.css</h3>
+<p>El archivo está dividido en bloques con un título comentado (búscalos por su nombre):</p>
+<ol>
+  <li><b>Tokens</b> — variables de color, tipografía y tamaños.</li>
+  <li><b>Base</b> — fondo, fuente general.</li>
+  <li><b>Barra de navegación</b> — enlaces, menú desplegable, buscador, menú del móvil.</li>
+  <li><b>Botones y píldoras</b>.</li>
+  <li><b>Hero</b> — cabecera de portada.</li>
+  <li><b>Secciones</b>.</li>
+  <li><b>Tarjetas, rejillas, cifras</b> — incluye fondos de tarjeta, listas, citas, banda de contacto, fichas de abogado, <code>qa/steps</code>, <code>qa/showcase</code>, <code>qa/split</code> y noticias.</li>
+  <li><b>Maquetación de páginas</b> — cabecera de página, migas de pan, índice lateral.</li>
+  <li><b>Contenido</b> — texto de las páginas y aspecto de los shortcodes de Hextra.</li>
+  <li><b>Pie de página</b>.</li>
+  <li><b>Movimiento reducido</b>.</li>
+</ol>
+
+
+<!-- ===================================================================== -->
+<h2 id="iconos"><span class="num">15</span>Iconos disponibles</h2>
+<p>Para los parámetros <code>icon</code>, <code>secondaryIcon</code>, <code>menuIcon</code> y el shortcode <code>{{&lt; icon "…" &gt;}}</code>. Son los iconos del tema Hextra (Heroicons).</p>
+<h4>Los más útiles para el despacho</h4>
+<div class="table"><table>
+<tr><th>Nombre</th><th>Icono</th><th>Nombre</th><th>Icono</th></tr>
+<tr><td><code>phone</code></td><td>Teléfono</td><td><code>mail</code></td><td>Correo</td></tr>
+<tr><td><code>location-marker</code></td><td>Ubicación</td><td><code>map</code></td><td>Mapa</td></tr>
+<tr><td><code>scale</code></td><td>Balanza</td><td><code>home</code></td><td>Casa (familia)</td></tr>
+<tr><td><code>document-text</code></td><td>Documento</td><td><code>briefcase</code></td><td>Maletín (laboral)</td></tr>
+<tr><td><code>library</code></td><td>Edificio público</td><td><code>office-building</code></td><td>Oficina</td></tr>
+<tr><td><code>users</code></td><td>Personas</td><td><code>user</code></td><td>Persona</td></tr>
+<tr><td><code>shield-check</code></td><td>Escudo</td><td><code>calendar</code></td><td>Calendario</td></tr>
+<tr><td><code>clock</code></td><td>Reloj</td><td><code>translate</code></td><td>Idiomas</td></tr>
+<tr><td><code>book-open</code></td><td>Libro</td><td><code>academic-cap</code></td><td>Birrete</td></tr>
+<tr><td><code>arrow-right</code></td><td>Flecha</td><td><code>arrow-circle-right</code></td><td>Flecha en círculo</td></tr>
+</table></div>
+<h4>Lista completa</h4>
+<div class="grid-icons" id="iconos-lista"></div>
+<div class="warn"><b>Ojo</b> Si escribes un nombre que no existe, la web <b>no compila</b> y da el error <code>icon "…" not found</code>.</div>
+
+
+<!-- ===================================================================== -->
+<h2 id="archivos"><span class="num">16</span>Archivos del tema (referencia técnica)</h2>
+<p>Qué hace cada plantilla propia. Las de <code>layouts/</code> sustituyen a las del tema Hextra con el mismo nombre; si se borra una, Hugo vuelve a usar la de Hextra.</p>
+<div class="table"><table>
+<tr><th>Archivo</th><th>Qué hace</th></tr>
+<tr><td><code>layouts/home.html</code></td><td>Portada. Si la página tiene <code>qa/hero</code>, no imprime el título automático.</td></tr>
+<tr><td><code>layouts/list.html</code></td><td>Páginas de sección (casi todas: abogados, servicios, áreas…). Cabecera editorial + contenido + índice lateral.</td></tr>
+<tr><td><code>layouts/single.html</code></td><td>Páginas sueltas (archivos <code>.md</code> que no son <code>_index.md</code>, fuera de Noticias).</td></tr>
+<tr><td><code>layouts/blog/list.html</code></td><td>Listado de noticias (usa la ordenación y paginación de Hextra).</td></tr>
+<tr><td><code>layouts/blog/single.html</code></td><td>Noticia: cabecera con fecha, autores y etiquetas; contenido; tarjeta de contacto.</td></tr>
+<tr><td><code>layouts/partials/navbar.html</code></td><td>Barra de navegación (logo, enlaces, buscador, teléfono, hamburguesa).</td></tr>
+<tr><td><code>layouts/partials/navbar-link.html</code></td><td>Cada enlace de la barra y el panel desplegable de los menús anidados.</td></tr>
+<tr><td><code>layouts/partials/footer.html</code></td><td>Pie de página. También carga <code>assets/js/qa.js</code>.</td></tr>
+<tr><td><code>layouts/partials/page-header.html</code></td><td>Cabecera de las páginas: migas de pan y título serif.</td></tr>
+<tr><td><code>layouts/partials/custom/head-end.html</code></td><td>Carga de Google Fonts y datos estructurados para Google (nombre, teléfono, dirección, horario, preguntas frecuentes).</td></tr>
+<tr><td><code>layouts/partials/qa/cta.html</code></td><td>HTML de la tarjeta de contacto (lo usan <code>qa/cta</code> y las noticias).</td></tr>
+<tr><td><code>layouts/partials/qa/href.html</code></td><td>Convierte los enlaces de los shortcodes (idioma, externos, <code>tel:</code>…).</td></tr>
+<tr><td><code>layouts/partials/qa/src.html</code></td><td>Convierte las rutas de imágenes y vídeos.</td></tr>
+<tr><td><code>layouts/shortcodes/qa/*.html</code></td><td>Un archivo por shortcode. Cada uno lleva sus instrucciones al principio.</td></tr>
+<tr><td><code>assets/css/custom.css</code></td><td>Todo el diseño (se carga después del CSS de Hextra y lo sobrescribe).</td></tr>
+<tr><td><code>assets/js/qa.js</code></td><td>Menú desplegable, <code>qa/split</code> y ajuste de <code>qa/showcase width="full"</code>.</td></tr>
+</table></div>
+<div class="note"><b>Actualizar Hextra</b>
+Las plantillas propias seguirán sustituyendo a las de Hextra tras una actualización y no recibirán sus mejoras en esas partes. Revísalas al actualizar (la versión está en <code>go.mod</code>).</div>
+
+
+<!-- ===================================================================== -->
+<h2 id="problemas"><span class="num">17</span>Solución de problemas</h2>
+<div class="table"><table class="quick">
+<tr><th>Síntoma</th><th>Causa probable</th><th>Solución</th></tr>
+<tr><td>Aparece texto raro como <code>&lt;a class="…"&gt;</code> en la página</td><td>Shortcode sin cerrar, o escrito con <code>{{%</code> en vez de <code>{{&lt;</code></td><td>Cada shortcode con contenido necesita su cierre <code>{{&lt; /qa/x &gt;}}</code>.</td></tr>
+<tr><td>Error al compilar: <i>must be closed or self-closed</i></td><td>Shortcode que admite contenido, abierto y sin cerrar</td><td>Añade el cierre o termínalo con <code>/&gt;}}</code>.</td></tr>
+<tr><td>Error: <i>icon "…" not found</i></td><td>Nombre de icono inexistente</td><td>Ver <a href="#iconos">Iconos</a>.</td></tr>
+<tr><td>Error: <i>qa/split-item debe ir dentro de qa/split</i></td><td>Un <code>qa/split-item</code> suelto</td><td>Mételo entre <code>{{&lt; qa/split &gt;}}</code> y su cierre.</td></tr>
+<tr><td>Un enlace da 404 en inglés o francés</td><td>La página solo existe en español</td><td>Quita el enlace en EN/FR o crea la traducción.</td></tr>
+<tr><td>La cursiva del titular no sale granate</td><td>Se usó <code>_guion bajo_</code> o hay espacios junto a los asteriscos</td><td>Escribe <code>*texto*</code> sin espacios por dentro.</td></tr>
+<tr><td>El texto de una tarjeta de color no se lee</td><td>Falta <code>text</code></td><td>Fondo claro → <code>text="dark"</code>; oscuro → <code>text="light"</code>.</td></tr>
+<tr><td>Una noticia no aparece</td><td><code>draft: true</code>, fecha futura, o fuera de <code>content/noticias/</code></td><td>Revisa la cabecera.</td></tr>
+<tr><td>Una página no aparece</td><td><code>draft: true</code></td><td>Cambia a <code>draft: false</code> o quita la línea.</td></tr>
+<tr><td>Una imagen no se ve</td><td>Ruta incorrecta</td><td>Si está en <code>static/images/foto.jpg</code>, escribe <code>/images/foto.jpg</code>. Cuidado con mayúsculas y extensiones.</td></tr>
+<tr><td>Tras editar una plantilla, en local se ve lo antiguo</td><td>Fallo de <code>hugo server</code> en Windows</td><td>Para y relanza <code>hugo server</code>; recarga con <kbd>Ctrl</kbd>+<kbd>F5</kbd>.</td></tr>
+<tr><td>Un cambio de estilo no se ve</td><td>El navegador guarda el CSS antiguo</td><td>Recarga con <kbd>Ctrl</kbd>+<kbd>F5</kbd>.</td></tr>
+<tr><td>El YAML da error (<i>yaml: line …</i>)</td><td>Sangría incorrecta o dos puntos sin comillas</td><td>Usa espacios (no tabuladores), respeta la sangría del bloque y pon entre comillas los textos que contengan <code>:</code>.</td></tr>
+</table></div>
+
+
+<!-- ===================================================================== -->
+<h2 id="plantillas"><span class="num">18</span>Plantillas para copiar</h2>
+
+<h3 id="plantilla-pagina">Página nueva</h3>
+<div class="code"><textarea readonly spellcheck="false">---
+title: Título de la página
+description: Descripción para buscadores.
+toc: false
+---
+{{< hextra/hero-subtitle >}}
+Entradilla de la página.
+{{< /hextra/hero-subtitle >}}
+
+{{< qa/section eyebrow="Sección" title="Título de la sección" >}}
+Texto introductorio opcional.
+{{< /qa/section >}}
+
+{{< qa/steps numbered="false" >}}
+  {{< qa/step title="Elemento uno" link="contacto" more="Más información" >}}
+  Texto del elemento.
+  {{< /qa/step >}}
+  {{< qa/step title="Elemento dos" >}}
+  Texto del elemento.
+  {{< /qa/step >}}
+{{< /qa/steps >}}
+
+{{< qa/cta />}}</textarea><button type="button">Copiar</button></div>
+
+<h3 id="plantilla-servicio">Servicio dentro de un área</h3>
+<div class="code"><span class="label">content/servicios/AREA/NOMBRE DEL SERVICIO/_index.md</span><textarea readonly spellcheck="false">---
+title: Abogados de NOMBRE DEL SERVICIO en Burgos
+description: Quintana Abogados - Abogados en Burgos especializados en NOMBRE DEL SERVICIO. Solicite su consulta.
+comments: false
+linkTitle: Nombre corto
+toc: true
+breadcrumbs: true
+draft: false
+cascade:
+  sidebar:
+    exclude: true
+---
+{{< hextra/hero-subtitle >}}
+En Quintana Abogados prestamos asesoramiento jurídico integral en …
+{{< /hextra/hero-subtitle >}}
+
+{{< callout type="error" icon="arrow-circle-right">}} [Contacte con nosotros](/contacto)
+{{< /callout >}}
+
+---
+
+### ¿Qué es …?
+
+Texto explicativo.
+
+### Nuestro servicio
+
+* Punto uno.
+* Punto dos.
+
+{{< qa/cta >}}
+Si necesita asesoramiento, estamos preparados para analizar su caso.
+{{< /qa/cta >}}</textarea><button type="button">Copiar</button></div>
+
+<h3 id="plantilla-noticia">Noticia</h3>
+<div class="code"><span class="label">content/noticias/titulo-corto.md</span><textarea readonly spellcheck="false">---
+title: Título de la noticia
+date: 2026-10-08
+description: Resumen de una o dos frases.
+tags: [Novedades]
+draft: false
+---
+Primer párrafo.
+
+## Subtítulo
+
+Texto…</textarea><button type="button">Copiar</button></div>
+
+<h3 id="plantilla-ejemplos">Página de ejemplos</h3>
+<p><code>content/ejemplos/_index.md</code> muestra <code>qa/showcase</code> y <code>qa/split</code> funcionando, con ilustraciones de muestra (<code>static/images/ejemplos/</code>). Es un <b>borrador</b>: no se publica. Para verla: <code>hugo server -D</code> y abre <code>/ejemplos/</code>.</p>
+<div class="note"><b>Antes de publicar con imágenes reales</b>
+Las ilustraciones de <code>static/images/ejemplos/</code> sí se suben con la web aunque la página sea borrador. Bórralas cuando ya no las necesites.</div>
+
+<p style="margin-top:4rem;color:var(--smoke);font-size:14px">Manual del tema de quintana-abogados.com · Hugo + Hextra + diseño editorial propio.</p>
+
+</main>
+</div>
+
+<script>
+(function () {
+  // Índice lateral generado a partir de los títulos
+  var indice = document.getElementById("indice");
+  var heads = document.querySelectorAll("main h2[id], main h3[id]");
+  heads.forEach(function (h) {
+    var li = document.createElement("li");
+    if (h.tagName === "H3") li.className = "sub";
+    var a = document.createElement("a");
+    a.href = "#" + h.id;
+    var num = h.querySelector(".num");
+    a.textContent = (num ? num.textContent + " · " : "") + h.textContent.replace(num ? num.textContent : "", "").trim();
+    li.appendChild(a);
+    indice.appendChild(li);
+  });
+
+  // Buscador del índice
+  document.getElementById("filtro").addEventListener("input", function (e) {
+    var q = e.target.value.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+    indice.querySelectorAll("li").forEach(function (li) {
+      var t = li.textContent.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+      li.classList.toggle("hidden", q && t.indexOf(q) === -1);
+    });
+  });
+
+  // Apartado activo al desplazarse.
+  // Solo se desplaza el propio índice lateral (nunca la página), y solo en
+  // escritorio, donde el índice está fijo a la izquierda.
+  var toc = document.querySelector(".toc");
+  function keepInToc(a) {
+    if (getComputedStyle(toc).position !== "sticky") return;
+    var r = a.getBoundingClientRect();
+    var t = toc.getBoundingClientRect();
+    var margin = 80;
+    if (r.top < t.top + margin) toc.scrollTop -= (t.top + margin) - r.top;
+    else if (r.bottom > t.bottom - margin) toc.scrollTop += r.bottom - (t.bottom - margin);
+  }
+  var links = {};
+  indice.querySelectorAll("a").forEach(function (a) { links[a.getAttribute("href").slice(1)] = a; });
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          indice.querySelectorAll("a.active").forEach(function (x) { x.classList.remove("active"); });
+          var a = links[en.target.id];
+          if (a) { a.classList.add("active"); keepInToc(a); }
+        }
+      });
+    }, { rootMargin: "0px 0px -75% 0px" });
+    heads.forEach(function (h) { io.observe(h); });
+  }
+
+  // En pantallas estrechas el índice se pliega para no ocupar toda la página
+  var toggle = document.getElementById("toc-toggle");
+  toggle.addEventListener("click", function () {
+    var open = toc.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.textContent = open ? "Ocultar índice" : "Mostrar índice";
+  });
+  indice.addEventListener("click", function (e) {
+    var a = e.target.closest("a");
+    if (!a || getComputedStyle(toggle).display === "none") return;
+    // Móvil: primero se cierra el índice y después se salta al apartado,
+    // para que el cierre no descoloque la página.
+    e.preventDefault();
+    toc.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.textContent = "Mostrar índice";
+    var id = a.getAttribute("href").slice(1);
+    setTimeout(function () {
+      var target = document.getElementById(id);
+      if (target) {
+        var offset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+        window.scrollTo(0, target.getBoundingClientRect().top + window.pageYOffset - offset);
+      }
+      history.replaceState(null, "", "#" + id);
+    }, 0);
+  });
+
+  // Bloques de código: altura automática y botón Copiar
+  document.querySelectorAll(".code").forEach(function (box) {
+    var ta = box.querySelector("textarea");
+    var btn = box.querySelector("button");
+    ta.rows = ta.value.split("\n").length;
+    btn.addEventListener("click", function () {
+      var done = function () { btn.textContent = "Copiado ✓"; setTimeout(function () { btn.textContent = "Copiar"; }, 1500); };
+      if (navigator.clipboard) navigator.clipboard.writeText(ta.value).then(done, function () { ta.select(); document.execCommand("copy"); done(); });
+      else { ta.select(); document.execCommand("copy"); done(); }
+    });
+  });
+
+  // Lista completa de iconos de Hextra
+  var iconos = "academic-cap adjustments annotation archive arrow-circle-down arrow-circle-left arrow-circle-right arrow-circle-up arrow-down arrow-left arrow-narrow-down arrow-narrow-left arrow-narrow-right arrow-narrow-up arrow-right arrow-sm-down arrow-sm-left arrow-sm-right arrow-sm-up arrow-up arrow-up-left arrow-up-right arrows-expand at-symbol backspace badge-check ban beaker bell book-open bookmark bookmark-alt briefcase cake calculator calendar camera card cards cash chart-bar chart-pie chart-square-bar chat chat-alt check check-circle chevron-double-down chevron-double-left chevron-double-right chevron-double-up chevron-down chevron-left chevron-right chevron-up chip clipboard clipboard-check clipboard-copy clipboard-list clock cloud cloud-download cloud-upload code cog collection color-swatch contrast copy credit-card cube cube-transparent currency-bangladeshi currency-dollar currency-euro currency-pound currency-rupee currency-yen cursor-click database desktop-computer device-mobile device-tablet document document-add document-download document-duplicate document-remove document-report document-search document-text dots-circle-horizontal dots-horizontal dots-vertical download duplicate emoji-happy emoji-sad exclamation exclamation-circle external-link eye eye-off fast-forward film filter finger-print fire flag folder folder-add folder-download folder-open folder-remove folder-tree gift globe globe-alt hamburger-menu hand hashtag heart home identification inbox inbox-in information-circle key library light-bulb lightning-bolt link location-marker lock-closed lock-open login logout mail mail-open map markdown menu microphone minus minus-circle minus-sm moon music-note newspaper office-building one paper-airplane paper-clip pause pencil pencil-alt phone phone-incoming phone-missed-call phone-outgoing photograph play plus plus-circle plus-sm presentation-chart-bar presentation-chart-line printer puzzle qrcode question-mark-circle receipt-refund receipt-tax refresh reply rewind rss save save-as scale scissors search search-circle selector server share shield-check shield-exclamation shopping-bag shopping-cart sort-ascending sort-descending sparkles speakerphone star status-offline status-online stop sun support switch-horizontal switch-vertical table tag template terminal thumb-down thumb-up ticket translate trash trending-down trending-up truck upload user user-add user-circle user-group user-remove users variable video-camera view-boards view-grid view-grid-add view-list volume-off volume-up warning wifi x x-circle zoom-in zoom-out bitbucket bluesky codeberg discord facebook github gitlab hugo instagram linkedin mastodon slack telegram twitter x-twitter youtube".split(" ");
+  var lista = document.getElementById("iconos-lista");
+  iconos.forEach(function (n) { var s = document.createElement("span"); s.textContent = n; lista.appendChild(s); });
+})();
+</script>
+</body>
+</html>

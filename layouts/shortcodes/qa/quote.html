@@ -1,0 +1,14 @@
+{{- /*
+Cita editorial centrada, en serif, entre líneas finas.
+
+@param {string} cite Fuente de la cita (opcional).
+
+@example {{< qa/quote cite="Código Deontológico" >}}Texto de la cita{{< /qa/quote >}}
+*/ -}}
+<figure class="qa-quote not-prose">
+  <span class="qa-quote__mark" aria-hidden="true">“</span>
+  <blockquote class="qa-quote__text">{{ .InnerDeindent | .Page.RenderString (dict "display" "block") }}</blockquote>
+{{- with .Get "cite" }}
+  <figcaption class="qa-quote__cite">— {{ . | markdownify }}</figcaption>
+{{- end }}
+</figure>

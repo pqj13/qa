@@ -1,0 +1,32 @@
+{{- /*
+Ficha de abogado: nombre, cargo, píldoras (colegiación, idiomas) y biografía.
+Los idiomas ES, EN y FR tienen color propio (amarillo, rosa y azul).
+
+@param {string} name  Nombre completo.
+@param {string} role  Cargo o descripción breve (opcional).
+@param {string} langs Idiomas separados por comas, p. ej. "ES, EN, FR" (opcional).
+@param {string} tags  Otras etiquetas separadas por punto y coma (opcional).
+
+@example {{< qa/lawyer name="Nombre Apellido" langs="ES, EN" >}}Biografía{{< /qa/lawyer >}}
+*/ -}}
+{{- $name := .Get "name" -}}
+<article class="qa-profile not-prose" id="{{ $name | anchorize }}">
+  <h2 class="qa-profile__name">{{ $name }}</h2>
+{{- with .Get "role" }}
+  <p class="qa-profile__role">{{ . | markdownify }}</p>
+{{- end }}
+{{- if or (.Get "langs") (.Get "tags") }}
+  <div class="qa-pills">
+  {{- with .Get "tags" }}{{ range split . ";" }}
+    <span class="qa-pill">{{ trim . " " }}</span>
+  {{- end }}{{ end }}
+  {{- with .Get "langs" }}{{ range split . "," }}
+    {{- $lang := trim . " " }}
+    <span class="qa-pill qa-pill--lang qa-pill--lang-{{ lower $lang }}">{{ $lang }}</span>
+  {{- end }}{{ end }}
+  </div>
+{{- end }}
+{{- with .Inner }}
+  <div class="qa-profile__bio">{{ . | $.Page.RenderString (dict "display" "block") }}</div>
+{{- end }}
+</article>

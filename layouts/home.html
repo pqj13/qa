@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <div class="qa-home hx:mx-auto hx:flex hextra-max-page-width">
+    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" false) }}
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8">
+      <main id="content" class="hx:w-full hx:min-w-0 hx:px-6 hx:md:px-12">
+        {{- if and .Title (not (.HasShortcode "qa/hero")) }}
+          <header class="qa-page-header">
+            <h1 class="qa-page-title">{{ .Title }}</h1>
+          </header>
+        {{- end }}
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </main>
+    </article>
+  </div>
+{{ end }}

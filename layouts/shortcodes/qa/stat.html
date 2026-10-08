@@ -1,0 +1,17 @@
+{{- /*
+Tarjeta de dato: etiqueta, cifra serif y nota.
+
+@param {string} label  Etiqueta superior.
+@param {string} value  Cifra o dato.
+@param {string} accent Sufijo resaltado con el color de acento, p. ej. "+" (opcional).
+@param {string} note   Nota inferior (opcional).
+
+@example {{< qa/stat label="Experiencia" value="40" accent="+" note="años de ejercicio" >}}
+*/ -}}
+<div class="qa-stat">
+  <span class="qa-stat__label">{{ .Get "label" }}</span>
+  <span class="qa-stat__value">{{ .Get "value" }}{{ with .Get "accent" }}<em>{{ . }}</em>{{ end }}</span>
+{{- with .Get "note" }}
+  <span class="qa-stat__note">{{ . | markdownify }}</span>
+{{- end }}
+</div>

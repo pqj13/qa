@@ -1,0 +1,31 @@
+{{- /*
+Elemento de qa/split. No pinta nada por sí mismo: entrega sus datos a qa/split,
+que coloca el título a la izquierda y el contenido en el panel de la derecha.
+
+@param {string} title Título del elemento en la lista de la izquierda (admite Markdown).
+@param {string} text  Descripción corta bajo el título; solo se ve en el elemento activo (admite Markdown).
+@param {string} image Imagen del panel derecho (opcional).
+@param {string} alt   Texto alternativo de la imagen.
+@param {string} fit   "contain" (imagen entera con margen, por defecto) o "cover" (rellena el panel).
+@param {string} bg    Fondo de este panel (mismos valores que en qa/split; manda sobre el de qa/split).
+@param {string} textColor Color del texto de este panel: "light" o "dark".
+Contenido interior: texto del panel derecho (opcional, admite Markdown). Con imagen, va debajo de ella.
+
+@example {{< qa/split-item title="Primera consulta" text="Estudiamos su caso." image="/images/consulta.jpg" />}}
+*/ -}}
+{{- $body := "" -}}
+{{- with .Inner }}{{ $body = . | $.Page.RenderString (dict "display" "block") }}{{ end -}}
+{{- with .Parent -}}
+  {{- .Store.Add "qa-split-items" (slice (dict
+    "title" ($.Get "title")
+    "text" ($.Get "text")
+    "image" ($.Get "image")
+    "alt" ($.Get "alt")
+    "fit" ($.Get "fit" | default "contain")
+    "bg" ($.Get "bg")
+    "text_color" ($.Get "textColor")
+    "body" $body
+  )) -}}
+{{- else -}}
+  {{- errorf "qa/split-item debe ir dentro de qa/split (%s)" $.Position -}}
+{{- end -}}
